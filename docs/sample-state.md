@@ -22,7 +22,6 @@
   },
 
   pins: {
-    pins: {
       1: {
         id: 2,
         title: "Skincare",
@@ -31,7 +30,6 @@
         description: "New ways to take care of your skin"
         user_id: 1
       }
-    }
     errors: []
   },
 
