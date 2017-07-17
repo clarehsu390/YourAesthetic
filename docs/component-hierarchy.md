@@ -26,7 +26,7 @@
   + Followers
   + Following
 - **SavedPinsContainer**
-  + Pins
+  + PinsIndex
 
   ## Routes
 
