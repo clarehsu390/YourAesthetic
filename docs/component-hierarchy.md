@@ -25,3 +25,18 @@
 - **FollowsContainer**
   + Followers
   + Following
+- **SavedPinsContainer**
+  + Pins
+
+  ## Routes
+
+  | Path                       | Component           |
+  |----------------------------|---------------------|
+  | "/signup"                  | "AuthFormContainer" |
+  | "/login"                   | "AuthFormContainer" |
+  | "/"                        | "DiscoverContainer" |
+  | "/:username"               | "UserContainer"     |
+  | "/:username/followers"     | "FollowsContainer"  |
+  | "/:username/following"     | "FollowsContainer"  |
+  | "/:username/pins"          | "SavedPinsContainer"|
+  | "/:username/boards"        | "BoardsContainer"   |
