@@ -9,6 +9,7 @@
   + Logo
   + Discover
   + UserProfile
+  + Notifications
 - **PinsContainer**
   + PinDetails
 - **NewPin**
@@ -22,6 +23,7 @@
   + BoardDetail
     * PinsContainer
   + EditBoard
+  + CreateBoard
 - **FollowsContainer**
   + Followers
   + Following
