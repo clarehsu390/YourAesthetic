@@ -1,2 +1,4 @@
 #YourAesthetic
-[Heroku Link][heroku] - https://youraesthetic.herokuapp.com/
+[Heroku Link][heroku]
+
+[heroku]: https://youraesthetic.herokuapp.com/
