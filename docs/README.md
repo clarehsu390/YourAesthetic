@@ -43,7 +43,7 @@ while pins tab contains pins that do not belong to a board.
 
 **Objective:** Users can follow other users. View following's pins.
 
-### Phase 6: - Final styling / infinite scroll for Notes Index (1 day)
+### Phase 6: - Final styling / infinite scroll for Discover Page (1 day)
 
 **Objective:** Add infinite scroll to Discover Page
 
