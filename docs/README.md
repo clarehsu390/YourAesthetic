@@ -18,3 +18,4 @@ YourAesthetic is a web application inspired by Pinterest, built using Rails and 
 while pins tab contains pins that do not belong to a board.
 - [] Feature 3: Main page (discover page) show discover feed with photos in individual boxes
 - [] Feature 4: Users are able to follow other users (display follows on user profile)
+- [] Bonus: Users can like pins(photos)
