@@ -20,6 +20,20 @@ while pins tab contains pins that do not belong to a board.
 - [ ] Feature 4: Users are able to follow other users (display follows on user profile)
 - [ ] Bonus: Users can like pins(photos)
 
+## Design Docs
+
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
+
+[wireframes]: wireframes
+[components]: component-hierarchy.md
+[sample-state]: sample-state.md
+[api-endpoints]: api-endpoints.md
+[schema]: schema.md
+
 ## Implementation Timeline
 
 
