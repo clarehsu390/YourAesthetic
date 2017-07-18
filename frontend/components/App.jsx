@@ -7,8 +7,8 @@ const App = () => (
   <header>
     <h1>Your Aesthetic</h1>
     <Switch>
-      <AuthRoute path="/login" component={SessionFormContainer} />
-        <AuthRoute path="/signup" component={SessionFormContainer} />
+      <AuthRoute path="/" component={SessionFormContainer} />
+        <AuthRoute path="/login" component={SessionFormContainer} />
     </Switch>
   </header>
 );

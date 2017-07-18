@@ -5,7 +5,7 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
+      email: "",
       password: ""
     };
 
@@ -57,9 +57,9 @@ class SessionForm extends React.Component {
         {this.navLink()}
         <input
           type='text'
-          value={this.state.username}
-          placeholder='username'
-          onChange={this.update('username')}
+          value={this.state.email}
+          placeholder='email'
+          onChange={this.update('email')}
           />
         <input
           type='password'

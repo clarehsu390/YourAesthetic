@@ -7,7 +7,7 @@ const _nullUser = {
   errors: []
 };
 
-export const SessionReducer = (state = _nullUser, action) => {
+export const currentUserReducer = (state = _nullUser, action) => {
   switch(action.type) {
     case RECEIVE_CURRENT_USER:
     const currentUser = action.currentUser;
