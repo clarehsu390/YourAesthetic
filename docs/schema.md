@@ -8,6 +8,7 @@ username        | string    | not null, indexed, unique
 email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
+image_url       | string    | not null, default:
 
 ## boards
 
@@ -25,8 +26,8 @@ id              | integer   | not null, primary key
 name            | string    | not null, indexed
 description     | text      |
 url             | string    | not null
-image_url       | string    | not null
-user_id         | integer   | (saved pins)
+image_url       | string    | not null, default:
+creator_id      | integer   | not null
 
 ## pinnings
 column name     | data type | details
@@ -41,5 +42,13 @@ pin_id          | integer   | not null ,indexed
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-followee_id     | integer   | not null
-follower_id     | string    | not null
+teacher_id      | integer   | not null
+student_id      | string    | not null
+
+
+## savedpins
+column name     | data type | details
+----------------|-----------|-----------------------
+id              | integer   | not null, primary key
+user_id         | integer   | not null, indexed
+pin_id          | integer   | not null ,indexed

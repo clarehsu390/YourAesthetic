@@ -41,26 +41,28 @@ while pins tab contains pins that do not belong to a board.
 
 **Objective:** Functioning rails project with front-end Authentication. Display user profile.
 
-### Phase 2: Board Model/Pins Model, API, and components (2 days)
+### Phase 2: Board Model/Pins Model, API, and components (3 days)
 
 **Objective:** Boards can be created/edited, pins can be added to board. Display Discover page.
+(full CRUD for boards and pins/include styling)
 
-### Phase 3: Seed Data (1 day)
 
-**Objective:** Adequately seed database with pins(urls).
-
-### Phase 4: Styling of pages (2 days)
+### Phase 3: Styling of pages (2 days)
 
 **Objective** Be able to display flex boxes on Discover page. Style all pages with proper design.
 
-### Phase 5: Followings (1 day)
+### Phase 4: Followings (1 day)
 
-**Objective:** Users can follow other users. View following's pins.
+**Objective:** Users can follow other users. View following's pins. Everything fully-styled.
 
-### Phase 6: - Final styling / infinite scroll for Discover Page (1 day)
+### Phase 5: - Final styling / infinite scroll for Discover Page (1 day)
 
 **Objective:** Add infinite scroll to Discover Page
+(consider taking out)
 
 ### Bonus
 
 **Objective:** Users are able to like pins.
+
+unsplash - for photos
+cloudenary - resize, upload

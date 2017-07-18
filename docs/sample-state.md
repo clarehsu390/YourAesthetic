@@ -1,20 +1,22 @@
 ```js
 {
-  session: {
-    currentUser: {
-      id: 1,
-      username: "clare"
-    },
-    errors: []
+  currentUser: {
+    id: 1,
+    username: "clare",
+    image_url:
   },
+  errors: [],
 
-  users: {
+  userProfile: {
     1: {
       id: 1,
       username: "clare",
       boards: [1, 2],
       followers: [2],
-      following: [2]
+      following: [2],
+      savedPins: [],
+      followed: boolean
+
     }
     2: {
       ...

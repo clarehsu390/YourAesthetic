@@ -12,6 +12,7 @@
 
 - `POST /api/users`
 - `PATCH /api/users`
+- `GET /api/users/:userId`
 
 ### Session
 
@@ -34,10 +35,3 @@
 - `GET /api/pins/:id`
 - `DELETE /api/pins/:id`
 - `PATCH /api/pins/:id`
-
-
-### Followings
-- `GET /api/followers`
-- `POST /api/following`
-- `GET /api/following`
-- `DELETE /api/following`

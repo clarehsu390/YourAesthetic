@@ -3,32 +3,38 @@
 **AuthFormContainer**
  - SignupForm
  - LoginForm
+**NavBarContainer** (render on every page, match "/")
+   + NavBar
+    * Logo
+    * Discover
+    * UserProfile
+    * Notifications
 
-**DiscoverContainer**
-- **NavBar**
-  + Logo
-  + Discover
-  + UserProfile
-  + Notifications
-- **PinsContainer**
-  + PinDetails
-- **NewPin**
+**PinsContainer**
+  + PinIndex
+    * PinIndexItem
+**PinDetailContainer**
+  + PinDetail
+
+
+- **NewPinContainer**
   + NewPin
-- **NewBoard**
+- **NewBoardContainer**
   + NewBoard
 
-**UserContainer**
-- **BoardsContainer**
+**UserProfileContainer**
+- **BoardIndexContainer**
   + BoardIndex
-  + BoardDetail
+  + BoardIndexItem
     * PinsContainer
-  + EditBoard
+    * EditBoard
   + CreateBoard
 - **FollowsContainer**
-  + Followers
-  + Following
-- **SavedPinsContainer**
-  + PinsIndex
+  + FollowerIndex
+    * FollowerIndexItem
+  + FollowingIndex
+    * FollowingIndexItem
+- **PinsContainer**
 
   ## Routes
 
