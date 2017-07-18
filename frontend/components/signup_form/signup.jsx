@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 class SignUp extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {
       email: "",
       password: ""
@@ -11,6 +12,7 @@ class SignUp extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleSubmit(e) {
@@ -20,6 +22,8 @@ class SignUp extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
+    console.log('hello');
+    this.props.history.push("/login");
 
 
   }
@@ -67,7 +71,7 @@ class SignUp extends React.Component {
         {this.renderErrors()}
         <button>Sign Up!</button>
       </form>
-      <button className='login'>login</button>
+      <button className='login' onClick={this.handleClick}>login</button>
       </section>
     );
   }

@@ -42,6 +42,7 @@ class SessionForm extends React.Component {
 
   }
 
+
   render() {
     return (
       <form className='session-form' onSubmit={this.handleSubmit}>
@@ -61,6 +62,10 @@ class SessionForm extends React.Component {
         {this.renderErrors()}
         <button>Login</button>
       </form>
+      <section>
+        <text>Already a user?</text>
+        <Link to='/signup'>Sign up Here</Link>
+      </section>
     );
   }
 
