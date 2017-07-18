@@ -3,6 +3,7 @@
 **AuthFormContainer**
  - SignupForm
  - LoginForm
+
 **NavBarContainer** (render on every page, match "/")
    + NavBar
     * Logo
