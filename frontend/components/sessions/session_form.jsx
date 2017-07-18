@@ -15,7 +15,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
+    this.props.processForm({ user });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -31,8 +31,8 @@ class SessionForm extends React.Component {
       if (this.props.errors) {
         return(
           <ul>
-            {this.props.errors.map((error, i) => (
-              <li key={`error-${i}`}>
+            {this.props.errors.map((error, idx) => (
+              <li key={idx}>
                 {error}
               </li>
             ))}
