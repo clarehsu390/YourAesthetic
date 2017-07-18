@@ -28,7 +28,7 @@ export const logout = () => dispatch => {
 
 export const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
-  currentUser: user
+  user
 });
 
 export const receiveErrors = errors => ({

@@ -7,9 +7,6 @@ import { AuthRoute } from '../../util/route_util';
 const loginRequired = () => {
   return (<section className='sign-in'>
 
-      <SessionForm />
-      <AuthRoute path='/' component={ SessionFormContainer }/>
-
   </section>
 );
 };
