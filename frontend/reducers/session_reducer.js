@@ -5,13 +5,13 @@ import merge from 'lodash/merge';
 const _nullUser = {
 
 };
+
 export const currentUserReducer = (
   state = null , action) => {
     switch(action.type) {
       case RECEIVE_CURRENT_USER:
-      const currentUser = action.currentUser;
-      const login = merge({}, {currentUser});
-      return login;
+        const currentUser = action.currentUser;
+        return merge({}, state, {currentUser});
       case RECEIVE_ERRORS:
       const errors = action.errors;
         return merge({}, state, {errors});

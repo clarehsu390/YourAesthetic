@@ -1,10 +1,15 @@
 import React from 'react';
+import SessionFormContainer from '../sessions/session_form_container';
 import SessionForm from '../sessions/session_form';
+import { Route, Switch } from 'react-router-dom';
+import { AuthRoute } from '../../util/route_util';
 
 const loginRequired = () => {
   return (<section className='sign-in'>
 
       <SessionForm />
+      <AuthRoute path='/' component={ SessionFormContainer }/>
+
   </section>
 );
 };
