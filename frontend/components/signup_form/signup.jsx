@@ -8,6 +8,9 @@ class SignUp extends React.Component {
       email: "",
       password: ""
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
   }
 
   handleSubmit(e) {
@@ -18,6 +21,7 @@ class SignUp extends React.Component {
   handleClick(e) {
     e.preventDefault();
 
+
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,7 +31,7 @@ class SignUp extends React.Component {
   }
 
   update(property) {
-    return e => this.setState({[property]: e.target.value});
+    return e => this.setState({[property]: e.currentTarget.value});
   }
 
   renderErrors() {
@@ -50,9 +54,9 @@ class SignUp extends React.Component {
       <form className='session-form' onSubmit={this.handleSubmit}>
         <input
           type='text'
-          value={this.state.username}
-          placeholder='username'
-          onChange={this.update('username')}
+          value={this.state.email}
+          placeholder='email'
+          onChange={this.update('email')}
           />
         <input
           type='password'
@@ -63,7 +67,7 @@ class SignUp extends React.Component {
         {this.renderErrors()}
         <button>Sign Up!</button>
       </form>
-      <button className='login'>Log In</button>
+      <button className='login'>login</button>
       </section>
     );
   }

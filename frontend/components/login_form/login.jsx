@@ -15,7 +15,7 @@ class SessionForm extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    this.props.processForm(this.state);
+    this.props.login(this.state);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
           onChange={this.update('password')}
           />
         {this.renderErrors()}
-        <button>Submit</button>
+        <button>Login</button>
       </form>
     );
   }

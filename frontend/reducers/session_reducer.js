@@ -8,8 +8,6 @@ export const currentUserReducer = (
     switch(action.type) {
       case RECEIVE_CURRENT_USER:
         const user = action.user;
-        console.log(user);
-        // return merge({}, state, user);
         return user;
       // case RECEIVE_ERRORS:
       // const errors = action.errors;

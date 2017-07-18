@@ -3,8 +3,7 @@ import SignUp from './signup';
 import { signup } from '../../actions/session_actions';
 
 const mapStateToProps = ({ currentUser }) => ({
-  loggedIn: Boolean(currentUser),
-  errors: currentUser.errors
+  loggedIn: Boolean(currentUser)
 });
 
 const mapDispatchToProps = (dispatch, { location }) => {
