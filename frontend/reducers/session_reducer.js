@@ -3,21 +3,20 @@ import { RECEIVE_CURRENT_USER, RECEIVE_ERRORS }
 import merge from 'lodash/merge';
 
 const _nullUser = {
-  currentUser: "",
-  errors: []
-};
 
-export const currentUserReducer = (state = _nullUser, action) => {
-  switch(action.type) {
-    case RECEIVE_CURRENT_USER:
-    const currentUser = action.currentUser;
-    const login = merge({}, _nullUser, {currentUser});
-    return login;
-    case RECEIVE_ERRORS:
-    const errors = action.errors;
-      return merge({}, _nullUser, {errors});
-    default:
-      return state;
-    }
+};
+export const currentUserReducer = (
+  state = null , action) => {
+    switch(action.type) {
+      case RECEIVE_CURRENT_USER:
+      const currentUser = action.currentUser;
+      const login = merge({}, {currentUser});
+      return login;
+      case RECEIVE_ERRORS:
+      const errors = action.errors;
+        return merge({}, state, {errors});
+      default:
+        return state;
+      }
 
 };

@@ -21,13 +21,14 @@ export const login = user => dispatch => {
 
 export const logout = () => dispatch => {
   return APIUtil.logout().then(
-    user => (dispatch(receiveCurrentUser(null))
+    user => (dispatch(receiveCurrentUser(null)),
+    error => (dispatch(receiveErrors(error.responseJSON)))
   ));
 };
 
-export const receiveCurrentUser = currentUser => ({
+export const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
-  currentUser
+  currentUser: user
 });
 
 export const receiveErrors = errors => ({
