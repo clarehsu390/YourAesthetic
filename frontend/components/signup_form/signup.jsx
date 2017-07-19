@@ -30,6 +30,7 @@ class SignUp extends React.Component {
     e.preventDefault();
     const guest = {email: "guest", password: "password"};
     this.props.login(guest);
+    this.props.history.push("/");
   }
 
   componentWillReceiveProps(nextProps) {

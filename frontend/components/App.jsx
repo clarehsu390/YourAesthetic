@@ -3,13 +3,13 @@ import SignUpContainer from './signup_form/signup_container';
 import { Route, Switch } from 'react-router-dom';
 import LoginContainer from './login_form/login_container';
 import { AuthRoute } from '../util/route_util';
-import GreetingContainer from './greeting/greeting_container';
+import NavBarContainer from'./navbar/navbar_container';
 
 const App = () => (
   <div>
-  <header>
-    <GreetingContainer />
-  </header>
+  <section>
+    <NavBarContainer />
+  </section>
     <Switch>
       <AuthRoute exact path='/' component={ SignUpContainer }/>
       <AuthRoute path ='/login' component={ LoginContainer } />

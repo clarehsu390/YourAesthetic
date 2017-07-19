@@ -9,14 +9,17 @@ const loginRequired = () => {
 };
 
 const logoutButton = (logout) => (
-  <header>
+  <section>
     <h1>Start your aesthetic</h1>
     <button className="logout" onClick={logout}>Logout!</button>
-  </header>
+    <button className="user">User Profile</button>
+    <button className="discover">Discover</button>
+    <Redirect to='/login' />
+  </section>
 );
 
-const Greeting = ({ currentUser, logout }) => (
+const NavBar = ({ currentUser, logout }) => (
   currentUser ? logoutButton(logout) : loginRequired()
 );
 
-export default Greeting;
+export default NavBar;
