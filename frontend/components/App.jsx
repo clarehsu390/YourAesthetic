@@ -11,7 +11,7 @@ const App = () => (
     <GreetingContainer />
   </header>
     <Switch>
-      <AuthRoute path='/' component={ SignUpContainer }/>
+      <AuthRoute exact path='/' component={ SignUpContainer }/>
       <AuthRoute path ='/login' component={ LoginContainer } />
     </Switch>
   </div>

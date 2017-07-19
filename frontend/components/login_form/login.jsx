@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-class SessionForm extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -51,11 +51,11 @@ class SessionForm extends React.Component {
           onChange={this.update('password')}
           />
         <button>Login</button>
-        
+
       </form>
         <span className="linkto-signup">
           <text>Not on YourAesthetic yet?</text>
-          <Link to='/signup'>Sign Up</Link>
+          <Link to='/'>Sign Up</Link>
         </span>
       </div>
     );
@@ -63,4 +63,4 @@ class SessionForm extends React.Component {
 
 }
 
-export default withRouter(SessionForm);
+export default withRouter(Login);
