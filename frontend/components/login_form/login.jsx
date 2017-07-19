@@ -12,16 +12,11 @@ class SessionForm extends React.Component {
 
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+
   }
   handleSubmit(e) {
     e.preventDefault();
     this.props.login(this.state);
-  }
-
-  handleClick(e) {
-    e.preventDefault();
-    this.props.history.push("/signup");
   }
 
   componentWillReceiveProps(nextProps) {
@@ -69,7 +64,8 @@ class SessionForm extends React.Component {
           onChange={this.update('password')}
           />
         {this.renderErrors()}
-        <button>Login</button>
+        <button className='auth'>Login</button>
+        <button className='auth'>Demo</button>
       </form>
         <span className="linkto-signup">
           <text>Not on YourAesthetic yet?</text>
