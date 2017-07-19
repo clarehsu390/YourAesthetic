@@ -1,10 +1,10 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { AuthRoute } from '../../util/route_util';
 
 const loginRequired = () => {
   return (<section className='sign-in'>
-
+  <Redirect to='/login'></Redirect>
   </section>
 );
 };

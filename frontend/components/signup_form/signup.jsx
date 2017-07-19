@@ -56,14 +56,15 @@ class SignUp extends React.Component {
     return (
       <section>
       <form className='session-form' onSubmit={this.handleSubmit}>
+        <h2>Sign up to see more</h2>
         <input
           type='text'
           value={this.state.email}
-          placeholder='email'
+          placeholder='Email'
           onChange={this.update('email')}
           />
         <input
-          type='password'
+          type='Password'
           value={this.state.password}
           placeholder='password'
           onChange={this.update('password')}
@@ -71,6 +72,7 @@ class SignUp extends React.Component {
         {this.renderErrors()}
         <button>Sign Up!</button>
       </form>
+      <span>Already a member?</span>
       <button className='login' onClick={this.handleClick}>login</button>
       </section>
     );
