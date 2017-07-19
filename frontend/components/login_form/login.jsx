@@ -23,7 +23,6 @@ class Login extends React.Component {
     e.preventDefault();
     const guest = {username: "guest", password: "password"};
     this.props.login(guest);
-    this.props.history.push("/");
   }
 
   componentWillUnmount() {
