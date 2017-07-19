@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import LoginContainer from './login_form/login_container';
 import { AuthRoute } from '../util/route_util';
 import NavBarContainer from'./navbar/navbar_container';
+import UserProfileContainer from './user_profile/user_prof_container';
 
 const App = () => (
   <div>
@@ -14,6 +15,7 @@ const App = () => (
       <AuthRoute exact path='/' component={ SignUpContainer }/>
       <AuthRoute path ='/login' component={ LoginContainer } />
     </Switch>
+    <Route path="/:username" component={ UserProfileContainer }/>
   </div>
 );
 
