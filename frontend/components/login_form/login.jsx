@@ -29,20 +29,6 @@ class SessionForm extends React.Component {
   update(property) {
     return e => this.setState({ [property]: e.target.value });
   }
-  renderErrors() {
-      if (this.props.errors) {
-        return(
-          <ul>
-            {this.props.errors.map((error, idx) => (
-              <li key={idx}>
-                {error}
-              </li>
-            ))}
-          </ul>
-        );
-      }
-
-  }
 
 
   render() {
@@ -64,7 +50,6 @@ class SessionForm extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
-        {this.renderErrors()}
         <button>Login</button>
         <button>Demo</button>
       </form>

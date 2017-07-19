@@ -38,20 +38,6 @@ class SignUp extends React.Component {
     return e => this.setState({[property]: e.currentTarget.value});
   }
 
-  renderErrors() {
-      if (this.props.errors) {
-        return(
-          <ul>
-            {this.props.errors.map((error, i) => (
-              <li key={`error-${i}`}>
-                {error}
-              </li>
-            ))}
-          </ul>
-        );
-      }
-    }
-
   render() {
     return (
       <div className="signup">
