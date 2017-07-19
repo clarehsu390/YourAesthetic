@@ -2,39 +2,65 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
+html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #E8E8E8
 }
 
 div.login {
   display: flex;
   flex-direction: column;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
-  position: relative;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  border-radius: 3px;
+  background-color: white;
+  padding: 20px 10px;
 }
 
 .login h4 {
-  margin: auto;
+  position: relative;
+  margin: 1px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .linkto-signup {
-  margin: auto;
+  margin: 5px;
   font-size: 12px;
+  position: relative;
 }
 .session-form {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 150px;
   text-align: center;
   margin: auto;
 }
 .session-form input {
   border-radius: 3px;
-  border: solid #d3d3d3 1px;
-  background-color: #d3d3d3;
+  border: solid #E8E8E8 1px;
+  background-color: #E8E8E8;
   -webkit-appearance: none;
+  padding: 3px;
+  margin: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+
 }
 
-button {
+.session-form button {
   cursor: pointer;
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  border-radius: 3px;
+  margin: 5px;
+  -webkit-appearance: none;
 }

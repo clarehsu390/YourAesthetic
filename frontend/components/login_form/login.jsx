@@ -52,7 +52,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login">
-        <h1>Your Aesthetic</h1>
+        <h4>Your Aesthetic</h4>
         <h4>Log in to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
 
