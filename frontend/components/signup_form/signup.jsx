@@ -6,7 +6,6 @@ class SignUp extends React.Component {
     super(props);
     console.log(props);
     this.state = {
-      email: "",
       username: "",
       password: ""
     };
@@ -29,7 +28,7 @@ class SignUp extends React.Component {
 
   handleDemoClick(e) {
     e.preventDefault();
-    const guest = {email: "guest", password: "password"};
+    const guest = {username: "guest", password: "password"};
     this.props.login(guest);
     this.props.history.push("/");
   }
@@ -70,13 +69,6 @@ class SignUp extends React.Component {
         <h4>Your Aesthetic</h4>
         <h4>Sign up to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
-
-        <input
-          type='text'
-          value={this.state.email}
-          placeholder='Email'
-          onChange={this.update('email')}
-          />
           <input
             type='text'
             value={this.state.username}

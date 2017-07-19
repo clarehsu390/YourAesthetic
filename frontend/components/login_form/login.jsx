@@ -5,7 +5,7 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
+      username: "",
       password: ""
     };
     this.props.clearErrors();
@@ -21,7 +21,7 @@ class Login extends React.Component {
 
   handleDemoClick(e) {
     e.preventDefault();
-    const guest = {email: "guest", password: "password"};
+    const guest = {username: "guest", password: "password"};
     this.props.login(guest);
     this.props.history.push("/");
   }
@@ -65,9 +65,9 @@ class Login extends React.Component {
 
         <input
           type='text'
-          value={this.state.email}
-          placeholder='Email'
-          onChange={this.update('email')}
+          value={this.state.username}
+          placeholder='Username'
+          onChange={this.update('username')}
           />
         <input
           type='password'

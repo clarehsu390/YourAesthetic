@@ -9,7 +9,7 @@ const mapStateToProps = ({ currentUser, errors }) => ({
 });
 
 const mapDispatchToProps = (dispatch, { location }) => {
-  const demoUser = {email: "guest", password: "password"};
+  const demoUser = {username: "guest", password: "password"};
   return {
       login: user => dispatch(login(user)),
       demo: demoUser => dispatch(login(demoUser)),
