@@ -14,5 +14,5 @@
  *= require_self
  */
 
- @import "reset.scss";
+ @import "base/reset.scss";
  @import "api/sessions.scss";

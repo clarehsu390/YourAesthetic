@@ -19,6 +19,7 @@ class SessionForm extends React.Component {
     this.props.login(this.state);
   }
 
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
@@ -64,8 +65,8 @@ class SessionForm extends React.Component {
           onChange={this.update('password')}
           />
         {this.renderErrors()}
-        <button className='auth'>Login</button>
-        <button className='auth'>Demo</button>
+        <button>Login</button>
+        <button>Demo</button>
       </form>
         <span className="linkto-signup">
           <text>Not on YourAesthetic yet?</text>
