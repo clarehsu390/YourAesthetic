@@ -11,10 +11,12 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+
  */
 
 
  @import "base/reset.css";
  @import "api/sessions.scss";
+ @import "base/layouts.scss";
  @import "components/navbar.scss";
- @import "api/errors";
+ @import "api/errors.scss";

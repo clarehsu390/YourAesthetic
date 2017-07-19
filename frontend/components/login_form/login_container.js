@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Login from './login';
 import { login } from '../../actions/session_actions';
+import { clearErrors } from '../../actions/errors_actions';
 
 const mapStateToProps = ({ currentUser, errors }) => ({
   loggedIn: Boolean(currentUser),
@@ -11,7 +12,8 @@ const mapDispatchToProps = (dispatch, { location }) => {
   const demoUser = {email: "guest", password: "password"};
   return {
       login: user => dispatch(login(user)),
-      demo: demoUser => dispatch(login(demoUser))
+      demo: demoUser => dispatch(login(demoUser)),
+      clearErrors: () => dispatch(clearErrors())
     };
 };
 

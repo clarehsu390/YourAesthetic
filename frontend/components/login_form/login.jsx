@@ -8,7 +8,7 @@ class Login extends React.Component {
       email: "",
       password: ""
     };
-
+    this.props.clearErrors();
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemoClick = this.handleDemoClick.bind(this);
@@ -26,7 +26,9 @@ class Login extends React.Component {
     this.props.history.push("/");
   }
 
-
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
@@ -38,13 +40,18 @@ class Login extends React.Component {
   }
 
   errors() {
-    if (this.props.errors) {
       return (
-        this.props.errors.map(error => {
-          return (<li className="error" key={error}>{error}</li>);
-        })
+        <ul>
+          {this.props.errors.map((error, i) => {
+            return (
+              <li className="error" key={i}>
+                {error}
+              </li>
+            );
+          })
+        }
+        </ul>
       );
-    }
   }
 
 
@@ -70,7 +77,7 @@ class Login extends React.Component {
           />
         {this.errors()}
         <button>Login</button>
-        <button onClick={this.handleDemoClick}>Demo</button>
+        <button className="demo"onClick={this.handleDemoClick}>Demo</button>
 
       </form>
         <span className="linkto-signup">

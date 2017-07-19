@@ -1,0 +1,32 @@
+button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  margin: 5px;
+  -webkit-appearance: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px
+
+}
+.session-form button {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  font-weight: bold;
+  bottom: 70px
+}
+
+button.login {
+  background-color: #E8E8E8;
+  color: gray;
+  border: solid #E8E8E8 1px;
+  margin: auto;
+  font-weight: bold;
+  width: 200px;
+
+}
+
+button.demo {
+  background-color: blue;
+}

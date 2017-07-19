@@ -33,6 +33,10 @@ class SignUp extends React.Component {
     this.props.history.push("/");
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push("/");
@@ -44,13 +48,18 @@ class SignUp extends React.Component {
   }
 
   errors() {
-    if (this.props.errors) {
       return (
-        this.props.errors.map((error,i) => {
-          return (<li className="error" key={i}>{error}</li>);
-        })
+        <ul>
+          {this.props.errors.map((error, i) => {
+            return (
+              <li className="error" key={i}>
+                {error}
+              </li>
+            );
+          })
+        }
+        </ul>
       );
-    }
   }
 
   render() {
@@ -73,9 +82,10 @@ class SignUp extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
+          {this.errors()}
         <button>Sign Up!</button>
-        <button onClick={this.handleDemoClick}>Demo</button>
-        {this.errors()}
+        <button className="demo"onClick={this.handleDemoClick}>Demo</button>
+
       </form>
       <span>Already a member?</span>
       <button className='login' onClick={this.handleClick}>Log In</button>

@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import SignUp from './signup';
 import { signup, login } from '../../actions/session_actions';
+import { clearErrors } from '../../actions/errors_actions';
 
 const mapStateToProps = ({ currentUser, errors }) => ({
   loggedIn: Boolean(currentUser),
@@ -12,7 +13,8 @@ const mapDispatchToProps = (dispatch, { location }) => ({
   //   "Welcome to Your Aesthetic!" : "Sign up to see more";
       signup: user => dispatch(signup(user)),
       login: user => dispatch(login(user)),
-      demo: demoUser => dispatch(login(demoUser))
+      demo: demoUser => dispatch(login(demoUser)),
+      clearErrors: () => dispatch(clearErrors())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignUp);
