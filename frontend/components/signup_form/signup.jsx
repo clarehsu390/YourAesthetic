@@ -7,6 +7,7 @@ class SignUp extends React.Component {
     console.log(props);
     this.state = {
       email: "",
+      username: "",
       password: ""
     };
 
@@ -76,6 +77,12 @@ class SignUp extends React.Component {
           placeholder='Email'
           onChange={this.update('email')}
           />
+          <input
+            type='text'
+            value={this.state.username}
+            placeholder='Username'
+            onChange={this.update('username')}
+            />
         <input
           type='password'
           value={this.state.password}
