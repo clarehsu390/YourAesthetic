@@ -8,7 +8,6 @@ import GreetingContainer from './greeting/greeting_container';
 const App = () => (
   <div>
   <header>
-    <h1>Your Aesthetic</h1>
     <GreetingContainer />
   </header>
     <Switch>

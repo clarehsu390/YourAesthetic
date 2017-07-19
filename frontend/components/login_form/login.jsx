@@ -51,9 +51,11 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="login">
+        <h1>Your Aesthetic</h1>
+        <h4>Log in to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
-        <h2>Log in to see more</h2>
+
         <input
           type='text'
           value={this.state.email}
@@ -69,7 +71,7 @@ class SessionForm extends React.Component {
         {this.renderErrors()}
         <button>Login</button>
       </form>
-        <span>
+        <span className="linkto-signup">
           <text>Not on YourAesthetic yet?</text>
           <Link to='/signup'>Sign Up</Link>
         </span>

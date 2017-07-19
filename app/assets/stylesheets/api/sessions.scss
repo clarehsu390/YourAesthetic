@@ -1,3 +1,40 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.login {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+}
+
+.login h4 {
+  margin: auto;
+}
+
+.linkto-signup {
+  margin: auto;
+  font-size: 12px;
+}
+.session-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+.session-form input {
+  border-radius: 3px;
+  border: solid #d3d3d3 1px;
+  background-color: #d3d3d3;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
