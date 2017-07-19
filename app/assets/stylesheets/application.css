@@ -16,3 +16,4 @@
 
  @import "base/reset.css";
  @import "api/sessions.scss";
+ @import "components/navbar.scss";

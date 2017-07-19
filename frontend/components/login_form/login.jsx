@@ -33,7 +33,8 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="login">
+      <section className="session">
+        <div className="login">
         <h4>Your Aesthetic</h4>
         <h4>Log in to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
@@ -57,7 +58,8 @@ class Login extends React.Component {
           <text>Not on YourAesthetic yet?</text>
           <Link to='/'>Sign Up</Link>
         </span>
-      </div>
+        </div>
+      </section>
     );
   }
 

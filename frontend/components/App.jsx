@@ -7,9 +7,9 @@ import NavBarContainer from'./navbar/navbar_container';
 
 const App = () => (
   <div>
-  <section>
+
     <NavBarContainer />
-  </section>
+
     <Switch>
       <AuthRoute exact path='/' component={ SignUpContainer }/>
       <AuthRoute path ='/login' component={ LoginContainer } />
