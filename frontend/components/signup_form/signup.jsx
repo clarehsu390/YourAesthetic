@@ -43,10 +43,21 @@ class SignUp extends React.Component {
     return e => this.setState({[property]: e.currentTarget.value});
   }
 
+  errors() {
+    if (this.props.errors) {
+      return (
+        this.props.errors.map((error,i) => {
+          return (<li className="error" key={i}>{error}</li>);
+        })
+      );
+    }
+  }
+
   render() {
     return (
       <section className="session">
         <div className="signup">
+        <h4>Your Aesthetic</h4>
         <h4>Sign up to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
 
@@ -64,6 +75,7 @@ class SignUp extends React.Component {
           />
         <button>Sign Up!</button>
         <button onClick={this.handleDemoClick}>Demo</button>
+        {this.errors()}
       </form>
       <span>Already a member?</span>
       <button className='login' onClick={this.handleClick}>Log In</button>

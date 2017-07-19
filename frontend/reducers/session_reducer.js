@@ -9,9 +9,7 @@ export const currentUserReducer = (
       case RECEIVE_CURRENT_USER:
         const user = action.user;
         return user;
-      // case RECEIVE_ERRORS:
-      // const errors = action.errors;
-      //   return errors;
+    
       default:
         return state;
       }

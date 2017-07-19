@@ -47,7 +47,7 @@ div.login {
   box-shadow: 0px 0px 5px #888888
 }
 
-.login h4 {
+h4 {
   position: relative;
   margin: 1px;
   font-size: 28px;
@@ -60,21 +60,22 @@ div.login {
   width: 250px;
   text-align: center;
   margin: auto;
+  position: relative;
 }
 .session-form input {
   border-radius: 3px;
   border: solid #E8E8E8 1px;
   background-color: #E8E8E8;
   -webkit-appearance: none;
-  bottom: 30px;
+  margin: auto;
   padding: 8px;
   margin: 5px;
   font-size: 14px;
   font-weight: 500;
-  position: relative;
   text-align: left;
-
+  position:static;
 }
+
 
 .session-form button {
   cursor: pointer;
@@ -87,7 +88,9 @@ div.login {
   margin: 5px;
   -webkit-appearance: none;
   font-weight: bold;
+  bottom: 70px
 }
+
 
 .linkto-signup {
   font-size: 12px;

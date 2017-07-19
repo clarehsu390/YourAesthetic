@@ -4,7 +4,6 @@ import { Link, withRouter } from 'react-router-dom';
 class Login extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
     this.state = {
       email: "",
       password: ""
@@ -12,11 +11,19 @@ class Login extends React.Component {
 
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoClick = this.handleDemoClick.bind(this);
 
   }
   handleSubmit(e) {
     e.preventDefault();
     this.props.login(this.state);
+  }
+
+  handleDemoClick(e) {
+    e.preventDefault();
+    const guest = {email: "guest", password: "password"};
+    this.props.login(guest);
+    this.props.history.push("/");
   }
 
 
@@ -28,6 +35,16 @@ class Login extends React.Component {
 
   update(property) {
     return e => this.setState({ [property]: e.target.value });
+  }
+
+  errors() {
+    if (this.props.errors) {
+      return (
+        this.props.errors.map(error => {
+          return (<li className="error" key={error}>{error}</li>);
+        })
+      );
+    }
   }
 
 
@@ -51,7 +68,9 @@ class Login extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
+        {this.errors()}
         <button>Login</button>
+        <button onClick={this.handleDemoClick}>Demo</button>
 
       </form>
         <span className="linkto-signup">

@@ -12,7 +12,7 @@ class NavBar extends React.Component {
       return (
         <section className="navbar">
           <h1>Start your aesthetic</h1>
-          <button className="logout" onClick={logout}>Logout!</button>
+          <button className="logout" onClick={logout}></button>
           <button className="user">User Profile</button>
           <button className="discover">Discover</button>
         </section>

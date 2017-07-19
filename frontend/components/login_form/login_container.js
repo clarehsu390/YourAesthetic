@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import Login from './login';
 import { login } from '../../actions/session_actions';
 
-const mapStateToProps = ({ currentUser }) => ({
-  loggedIn: Boolean(currentUser)
+const mapStateToProps = ({ currentUser, errors }) => ({
+  loggedIn: Boolean(currentUser),
+  errors
 });
 
 const mapDispatchToProps = (dispatch, { location }) => {
