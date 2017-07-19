@@ -12,7 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require reset
  */
 
- @import "base/reset.scss";
+
  @import "api/sessions.scss";
