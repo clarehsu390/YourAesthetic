@@ -13,6 +13,7 @@ class SignUp extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleDemoClick = this.handleDemoClick.bind(this);
   }
 
   handleSubmit(e) {
@@ -22,10 +23,13 @@ class SignUp extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    console.log('hello');
     this.props.history.push("/login");
+  }
 
-
+  handleDemoClick(e) {
+    e.preventDefault();
+    const guest = {email: "guest", password: "password"};
+    this.props.login(guest);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -56,11 +60,12 @@ class SignUp extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
-        {this.renderErrors()}
         <button>Sign Up!</button>
+        <button onClick={this.handleDemoClick}>Demo</button>
       </form>
       <span>Already a member?</span>
       <button className='login' onClick={this.handleClick}>Log In</button>
+
     </div>
     );
   }

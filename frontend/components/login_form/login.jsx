@@ -51,7 +51,7 @@ class SessionForm extends React.Component {
           onChange={this.update('password')}
           />
         <button>Login</button>
-        <button>Demo</button>
+        
       </form>
         <span className="linkto-signup">
           <text>Not on YourAesthetic yet?</text>

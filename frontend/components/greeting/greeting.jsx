@@ -10,6 +10,7 @@ const loginRequired = () => {
 
 const logoutButton = (logout) => (
   <header>
+    <h1>Start your aesthetic</h1>
     <button className="logout" onClick={logout}>Logout!</button>
   </header>
 );
