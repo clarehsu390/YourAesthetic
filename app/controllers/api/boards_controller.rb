@@ -15,7 +15,6 @@ class Api::BoardsController < ApplicationController
 
   def show
     @board = Board.find(params[:id])
-    render "api/boards/show"
   end
 
   def update
