@@ -5,6 +5,7 @@ import LoginContainer from './login_form/login_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from'./navbar/navbar_container';
 import UserProfileContainer from './user_profile/user_prof_container';
+import PinsIndexContainer from './pins/pinsindex_container';
 
 const App = () => (
   <div>
@@ -17,6 +18,7 @@ const App = () => (
       <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
       <ProtectedRoute path='/' component= { NavBarContainer } />
     </Switch>
+    <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
 
   </div>
 );

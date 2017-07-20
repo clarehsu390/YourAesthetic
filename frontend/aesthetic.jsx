@@ -4,6 +4,8 @@ import configureStore from './store/store.js';
 import Root from './components/root';
 import { getAllPins } from './util/pins_util';
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById("root");
   let store;
@@ -17,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store} />, root);
   window.getAllPins = getAllPins;
   window.getState = store.getState;
+
 });

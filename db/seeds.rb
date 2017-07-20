@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(username: "guest", password: "password")
+Pin.create!(name: "Desk Setup", image_url: "https://unsplash.com/?photo=a8K-puaPyVk", user: User.first)
