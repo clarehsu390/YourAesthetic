@@ -34,7 +34,7 @@ class NavBar extends React.Component {
     if (currentUser){
       return (
         <section className="navbar">
-          <h1>Aesthetic</h1>
+          <h1 onClick={this.handleDiscoverClick}>Aesthetic</h1>
           <input type="text" className="search" placeholder="Search"/>
             <button
               className="user"
