@@ -7,6 +7,7 @@ class NavBar extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.handleUserClick = this.handleUserClick.bind(this);
+    this.handleDiscoverClick = this.handleDiscoverClick.bind(this);
   }
 
 
@@ -20,6 +21,10 @@ class NavBar extends React.Component {
     this.props.history.push(`/${currentUser.username}`);
   }
 
+  handleDiscoverClick(e) {
+    this.props.history.push("/");
+  }
+
   componentWillUnmount() {
     this.props.history.push("/");
   }
@@ -30,13 +35,16 @@ class NavBar extends React.Component {
       return (
         <section className="navbar">
           <h1>Aesthetic</h1>
-          <input type="text" className="search" placeholder="Search.."/>
+          <input type="text" className="search" placeholder="Search"/>
             <button
               className="user"
                 onClick={this.handleUserClick}>
                   User Profile
               </button>
-            <button className="discover">Discover</button>
+            <button className="discover"
+              onClick={this.handleDiscoverClick}>
+              Discover
+            </button>
             <button className="logout"
               onClick={this.handleClick}>
                 Logout
