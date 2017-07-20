@@ -2,6 +2,11 @@ class Api::BoardsController < ApplicationController
 
   def create
     @board = Board.new(board_params)
+    if @board.save
+      render "api/boards/show"
+    else
+      render json: @board.errors.full_messages
+    end
   end
 
   def index
