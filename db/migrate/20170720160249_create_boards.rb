@@ -3,6 +3,7 @@ class CreateBoards < ActiveRecord::Migration[5.0]
     create_table :boards do |t|
       t.string :title, null: false
       t.integer :user_id, null: false
+      t.string :description
       t.timestamps
     end
     add_index :boards, :title
