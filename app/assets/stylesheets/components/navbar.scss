@@ -1,30 +1,36 @@
 button {
   font-weight: bold;
-  display: inline-block;
+  color: #575757;
   padding: 10px;
-  float: right;
   margin: 8px 5px 8px 8px
 }
 
 .navbar {
   border: solid 2px #E8E8E8;
   border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .search {
   border-radius: 5px;
   background-color: #E8E8E8;
+  display: flex;
   line-height: 20px;
   padding: 10px;
-  width: 40%;
+  width: 60%;
   height: 100%;
-  margin: 5px;
+  margin: auto;
   font-size: 16px;
   font-weight: 600;
+  margin-left: 30px;
 }
 
 .navbar h1 {
   font-size: 38px;
   padding: 5px;
-  display: inline
+  color: #575757;
+  display: flex;
+  font-family: 'Lemonada', cursive;
 }

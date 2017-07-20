@@ -29,7 +29,7 @@ class NavBar extends React.Component {
     if (currentUser){
       return (
         <section className="navbar">
-          <h1>Start your aesthetic</h1>
+          <h1>Aesthetic</h1>
           <input type="text" className="search" placeholder="Search.."/>
           <button className="logout"
             onClick={this.handleClick}>
