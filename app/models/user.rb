@@ -6,6 +6,12 @@ class User < ApplicationRecord
   has_many :boards,
   class_name: :Board
 
+  has_many :pins,
+  primary_key: :id,
+  foreign_key: :creator_id,
+  class_name: :Pin
+
+
   attr_reader :password
   after_initialize :ensure_session_token
 

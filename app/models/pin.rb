@@ -1,8 +1,8 @@
 class Pin < ApplicationRecord
-  validates :name, :user
+  validates :name, :user, presence: true
 
-  belong_to :user,
+  belongs_to :user,
   primary_key: :id,
-  foreign_kay: :creator_id,
+  foreign_key: :creator_id,
   class_name: :User
 end
