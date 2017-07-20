@@ -30,6 +30,7 @@ class NavBar extends React.Component {
       return (
         <section className="navbar">
           <h1>Start your aesthetic</h1>
+          <input type="text" className="search" placeholder="Search.."/>
           <button className="logout"
             onClick={this.handleClick}>
               Logout

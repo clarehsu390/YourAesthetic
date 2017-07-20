@@ -21,10 +21,10 @@ class UserProfile extends React.Component {
         <h3>{currentUser.username}</h3>
 
           <section className='follows'>
-            <Link to={`/{currentUser.username}/followers`}>
+            <Link to={`/${currentUser.username}/followers`}>
               Followers
             </Link>
-            <Link to={`/{currentUser.username}/following`}>
+            <Link to={`/${currentUser.username}/following`}>
               Following
             </Link>
             <img src="https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
