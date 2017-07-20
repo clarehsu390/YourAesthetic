@@ -17,10 +17,8 @@ class UserProfile extends React.Component {
     if (loggedIn) {
       return (
       <div className='profile'>
-      <div className='banner'>
+        <div className="follows">
         <h3>{currentUser.username}</h3>
-
-          <section className='follows'>
             <Link to={`/${currentUser.username}/followers`}>
               Followers
             </Link>
@@ -29,8 +27,7 @@ class UserProfile extends React.Component {
             </Link>
             <img src="https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
-          </section>
-        </div>
+            </div>
 
         <div className="boards">
         <section className="boards">
