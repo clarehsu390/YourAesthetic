@@ -31,16 +31,18 @@ class NavBar extends React.Component {
         <section className="navbar">
           <h1>Aesthetic</h1>
           <input type="text" className="search" placeholder="Search.."/>
-          <button className="logout"
-            onClick={this.handleClick}>
-              Logout
-          </button>
-          <button
-            className="user"
-              onClick={this.handleUserClick}>
-                User Profile
-            </button>
-          <button className="discover">Discover</button>
+            <button
+              className="user"
+                onClick={this.handleUserClick}>
+                  User Profile
+              </button>
+            <button className="discover">Discover</button>
+            <button className="logout"
+              onClick={this.handleClick}>
+                Logout
+              </button>
+
+
         </section>
       );
     }

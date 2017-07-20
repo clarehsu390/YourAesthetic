@@ -15,6 +15,7 @@ h3.username {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 100px;
+  color: #575757;
 
 }
  img {
@@ -34,15 +35,32 @@ h3.username {
 
 .follows a {
   margin: 10px;
+  color: #b8b8b8;
+  font-weight: 600
 }
 
 .follows a:hover {
   cursor: pointer
 }
 
-.boards {
+.board {
+  color: #575757;
+  font-weight: 600;
+  font-size: 16px;
   display: flex;
+  position: absolute;
+  left: 205px;
+  top: 300px;
+}
 
+.board a {
+  display: flex;
+  border-radius: 100px;
+  margin: 8px;
+  padding: 10px;
 
+}
 
+.board a:hover {
+  background-color: #E8E8E8
 }
