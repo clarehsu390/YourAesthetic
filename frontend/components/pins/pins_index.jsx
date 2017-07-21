@@ -13,7 +13,9 @@ class PinsIndex extends React.Component {
     if (this.props.pins){
       return (
         <div className="all-pins">
-        <ul>
+        <ul className="list-of-pins">
+          <div class="grid" data-masonry='
+            { "itemSelector": ".grid-item", "columnWidth": 200 }'>
           {this.props.pins.map((pin, i) => {
             return (
               <li key={i} className="pin-attr">
@@ -23,7 +25,9 @@ class PinsIndex extends React.Component {
             );
           })
         }
+        </div>
         </ul>
+
       </div>
       );
     }

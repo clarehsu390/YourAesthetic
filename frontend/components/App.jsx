@@ -18,7 +18,7 @@ const App = () => (
       <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
       <ProtectedRoute path='/' component= { NavBarContainer } />
     </Switch>
-    <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
+    <Route exact path='/' component={ PinsIndexContainer } />
 
   </div>
 );

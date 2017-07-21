@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, withRouter, Link } from 'react-router-dom';
+import { Redirect, withRouter, Link, NavLink } from 'react-router-dom';
 import { fetchSingleUser } from '../../util/user_util';
 
 class UserProfile extends React.Component {
@@ -30,8 +30,10 @@ class UserProfile extends React.Component {
               </img>
             </div>
             <div className="board">
-              <Link to={`/${currentUser.username}/boards`}>Boards</Link>
-              <Link to={`/${currentUser.username}/pins`}>Pins</Link>
+              <NavLink to={`/${currentUser.username}/boards`} activeClassName="boards-link">
+                Boards
+              </NavLink>
+              <NavLink to={`/${currentUser.username}/pins`} activeClassName="pins-link">Pins</NavLink>
             </div>
           </div>
       );
