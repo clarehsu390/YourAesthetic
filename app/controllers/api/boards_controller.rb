@@ -10,11 +10,13 @@ class Api::BoardsController < ApplicationController
   end
 
   def index
-    @boards = current_user.boards
+    user = User.find(params[:user_id])
+    @boards = user.boards
   end
 
   def show
-    @board = Board.find(params[:id])
+    user = User.find(params[:user_id])
+    @board = user.boards.find(params[:id])
   end
 
   def update
@@ -35,7 +37,7 @@ class Api::BoardsController < ApplicationController
   private
 
   def board_params
-    params.require(:board).permit(:title, :user, :description)
+    params.require(:board).permit(:title, :user_id, :description)
   end
 
 end

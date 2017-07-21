@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store.js';
 import Root from './components/root';
 import { requestAllPins } from './actions/pins_actions';
+import { requestSingleBoard } from './actions/board_actions';
 
 
 
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  window.requestAllPins = requestAllPins;
+  window.requestSingleBoard = requestSingleBoard;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   ReactDOM.render(<Root store={store} />, root);

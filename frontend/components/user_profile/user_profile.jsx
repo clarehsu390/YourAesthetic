@@ -1,6 +1,8 @@
 import React from 'react';
-import { Redirect, withRouter, Link, NavLink } from 'react-router-dom';
+import { Redirect, withRouter, Link, NavLink, Route} from 'react-router-dom';
 import { fetchSingleUser } from '../../util/user_util';
+import BoardIndexContainer from '../boards/board_index_container';
+import BoardIndex from '../boards/board_index_container';
 
 class UserProfile extends React.Component {
   constructor(props){
@@ -26,7 +28,8 @@ class UserProfile extends React.Component {
               Following
             </Link>
               <img className="pf-pic"
-                src="https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
+                src="
+                https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
             </div>
             <div className="board">
@@ -35,6 +38,7 @@ class UserProfile extends React.Component {
               </NavLink>
               <NavLink to={`/${currentUser.username}/pins`} activeClassName="pins-link">Pins</NavLink>
             </div>
+            <Route path={`/${currentUser.username}/boards`} component={BoardIndexContainer} />
           </div>
       );
     }
