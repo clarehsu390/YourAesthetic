@@ -11,3 +11,11 @@ export const getPin = (pin) => (
     url: `/api/pins/${pin.id}`
   })
 );
+
+export const createPin = (pin) => (
+  $.ajax({
+    method: 'POST',
+    url: '/api/pins',
+    data: pin
+  })
+);

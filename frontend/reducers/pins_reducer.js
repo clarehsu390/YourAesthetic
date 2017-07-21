@@ -1,4 +1,5 @@
-import { RECEIVE_ALL_PINS, RECEIVE_PIN } from '../actions/pins_actions';
+import { RECEIVE_ALL_PINS,
+   RECEIVE_PIN} from '../actions/pins_actions';
 import merge from 'lodash/merge';
 
 const pinsReducer = (

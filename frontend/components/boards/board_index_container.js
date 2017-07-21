@@ -3,6 +3,7 @@ import { requestBoards } from '../../actions/board_actions';
 import BoardIndex from './board_index';
 
 
+
 const mapStateToProps = ({ boards, currentUser }) => ({
   currentUser,
   boards

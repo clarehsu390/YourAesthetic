@@ -6,7 +6,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from'./navbar/navbar_container';
 import UserProfileContainer from './user_profile/user_prof_container';
 import PinsIndexContainer from './pins/pinsindex_container';
-import CreatePin from './pins/create_pins';
+import CreatePin from './pins/create_pin';
 
 const App = () => (
   <div>
@@ -20,7 +20,7 @@ const App = () => (
       <ProtectedRoute path='/' component= { NavBarContainer } />
     </Switch>
     <Route exact path='/' component={ PinsIndexContainer } />
-    <Route path='/' component={ CreatePin }
+    <Route path='/' component={ CreatePin } />
 
   </div>
 );

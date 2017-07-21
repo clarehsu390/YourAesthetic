@@ -33,12 +33,17 @@ class UserProfile extends React.Component {
               </img>
             </div>
             <div className="board">
-              <NavLink to={`/${currentUser.username}/boards`} activeClassName="boards-link">
+              <NavLink to=
+                {`/${currentUser.username}/boards`}
+                activeClassName="boards-link">
                 Boards
               </NavLink>
-              <Route path={`/${currentUser.username}/boards`} component={BoardIndexContainer} />
-              <Route exact path={`/${currentUser.username}`} component={BoardIndexContainer} />
-              <NavLink to={`/${currentUser.username}/pins`} activeClassName="pins-link">Pins</NavLink>
+              <Route path={`/${currentUser.username}/boards`}
+                 component={BoardIndexContainer} />
+              <Route exact path={`/${currentUser.username}`}
+                 component={BoardIndexContainer} />
+              <NavLink to={`/${currentUser.username}/pins`}
+                 activeClassName="pins-link">Pins</NavLink>
             </div>
 
           </div>
