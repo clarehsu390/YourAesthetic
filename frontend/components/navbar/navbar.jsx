@@ -36,21 +36,19 @@ class NavBar extends React.Component {
         <section className="navbar">
           <h1 onClick={this.handleDiscoverClick}>Aesthetic</h1>
           <input type="text" className="search" placeholder="Search"/>
-            <button
-              className="user"
-                onClick={this.handleUserClick}>
-                  User Profile
-              </button>
-            <button className="discover"
+            <i className="fa fa-user fa-2x"
+              aria-hidden="true"
+              onClick={this.handleUserClick}>
+            </i>
+            <i className="fa fa-safari fa-2x"
+              aria-hidden="true"
               onClick={this.handleDiscoverClick}>
-              Discover
-            </button>
-            <button className="logout"
-              onClick={this.handleClick}>
-                Logout
-              </button>
+            </i>
+          <i className="fa fa-sign-out fa-2x"
+            aria-hidden="true"
+            onClick={this.handleClick}>
 
-
+          </i>
         </section>
       );
     }

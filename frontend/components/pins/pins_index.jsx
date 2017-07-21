@@ -16,7 +16,7 @@ class PinsIndex extends React.Component {
         <ul>
           {this.props.pins.map((pin, i) => {
             return (
-              <li key={i}>
+              <li key={i} className="pin-attr">
                 <img src={pin.image_url} className="pin"></img>
                 <span className="pin-name">{pin.name}</span>
               </li>
