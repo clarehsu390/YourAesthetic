@@ -1,3 +1,28 @@
 .boards {
-  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0em 0em 2em 0em;
+  position: absolute;
+  top: 100px;
+  -webkit-column-gap: 20px;
+  -webkit-column-count: 3;
+  height: auto;
+
+
+
+}
+
+.board-item {
+  width:  250px;
+  height: 150px;
+  margin: auto;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.board-item:hover{
+  background-color: #E8E8E8;
+  border-radius: 5%;
 }

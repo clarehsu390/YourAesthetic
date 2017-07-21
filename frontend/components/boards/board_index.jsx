@@ -13,7 +13,7 @@ class BoardIndex extends React.Component {
       <div className="boards">
       <ul>
         {this.props.boards.map((board, i) => {
-          return <li className="board-item">{board.title}</li>;
+          return <li key={i} className="board-item">{board.title}</li>;
         }
       )
     }
