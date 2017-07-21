@@ -25,7 +25,8 @@ class UserProfile extends React.Component {
             <Link to={`/${currentUser.username}/following`}>
               Following
             </Link>
-              <img src="https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
+              <img className="pf-pic"
+                src="https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
             </div>
             <div className="board">

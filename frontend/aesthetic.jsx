@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store.js';
 import Root from './components/root';
-import { getAllPins } from './util/pins_util';
+import { requestAllPins } from './actions/pins_actions';
 
 
 
@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  ReactDOM.render(<Root store={store} />, root);
-  window.getAllPins = getAllPins;
+  window.requestAllPins = requestAllPins;
   window.getState = store.getState;
+  window.dispatch = store.dispatch;
+  ReactDOM.render(<Root store={store} />, root);
+
 
 });

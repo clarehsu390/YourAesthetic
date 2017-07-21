@@ -9,21 +9,29 @@ class PinsIndex extends React.Component {
     this.props.requestAllPins();
   }
 
-  render() {
-    const { pins } = this.props;
-    const allPins = pins.map.forEach(pin => {
-      return <li><img src={pin.image_url}></img></li>;
-    });
-    return (
-      <div>
-      <h4>Pins</h4>
-      <ul>
-        {allPins}
-      </ul>
+  render () {
+    if (this.props.pins){
+      return (
+        <div className="all-pins">
+        <ul>
+          {this.props.pins.map((pin, i) => {
+            return (
+              <li key={i}>
+                <img src={pin.image_url} className="pin"></img>
+                <span className="pin-name">{pin.name}</span>
+              </li>
+            );
+          })
+        }
+        </ul>
       </div>
-
-    );
-
+      );
+    }
+    else {
+      return (
+        <div></div>
+      );
+    }
   }
 }
 

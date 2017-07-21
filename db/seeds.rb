@@ -5,4 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Pin.create!(name: "Desk Setup", image_url: "https://unsplash.com/?photo=a8K-puaPyVk", user: User.first)
+Pin.create!(name: "Desk Setup", image_url: "https://images.unsplash.com/photo-1495521939206-a217db9df264?dpr=2&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=", user: User.first)
+Pin.create!(name: "Scenery", image_url: "http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,r_0,w_366/v1500595180/myles-tan-91630_jntc8n.jpg", user: User.first)
+Pin.create!(name: "Black and White Wedding", image_url: "http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595179/anne-edgar-119383_b7gje4.jpg", user: User.first)
+Pin.create!(name: "Colorful Food", image_url: "http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595181/brooke-lark-229136_gjxdfq.jpg", user: User.first)
+Pin.create!(name: "Fruit", image_url: "http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595180/brenda-godinez-228181_zvxet4.jpg", user: User.first)
+Pin.create!(name: "Hipster", image_url: "http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595177/jesus-kiteque-224069_hjsnwi.jpg", user: User.first)
