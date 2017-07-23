@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   currentUser: currentUserReducer,
   errors: errorsReducer,
   boards: boardsReducer,
-  pins: pinsReducer,
+  pins: pinsReducer
 });
 
 export default rootReducer;

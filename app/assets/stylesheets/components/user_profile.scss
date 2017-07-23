@@ -40,7 +40,8 @@ h3.username {
 }
 
 .follows a:hover {
-  cursor: pointer
+  cursor: pointer;
+  background: darken(#E8E8E8, 7.5%)
 }
 
 .board {
@@ -62,7 +63,8 @@ h3.username {
 }
 
 .board a:hover {
-  background-color: #E8E8E8
+  background-color: #E8E8E8;
+  transition: 0.35s ease-in-out;
 }
 
 .boards-link {

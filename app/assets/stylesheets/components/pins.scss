@@ -13,7 +13,6 @@ width: 24%;
 margin: 0em 0.5% 0.5em 0.5%;
 padding: 5px;
 
-
 }
 
 .list-of-pins {
@@ -23,6 +22,7 @@ margin:auto;
 width: 100%;
 overflow: hidden;
 padding: 0em 0em 2em 0em;
+
 }
 
 li.pin-attr:hover {
@@ -35,4 +35,82 @@ li.pin-attr:hover {
   font-size: 12px;
   margin-left: 15px;
   font-weight: 600;
+}
+
+.create-pin {
+  margin: auto;
+  text-align: center;
+  height: 700px;
+  width: 300px;
+}
+
+.new-pin-input {
+  border: solid 1px black;
+  display: inline;
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #E8E8E8;
+  font-weight: 600;
+}
+
+.drop-zone {
+  margin: auto;
+  border: dotted 1px black;
+  height: 236px;
+  width: 413px;
+  background-color: #E8E8E8;
+  text-align: center;
+}
+
+.create {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: auto;
+  font-weight: bold;
+  margin-top: 20px;
+  height: 30px;
+  width: 150px;
+  font-family: 'Lemonada', cursive;
+
+}
+
+/*Create Pins*/
+.add {
+      position: fixed;
+      bottom: 30px;
+      right: 40px;
+      z-index: 99;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.428571429;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 2px 2px 2px #E8E8E8;
+      font-size: 28px;
+    }
+
+
+.add{
+  transition: 0.35s ease-in-out;
+  font-weight: 700;
+
+}
+
+.add:hover {
+  background: darken(#E8E8E8, 7.5%)
+}
+
+.create-pin-form{
+  display: flex;
+  flex-direction: column;
 }

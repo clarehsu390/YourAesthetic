@@ -23,6 +23,7 @@
 }
 
 .board-item:hover{
-  background-color: #E8E8E8;
+  background: darken(#E8E8E8, 7.5%);
   border-radius: 5%;
+  transition: 0.25s ease-in-out;
 }
