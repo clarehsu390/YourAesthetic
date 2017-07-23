@@ -37,33 +37,22 @@ li.pin-attr:hover {
   font-weight: 600;
 }
 
-.create-pin {
+.create-pin-form {
   margin: auto;
   text-align: center;
-  height: 700px;
-  width: 300px;
-}
-
-.new-pin-input {
-  border: solid 1px black;
-  display: inline;
-  height: 30px;
-  width: 200px;
-  border-radius: 8px;
-  margin: auto;
-  margin-top: 10px;
-  padding: 5px;
-  background-color: #E8E8E8;
-  font-weight: 600;
+  height: 650px;
+  width: 350px;
+  border-radius: 30px;
 }
 
 .drop-zone {
   margin: auto;
   border: dotted 1px black;
-  height: 236px;
-  width: 413px;
+  height: 413px;
+  width: 236px;
   background-color: #E8E8E8;
-  text-align: center;
+  text-align: left;
+  border-radius: 10px;
 }
 
 .create {
@@ -72,7 +61,6 @@ li.pin-attr:hover {
   border: solid #b22222 1px;
   margin: auto;
   font-weight: bold;
-  margin-top: 20px;
   height: 30px;
   width: 150px;
   font-family: 'Lemonada', cursive;
@@ -113,4 +101,29 @@ li.pin-attr:hover {
 .create-pin-form{
   display: flex;
   flex-direction: column;
+}
+
+.new-pin-input {
+  border: solid 1px black;
+  display: inline;
+  height: 30px;
+  width: 230px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #E8E8E8;
+  font-weight: 600;
+  text-align: left;
+}
+
+.create-pin-form h4{
+font-family: 'Lemonada', cursive;
+font-size: 16px;
+}
+
+.new-pin img {
+  width: 236px;
+  height: 413px;
+  margin: auto;
 }

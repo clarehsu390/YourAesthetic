@@ -102,6 +102,7 @@ class CreatePin extends React.Component {
    return(
     <div className="create-pin">
       <button className="add"onClick={this.openModal}>+</button>
+
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -110,18 +111,20 @@ class CreatePin extends React.Component {
           contentLabel="create-pin"
         >
         <form id="create-pin" className="create-pin-form">
+                <h4>Drop an image or click to select a file</h4>
     <Dropzone className="drop-zone"
       multiple={false}
       accept="image/*"
       onDrop={this.onImageDrop.bind(this)}>
-      <p>Drop an image or click to select a file to create a pin.</p>
-    </Dropzone>
 
-      <div>
         {this.state.image_url === '' ? null :
         <div className='new-pin'>
           <img src={this.state.image_url} />
         </div>}
+    </Dropzone>
+
+      <div>
+
       </div>
       <input className='new-pin-input'
         type="text"
