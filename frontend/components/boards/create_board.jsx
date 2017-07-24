@@ -65,7 +65,8 @@ class CreateBoard extends React.Component {
         style={customStyles}
         contentLabel="create-board"
       >
-      <form>
+      <form className="create-board-form">
+        <h4>Create Board</h4>
         <input
           type="text"
           value={this.state.title}
@@ -80,7 +81,7 @@ class CreateBoard extends React.Component {
           />
         <button className="create"
           onClick={this.handleSubmit}>
-          Create Board
+          Submit
         </button>
       </form>
     </Modal>

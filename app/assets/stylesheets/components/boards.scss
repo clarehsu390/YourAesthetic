@@ -3,11 +3,13 @@
   margin: auto;
   overflow: hidden;
   padding: 0em 0em 2em 0em;
-  position: absolute;
   top: 100px;
   -webkit-column-gap: 20px;
   -webkit-column-count: 3;
   height: auto;
+  display: flex;
+  flex-disply: column;
+  justify-content: space-around;
 
 
 
@@ -20,10 +22,36 @@
   background-color: #E8E8E8;
   border-radius: 8px;
   padding: 10px;
+  display: flex;
+  flex-display: column;
+  position: fixed;
 }
 
 .board-item:hover{
   background: darken(#E8E8E8, 7.5%);
   border-radius: 5%;
   transition: 0.25s ease-in-out;
+}
+
+.create-board-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-board-form h4 {
+  font-family: 'Lemonada', cursive;
+}
+
+.create-board-form input {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 500
+}
+
+.add-board {
+  margin: auto;
+  background-color: #E8E8E8;
+  border-radius: 8px;
 }
