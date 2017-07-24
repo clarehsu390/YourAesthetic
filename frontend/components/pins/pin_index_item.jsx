@@ -1,4 +1,7 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+import PinDetail from 'pin_detail';
+import Modal from 'react-modal';
 
 class PinIndexItem extends React.Component {
   constructor(props) {
@@ -13,6 +16,6 @@ class PinIndexItem extends React.Component {
     </li>
   );
   }
- }
+}
 
 export default PinIndexItem;
