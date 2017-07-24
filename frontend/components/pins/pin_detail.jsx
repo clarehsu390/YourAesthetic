@@ -15,6 +15,19 @@ const customStyle = {
 class PinDetail extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      pin_id: 0,
+      board_id: 0
+    };
+  }
+
+  handleBoard(e) {
+    e.preventDefault();
+    // this.setState({
+    //   pin_id: this.props.pin.id,
+    //   board_id:
+    //
+    // })
   }
 
   render() {

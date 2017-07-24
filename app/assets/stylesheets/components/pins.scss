@@ -1,36 +1,29 @@
 
 
 img.pin {
-  border-radius: 5%;
-
-
-
+  border-radius: 5px;
 }
 
 .pin-attr {
-float:left;
-width: 24%;
-margin: 0em 0.5% 0.5em 0.5%;
-padding: 5px;
+display: inline-block;
+margin: 0 0 1em;
+width: 100%;
+height: auto;
+padding: 3px;
 
 }
 
 .all-pins{
-    display: -ms-flexbox;
-  	-ms-flex-direction: column;
-  	-ms-flex-wrap: wrap;
-  	display: flex;
-  	flex-direction: column;
-  	flex-wrap: wrap;
-  	height: 100vw;
-  	font-size: 0;
+  column-count: 5;
+  column-gap: 1em;
 
 }
 
 li.pin-attr:hover {
   cursor: zoom-in;
   background-color: #E8E8E8;
-  border-radius: 5%
+  border-radius: 5px;
+
 }
 
 .pin-name {

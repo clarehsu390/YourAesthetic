@@ -1,13 +1,13 @@
-export const addPinToBoard = (pin, board) => {
+export const addPinning = (pinning) => {
   $.ajax({method: 'POST',
   url: `api/pinnings`,
-  data: {pin, board}
+  data: { pinning }
 });
 };
 
-export const removePinFromBoard = (id) => {
+export const removePinning = (pinning) => {
   $.ajax({
     method: 'DELETE',
-    url: `api/pinnings/${id}`,
+    url: `api/pinnings/${pinning.id}`,
   });
 };

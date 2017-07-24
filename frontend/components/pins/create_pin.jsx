@@ -97,7 +97,7 @@ class CreatePin extends React.Component {
     this.props.onOk();
     this.props.hideModal();
   }
-
+  
  render() {
    return(
     <div className="create-pin">
