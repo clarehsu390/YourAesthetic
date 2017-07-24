@@ -15,6 +15,12 @@ export const requestSingleBoard = (userId, id) => (dispatch)=> {
   );
 };
 
+export const createNewBoard = (userId, board) => (dispatch) => {
+  return BoardUtil.createBoard(userId, board).then(
+    board => dispatch(receiveSingleBoard(board))
+  );
+};
+
 export const receiveBoards = (boards) => ({
   type: RECEIVE_USER_BOARDS,
   boards

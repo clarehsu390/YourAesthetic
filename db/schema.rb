@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170720174105) do
+ActiveRecord::Schema.define(version: 20170723194841) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20170720174105) do
     t.datetime "updated_at",  null: false
     t.index ["title"], name: "index_boards_on_title", using: :btree
     t.index ["user_id"], name: "index_boards_on_user_id", using: :btree
+  end
+
+  create_table "pinnings", force: :cascade do |t|
+    t.integer "board_id", null: false
+    t.integer "pin_id"
+    t.index ["board_id"], name: "index_pinnings_on_board_id", using: :btree
+    t.index ["pin_id"], name: "index_pinnings_on_pin_id", using: :btree
   end
 
   create_table "pins", force: :cascade do |t|
