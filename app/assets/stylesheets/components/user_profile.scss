@@ -1,13 +1,15 @@
 .profile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 800px;
   margin: auto;
   text-align: center;
   padding-top: 40px;
 
 }
-
+.user-info {
+  display: flex;
+}
 h3.username {
   display: flex;
   flex: 1.5;
@@ -16,7 +18,6 @@ h3.username {
   margin-bottom: 0px;
   padding-left: 100px;
   color: #575757;
-
 }
  .pf-pic {
   border-radius: 50%;
@@ -31,6 +32,7 @@ h3.username {
 .follows {
   display: flex;
   flex: 1;
+  justify-content: flex-end;
 }
 
 .follows a {
@@ -44,23 +46,10 @@ h3.username {
   background: darken(#E8E8E8, 7.5%)
 }
 
-.board {
-  color: #575757;
-  font-weight: 600;
-  font-size: 16px;
+.links {
   display: flex;
-  position: absolute;
-  left: 205px;
-  top: 300px;
-}
-
-.board a {
-  display: inline-block;
-  border-radius: 100px;
   margin: 8px;
-  padding: 10px;
-  height: 15px;
-
+  flex-direction: row;
 }
 
 .board a:hover {
@@ -70,11 +59,18 @@ h3.username {
 
 .boards-link {
   background-color: #E8E8E8;
-  position: absolute;
   float: right;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .pins-link{
   background-color: #E8E8E8;
-  float:left;
+  padding: 10px;
+  border-radius: 8px;
+
+}
+
+.boards-link:active{
+  padding: 10px;
 }

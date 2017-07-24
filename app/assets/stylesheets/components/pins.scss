@@ -8,31 +8,32 @@ img.pin:hover {
   cursor: zoom-in;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  background-color: darken(gray, 7.5%)
 }
 
 .list-of-pins {
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
-  margin: auto;
+  align-items: center;
 }
 
 .pin-attr {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   width:  100%;
 }
 
 
 .all-pins{
-  max-width: 1200px;
+  max-width: 1100px;
+  margin: auto;
 
 }
 
 .pin-name {
   font-size: 12px;
-  padding: 10px;
   font-weight: 600;
 }
 
@@ -63,25 +64,25 @@ img.pin:hover {
   font-weight: bold;
   height: 30px;
   width: 150px;
-  font-family: 'Lemonada', cursive;
+
 
 }
 
 /*Create Pins*/
 .add {
       position: fixed;
-      // bottom: 30px;
-      // right: 40px;
+      bottom: 30px;
+      right: 40px;
       z-index: 99;
       background-color: white;
-      color: gray;
-
+      border-radius: 50%;
       cursor: pointer;
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       padding: 10px;
       box-shadow: 2px 2px 2px gray;
       font-size: 28px;
+      color: #b22222
     }
 
 
@@ -89,8 +90,11 @@ img.pin:hover {
   display: flex;
   transition: 0.35s ease-in-out;
   font-weight: bolder;
-  text-align: center;
-  margin: auto;
+    margin: 0 auto;
+     padding: 0;
+     display: table-cell;
+     vertical-align: middle;
+
 
 
 }
@@ -130,23 +134,24 @@ transform: translateY(8px);
 }
 
 .create-pin-form h4{
-font-family: 'Lemonada', cursive;
 font-size: 16px;
 }
 
 .new-pin{
   overflow: hidden;
   margin: auto;
+  max-width: 100%;
+  max-height: 100%
 
 }
 
 .pin-image {
-  max-width: 80%;
-  max-height: 100%;
+  max-height: 90%;
   margin: auto;
   top: 50%;
   left: 50%;
   right: auto;
+  overflow: hidden;
 
 }
 
@@ -163,11 +168,12 @@ font-size: 16px;
 
 .pin-detail {
   margin: auto;
-  width: 500px;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
+  width: 400px;
+  height: 600px;
 }
 
 .pin-detail-modal {
@@ -176,7 +182,6 @@ font-size: 16px;
 }
 
 .pin-detail h3 {
-  font-family: 'Lemonada', cursive;
   margin: 0;
   font-size: 28px;
 }

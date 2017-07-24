@@ -1,17 +1,13 @@
 .boards-index {
-  display: flex;
-  margin: 0 0 1em;
-  width: 100%;
-  height: auto;
-  padding: 3px;
-  column-count: 4;
-    column-gap: 1em;
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  column-count: 3
 }
 
-.boards {
-  position: relative;
 
-}
 
 .board-item {
   width:  250px;
@@ -36,9 +32,6 @@
   flex-direction: column;
 }
 
-.create-board-form h4 {
-  font-family: 'Lemonada', cursive;
-}
 
 .create-board-form input {
   border: solid 1px black;

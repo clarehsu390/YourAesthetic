@@ -73,14 +73,13 @@ class CreatePin extends React.Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
     const pin = {
       name: this.state.name,
       description: this.state.description,
       image_url: this.state.image_url,
       creator_id: this.props.currentUser.id
     };
-    this.props.newPin(pin).then(this.props.history.push("/"));
+    this.props.newPin(pin)
   }
 
   update(property) {

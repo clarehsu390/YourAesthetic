@@ -20,6 +20,7 @@ class UserProfile extends React.Component {
     if (loggedIn) {
       return (
       <div className='profile'>
+        <div className="user-info">
         <h3 className="username">{currentUser.username}</h3>
         <div className="follows">
             <Link to={`/${currentUser.username}/followers`}>
@@ -33,18 +34,23 @@ class UserProfile extends React.Component {
                 https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
             </div>
-            <div className="board">
+            </div>
+            <div className="links">
               <NavLink to=
                 {`/${currentUser.username}/boards`}
                 activeClassName="boards-link">
                 Boards
               </NavLink>
+              <NavLink to={`/${currentUser.username}/pins`}
+                 activeClassName="pins-link">Pins</NavLink>
+             </div>
+            <div className="board">
+
               <Route path={`/${currentUser.username}/boards`}
                  component={BoardIndexContainer} />
               <Route exact path={`/${currentUser.username}`}
                  component={BoardIndexContainer} />
-              <NavLink to={`/${currentUser.username}/pins`}
-                 activeClassName="pins-link">Pins</NavLink>
+
             </div>
 
           </div>

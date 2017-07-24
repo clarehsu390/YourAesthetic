@@ -25,10 +25,14 @@ class CreateBoard extends React.Component {
     this.update = this.update.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
   }
 
   openModal(){
     this.setState({modalIsOpen: true});
+  }
+  afterOpenModal() {
+
   }
 
   closeModal(){
@@ -36,7 +40,7 @@ class CreateBoard extends React.Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
+    console.log(this.props.currentUser);
     const board = {
       title: this.state.title,
       description: this.state.description,
