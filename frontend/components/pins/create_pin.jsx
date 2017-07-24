@@ -97,11 +97,11 @@ class CreatePin extends React.Component {
     this.props.onOk();
     this.props.hideModal();
   }
-  
+
  render() {
    return(
     <div className="create-pin">
-      <button className="add"onClick={this.openModal}>+</button>
+      <button className="add" onClick={this.openModal}>+</button>
 
         <Modal
           isOpen={this.state.modalIsOpen}

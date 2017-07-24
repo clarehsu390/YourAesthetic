@@ -40,10 +40,12 @@ class PinIndexItem extends React.Component {
 
      <li className="pin-attr">
       <div className="pin-holder">
-        <img src={pin.image_url} className="pin"></img>
         <div className="overlay">
-          <button className="save-pin-button">Save Pin</button>
+          <button className="save-pin-button" onClick={this.openModal}>
+            Save Pin
+          </button>
         </div>
+        <img src={pin.image_url} className="pin"></img>
         <span onClick={this.openModal} className="pin-name">{pin.name}</span>
       </div>
 
