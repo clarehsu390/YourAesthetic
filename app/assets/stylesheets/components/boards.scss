@@ -1,15 +1,17 @@
-.boards {
+.boards-index {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
   padding: 0em 0em 2em 0em;
   top: 100px;
-  -webkit-column-gap: 20px;
-  -webkit-column-count: 3;
-  height: auto;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
   display: flex;
-  flex-disply: column;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vw;
+  font-size: 0;
 
 
 
@@ -24,7 +26,6 @@
   padding: 10px;
   display: flex;
   flex-display: column;
-  position: fixed;
 }
 
 .board-item:hover{

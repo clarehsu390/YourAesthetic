@@ -17,5 +17,14 @@ class PinDetail extends React.Component {
     super(props);
   }
 
-  
+  render() {
+    const pin = this.props.pin;
+    return (<div>
+      <img src={pin.image_url} className="pin">
+      </img>
+    </div>
+  );
+  }
 }
+
+export default PinDetail;
