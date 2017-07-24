@@ -20,8 +20,11 @@ class PinDetail extends React.Component {
   render() {
     const pin = this.props.pin;
     return (<div>
+      <h5>{pin.name}</h5>
       <img src={pin.image_url} className="pin">
       </img>
+
+      <span>{pin.description}</span>
     </div>
   );
   }

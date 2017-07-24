@@ -34,7 +34,6 @@ class UserProfile extends React.Component {
               </img>
             </div>
             <div className="board">
-              <Route path={`/${currentUser.username}/boards`} component={CreateBoardContainer}/>
               <NavLink to=
                 {`/${currentUser.username}/boards`}
                 activeClassName="boards-link">

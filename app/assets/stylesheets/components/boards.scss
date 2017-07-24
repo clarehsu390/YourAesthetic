@@ -1,31 +1,29 @@
 .boards-index {
   max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
   padding: 0em 0em 2em 0em;
-  top: 100px;
-  display: -ms-flexbox;
+  display: -ms-flex;
   -ms-flex-direction: column;
   -ms-flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vw;
-  font-size: 0;
+  bottom: px;
+}
 
-
-
+.boards {
+  bottom: 100px;
 }
 
 .board-item {
   width:  250px;
   height: 150px;
+  bottom: 10px;
   margin: auto;
   background-color: #E8E8E8;
   border-radius: 8px;
   padding: 10px;
-  display: flex;
-  flex-display: column;
+  bottom: 200px;
+  margin: 10px;
 }
 
 .board-item:hover{
@@ -55,4 +53,13 @@
   margin: auto;
   background-color: #E8E8E8;
   border-radius: 8px;
+  width:  250px;
+  height: 150px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.add-board:hover {
+  background: darken(#E8E8E8, 7.5%)
 }
