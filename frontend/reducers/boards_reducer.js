@@ -1,5 +1,5 @@
 import { RECEIVE_USER_BOARDS, RECEIVE_SINGLE_BOARD } from '../actions/board_actions';
-
+import merge from 'lodash/merge';
 const boardsReducer = (
   state = [], action
 ) => {
@@ -8,7 +8,7 @@ const boardsReducer = (
     case RECEIVE_USER_BOARDS:
     return action.boards;
   case RECEIVE_SINGLE_BOARD:
-    return action.board;
+    return merge(state, action.board);
   default:
     return state;
   }

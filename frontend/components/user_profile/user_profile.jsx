@@ -3,6 +3,7 @@ import { Redirect, withRouter, Link, NavLink, Route} from 'react-router-dom';
 import { fetchSingleUser } from '../../util/user_util';
 import BoardIndexContainer from '../boards/board_index_container';
 import BoardIndex from '../boards/board_index_container';
+import CreateBoardContainer from '../boards/create_board_container';
 
 class UserProfile extends React.Component {
   constructor(props){
@@ -33,6 +34,7 @@ class UserProfile extends React.Component {
               </img>
             </div>
             <div className="board">
+              <Route path={`/${currentUser.username}/boards`} component={CreateBoardContainer}/>
               <NavLink to=
                 {`/${currentUser.username}/boards`}
                 activeClassName="boards-link">

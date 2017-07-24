@@ -1,5 +1,5 @@
 class Pinning < ApplicationRecord
-  validates :board, presence: true
+  validates :board, :pin, presence: true
 
   belongs_to :board,
     primary_key: :id,
