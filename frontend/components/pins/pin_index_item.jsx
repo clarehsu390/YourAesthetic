@@ -37,12 +37,21 @@ class PinIndexItem extends React.Component {
     const { pin } = this.props;
     return (
     <div>
-     <li className="pin-attr">
-      <img src={pin.image_url} className="pin">
-      </img>
-      <span onClick={this.openModal} className="pin-name">{pin.name}</span>
-    </li>
 
+     <li className="pin-attr">
+      <div className="pin-holder">
+        <img src={pin.image_url} className="pin"></img>
+        <div className="overlay">
+          <button className="save-pin-button">Save Pin</button>
+        </div>
+        <span onClick={this.openModal} className="pin-name">{pin.name}</span>
+      </div>
+
+
+
+
+    </li>
+    <div className="pin-detail-modal">
     <Modal
         isOpen={this.state.modalIsOpen}
         onAfterOpen={this.afterOpenModal}
@@ -52,6 +61,7 @@ class PinIndexItem extends React.Component {
         >
         <PinDetail pin={pin}/>
       </Modal>
+      </div>
     </div>
 
   );

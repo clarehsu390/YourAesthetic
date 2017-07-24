@@ -4,25 +4,24 @@ img.pin {
   border-radius: 5px;
 }
 
-.pin-attr {
-display: inline-block;
-margin: 0 0 1em;
-width: 100%;
-height: auto;
-padding: 3px;
-
+.list-of-pins {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
 }
+
+.pin-attr {
+  display: inline-block;
+  margin:  0.25rem;
+  padding:  10px;
+  width:  100%;
+  border-radius: 5px;
+}
+
 
 .all-pins{
-  column-count: 5;
-  column-gap: 1em;
 
-}
-
-li.pin-attr:hover {
-  cursor: zoom-in;
-  background-color: #E8E8E8;
-  border-radius: 5px;
 
 }
 
@@ -36,18 +35,18 @@ li.pin-attr:hover {
   margin: auto;
   text-align: center;
   height: 650px;
-  width: 350px;
+  width: 450px;
   border-radius: 30px;
 }
 
 .drop-zone {
   margin: auto;
   border: dotted 1px black;
-  height: 413px;
-  width: 236px;
+  height: 400px;
+  width: 400px;
   background-color: #E8E8E8;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .create {
@@ -86,7 +85,12 @@ li.pin-attr:hover {
 .add{
   transition: 0.35s ease-in-out;
   font-weight: 700;
+}
 
+.add:active {
+  background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(8px);
 }
 
 .add:hover {
@@ -121,4 +125,83 @@ font-size: 16px;
   width: 236px;
   height: 413px;
   margin: auto;
+}
+
+.pin-image {
+  max-width: 80%;
+  max-height: 100%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  right: auto;
+
+}
+
+.save-pin {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  width: 100px;
+  margin-left: 350px;
+
+}
+
+.pin-detail {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pin-detail-modal {
+  margin: auto;
+  border-radius: 5px;
+}
+
+.pin-detail h3 {
+  font-family: 'Lemonada', cursive;
+  margin: 0;
+  font-size: 28px;
+}
+
+
+.overlay {
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: red;
+  transition: background 0.5s ease;
+}
+.save-pin-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  position: absolute;
+  width: 100px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.pin-attr:hover .overlay {
+  cursor: zoom-in;
+  display: block;
+ background: rgba(0, 0, 0, .3);
+}
+
+.pin-attr:hover .save-pin-button {
+  opacity: 1;
 }
