@@ -18,19 +18,18 @@ class CreatePinning extends React.Component {
     this.props.requestBoards(this.props.currentUser.id);
   }
   allBoards() {
+    console.log(this.props.boards);
 
-    this.props.boards.map((board, i) => {
-      return <option value={board.id}>{board.title}</option>;
-    });
   }
 
   render() {
     return (
       <div className="board-menu">
-        <select>
-          {this.allBoards}
-        </select>
-
+        <ul className="dropdown-content">
+          {this.props.boards.map((board, i) => {
+            return <li><a href="#" value={board.id}>{board.title}</a></li>;
+          })}
+        </ul>
       </div>
     );
   }

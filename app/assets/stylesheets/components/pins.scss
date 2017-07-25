@@ -35,6 +35,10 @@ img.pin:hover {
   font-weight: 600;
 }
 
+.pin-name:hover {
+  cursor: zoom-in;
+}
+
 .create-pin-form {
   margin: auto;
   text-align: center;
@@ -203,7 +207,7 @@ font-size: 16px;
   border: solid #b22222 1px;
   font-weight: bold;
   position: absolute;
-  width: 100px;
+  width: 80px;
   text-align: center;
   opacity: 0;
   transition: opacity .2s ease;
