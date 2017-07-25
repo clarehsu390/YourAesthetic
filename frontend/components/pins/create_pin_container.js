@@ -3,7 +3,8 @@ import { newPin } from '../../actions/pins_actions';
 import CreatePin from './create_pin';
 
 const mapStateToProps = ({ currentUser, errors }) => ({
-  currentUser
+  currentUser,
+  errors
 });
 
 

@@ -34,10 +34,6 @@ class PinDetail extends React.Component {
       </img>
 
       <span>{this.props.pin.description}</span>
-      <CreatePinning pin={this.props.pin}
-        currentUser={this.props.currentUser}
-        requestBoards={this.props.requestBoards}
-        boards={this.props.boards}/>
     </div>
   );
   }

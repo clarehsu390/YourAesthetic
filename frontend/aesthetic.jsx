@@ -4,7 +4,7 @@ import configureStore from './store/store.js';
 import Root from './components/root';
 import { createPin } from './util/pins_util';
 import { requestSingleBoard } from './actions/board_actions';
-
+import { createPinning } from './actions/pinning_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
   window.requestSingleBoard = requestSingleBoard;
-  window.createPin = createPin;
+  window.createPinning = createPinning;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   ReactDOM.render(<Root store={store} />, root);

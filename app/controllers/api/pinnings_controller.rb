@@ -1,12 +1,17 @@
 class Api::PinningsController < ApplicationController
   def create
     @pinning = Pinning.new(pinning_params)
+    # debugger
     if @pinning.save
       @pin = @pinning.pin
       render 'api/pins/show'
     else
       render json: @pinning.errors.full_messages
     end
+  end
+
+  def index
+    @pinnings = Pinning.all
   end
 
   def remove
@@ -19,7 +24,7 @@ class Api::PinningsController < ApplicationController
       render json: @pinning.errors.full_messages, status: 400
     end
   end
-  private
+  # private
 
   def pinning_params
     params.require(:pinning).permit(:board_id, :pin_id)

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import PinDetail from './pin_detail';
 import Modal from 'react-modal';
-import CreatePinning from '../pinnings/create_pinnings';
+import CreatePinningContainer from '../pinnings/create_pinnings_container';
 
 const customStyles = {
   content : {
@@ -46,9 +46,7 @@ class PinIndexItem extends React.Component {
             Save Pin
           </button>
 
-          <CreatePinning pin={this.props.pin} currentUser={this.props.currentUser}
-            requestBoards={this.props.requestBoards}
-            boards={this.props.boards} />
+          <CreatePinningContainer pin={this.props.pin} />
           </div>
         </div>
         <span onClick={this.openModal}><img src={this.props.pin.image_url} className="pin"></img></span>
@@ -67,9 +65,7 @@ class PinIndexItem extends React.Component {
         style={customStyles}
         contentLabel="pin-detail"
         >
-        <PinDetail pin={this.props.pin} currentUser={this.props.currentUser}
-          requestBoards={this.props.requestBoards}
-          boards={this.props.boards}/>
+        <PinDetail pin={this.props.pin} currentUser={this.props.currentUser} />
       </Modal>
       </div>
     </div>

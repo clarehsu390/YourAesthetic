@@ -34,6 +34,7 @@ class CreatePin extends React.Component {
     this.openModal = this.openModal.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.errors = this.errors.bind(this);
   }
 
   openModal(){
@@ -98,6 +99,21 @@ class CreatePin extends React.Component {
     this.props.hideModal();
   }
 
+  errors() {
+      return (
+        <ul>
+          {this.props.errors.map((error, i) => {
+            return (
+              <li className="error" key={i}>
+                {error}
+              </li>
+            );
+          })
+        }
+        </ul>
+      );
+  }
+
  render() {
    return(
     <div className="create-pin">
@@ -139,7 +155,7 @@ class CreatePin extends React.Component {
         placeholder = "Description"
         onChange={this.update('description')}
         />
-
+      {this.errors()}
       <button className="create" onClick={this.handleSubmit}>Create Pin</button>
 
       </form>

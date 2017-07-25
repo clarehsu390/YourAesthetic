@@ -5,29 +5,42 @@ import ReactDOM from 'react-dom';
 class CreatePinning extends React.Component {
   constructor(props) {
     super(props);
-    console.log("pinnings");
-    console.log(this.props);
     this.state = {
-      pin_id: this.props.pin.id,
+      pin_id: null,
       board_id: null
     };
     this.allBoards = this.allBoards.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
     this.props.requestBoards(this.props.currentUser.id);
+
   }
   allBoards() {
     console.log(this.props.boards);
+  }
 
+  handleClick(e) {
+    e.preventDefault();
+    this.setState({
+      pin_id: this.props.pin.id,
+      board_id: e.currentTarget.value
+    });
+  }
+
+  componentDidUpdate() {
+    this.props.createPinning(this.state);
   }
 
   render() {
     return (
       <div className="board-menu">
         <ul className="dropdown-content">
+          <li><a href="#">Select a Board</a></li>
           {this.props.boards.map((board, i) => {
-            return <li><a href="#" value={board.id}>{board.title}</a></li>;
+            return <li onClick={this.handleClick}
+              key={board.id} value={board.id}>{board.title}</li>;
           })}
         </ul>
       </div>

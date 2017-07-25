@@ -1,6 +1,6 @@
 import React from 'react';
 import CreateBoardContainer from '../boards/create_board_container';
-import {Route} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 
 class BoardIndex extends React.Component {
   constructor(props){
@@ -16,7 +16,9 @@ class BoardIndex extends React.Component {
       <ul className="boards-index">
         <Route path="/:username" component={CreateBoardContainer}/>
         {this.props.boards.map((board, i) => {
-          return <li key={i} className="board-item">{board.title}</li>;
+          return <li key={i} className="board-item">
+          <Link to={`/boards/${board.id}`}>{board.title}</Link>
+          </li>;
         }
       )
     }
