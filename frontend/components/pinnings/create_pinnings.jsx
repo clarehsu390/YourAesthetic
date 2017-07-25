@@ -36,11 +36,6 @@ class CreatePinning extends React.Component {
   }
 
   render() {
-    if (this.state.waiting) {
-      return (
-        <div></div>
-      );
-    }
     return (
       <div className="board-menu">
         <ul className="dropdown-content">

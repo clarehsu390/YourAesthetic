@@ -28,6 +28,5 @@ export const receiveBoards = (boards) => ({
 
 export const receiveSingleBoard = (board) => ({
   type: RECEIVE_SINGLE_BOARD,
-  board,
-  pins: board.pins
+  board
 });
