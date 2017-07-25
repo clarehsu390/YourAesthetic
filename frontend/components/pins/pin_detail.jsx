@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import CreatePinning from '../pinnings/create_pinnings';
 
 const customStyle = {
   content : {
@@ -15,32 +16,28 @@ const customStyle = {
 class PinDetail extends React.Component {
   constructor(props){
     super(props);
+    console.log("pin detail");
+    console.log(this.props);
     this.state = {
       pin_id: 0,
       board_id: 0
     };
   }
 
-  handleBoard(e) {
-    e.preventDefault();
-    // this.setState({
-    //   pin_id: this.props.pin.id,
-    //   board_id:
-    //
-    // });
-  }
-
   render() {
-    const pin = this.props.pin;
+    console.log(this.props.currentUser);
     return (
       <div className="pin-detail">
-      <h3>{pin.name}</h3>
+      <h3>{this.props.pin.name}</h3>
 
-      <img src={pin.image_url} className="pin-image">
+      <img src={this.props.pin.image_url} className="pin-image">
       </img>
 
-      <span>{pin.description}</span>
-
+      <span>{this.props.pin.description}</span>
+      <CreatePinning pin={this.props.pin}
+        currentUser={this.props.currentUser}
+        requestBoards={this.props.requestBoards}
+        boards={this.props.boards}/>
     </div>
   );
   }

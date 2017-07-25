@@ -1,13 +1,22 @@
 import { connect } from 'react-redux';
-import { requestAllPins } from '../../actions/pins_actions';
+import { requestAllPins, requestPin } from '../../actions/pins_actions';
+import { createPinning } from '../../actions/pinning_actions';
+import { requestBoards } from '../../actions/board_actions';
 import PinsIndex from './pins_index';
 
-const mapStateToProps = ({ pins }) => ({
-  pins
+const mapStateToProps = (state) => ({
+  currentUser: state.currentUser,
+  pins: state.pins,
+  pin: state.pin,
+  boards: state.boards
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestAllPins: () => dispatch(requestAllPins())
+  requestAllPins: () => dispatch(requestAllPins()),
+  requestPin: pin => dispatch(requestPin(pin)),
+  createPinning: pinning => dispatch(createPinning(pinning)),
+  requestBoards: userId => dispatch(requestBoards(userId))
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PinsIndex);

@@ -10,11 +10,13 @@ class PinsIndex extends React.Component {
   }
 
   render () {
+    const { currentUser } = this.props;
     if (this.props.pins){
       return (
         <div className="all-pins">
         <ul className="list-of-pins">
-          {this.props.pins.map((pin, i) => <PinIndexItem key={i} pin={pin} />)}
+          {this.props.pins.map((pin, i) => <PinIndexItem key={i} pin={pin} currentUser={currentUser}
+          requestBoards={this.props.requestBoards} boards={this.props.boards} />)}
         </ul>
       </div>
       );

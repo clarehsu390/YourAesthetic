@@ -34,7 +34,6 @@ class PinIndexItem extends React.Component {
   }
 
   render(){
-    const { pin } = this.props;
     return (
     <div>
 
@@ -45,8 +44,8 @@ class PinIndexItem extends React.Component {
             Save Pin
           </button>
         </div>
-        <img src={pin.image_url} className="pin"></img>
-        <span onClick={this.openModal} className="pin-name">{pin.name}</span>
+        <img src={this.props.pin.image_url} className="pin"></img>
+        <span onClick={this.openModal} className="pin-name">{this.props.pin.name}</span>
       </div>
 
 
@@ -61,7 +60,9 @@ class PinIndexItem extends React.Component {
         style={customStyles}
         contentLabel="pin-detail"
         >
-        <PinDetail pin={pin}/>
+        <PinDetail pin={this.props.pin} currentUser={this.props.currentUser}
+          requestBoards={this.props.requestBoards}
+          boards={this.props.boards}/>
       </Modal>
       </div>
     </div>
