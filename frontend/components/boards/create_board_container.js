@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { createNewBoard } from '../../actions/board_actions';
 import CreateBoard from './create_board';
 
-const mapStateToProps = ({ currentUser }) => ({
+const mapStateToProps = ({ currentUser, errors }) => ({
   currentUser
 });
 

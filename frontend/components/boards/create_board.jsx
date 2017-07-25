@@ -18,6 +18,7 @@ class CreateBoard extends React.Component {
 
   constructor(props){
     super(props);
+
     this.state = {
       title: "",
       description: "",
@@ -26,34 +27,45 @@ class CreateBoard extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
     this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   openModal(){
     this.setState({modalIsOpen: true});
-    console.log(this.props);
   }
   afterOpenModal() {
+    this.subtitle.style.color = '#f00';
   }
 
   closeModal(){
+    console.log(this.state);
     this.setState({modalIsOpen: false});
+  }
+
+  onOk() {
+    this.props.onOk();
+    this.props.hideModal();
   }
 
   handleSubmit(e) {
     const { currentUser } = this.props;
-    console.log(currentUser);
     const board = {
       title: this.state.title,
       description: this.state.description,
       user_id: this.props.currentUser.id
     };
-    this.props.createNewBoard(board);
+    this.props.createNewBoard(board).then(this.closeModal());
   }
 
   update(property) {
     return e => this.setState({[property]: e.target.value});
+  }
+
+  handleBackgroundClick(e) {
+    if (e.target === e.currentTarget) {
+      this.props.hideModal();
+    }
   }
 
   render() {
@@ -92,4 +104,4 @@ class CreateBoard extends React.Component {
   }
 }
 
-export default withRouter(CreateBoard);
+export default CreateBoard;

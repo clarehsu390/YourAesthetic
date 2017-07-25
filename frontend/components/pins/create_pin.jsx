@@ -28,6 +28,7 @@ class CreatePin extends React.Component {
       description: '',
       modalIsOpen: false
     };
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
     this.openModal = this.openModal.bind(this);
@@ -36,7 +37,7 @@ class CreatePin extends React.Component {
   }
 
   openModal(){
-    this.setState({modalIsOpen: true});
+    this.setState({ modalIsOpen: true });
   }
 
   afterOpenModal(){
@@ -44,7 +45,7 @@ class CreatePin extends React.Component {
   }
 
   closeModal(){
-    this.setState({modalIsOpen: false});
+    this.setState({ modalIsOpen: false });
   }
 
   onImageDrop(files) {

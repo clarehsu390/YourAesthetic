@@ -27,14 +27,15 @@ class PinDetail extends React.Component {
     //   pin_id: this.props.pin.id,
     //   board_id:
     //
-    // })
+    // });
   }
 
   render() {
     const pin = this.props.pin;
-    return (<div className="pin-detail">
+    return (
+      <div className="pin-detail">
       <h3>{pin.name}</h3>
-      
+
       <img src={pin.image_url} className="pin-image">
       </img>
 

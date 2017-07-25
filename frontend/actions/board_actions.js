@@ -9,14 +9,14 @@ export const requestBoards = (userId) => (dispatch)=> {
   );
 };
 
-export const requestSingleBoard = (userId, id) => (dispatch)=> {
-  return BoardUtil.getSingleBoard(userId, id).then(
+export const requestSingleBoard = (id) => (dispatch)=> {
+  return BoardUtil.getSingleBoard(id).then(
     board => dispatch(receiveSingleBoard(board))
   );
 };
 
-export const createNewBoard = (userId, board) => (dispatch) => {
-  return BoardUtil.createBoard(userId, board).then(
+export const createNewBoard = (board) => (dispatch) => {
+  return BoardUtil.createBoard(board).then(
     board => dispatch(receiveSingleBoard(board))
   );
 };

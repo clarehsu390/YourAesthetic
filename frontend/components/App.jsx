@@ -7,6 +7,7 @@ import NavBarContainer from'./navbar/navbar_container';
 import UserProfileContainer from './user_profile/user_prof_container';
 import PinsIndexContainer from './pins/pinsindex_container';
 import CreatePinContainer from './pins/create_pin_container';
+import CreateBoardContainer from './boards/create_board_container';
 
 
 const App = () => (
@@ -23,7 +24,7 @@ const App = () => (
 
     <Route exact path='/' component={ PinsIndexContainer } />
     <ProtectedRoute exact path='/' component={ CreatePinContainer } />
-
+  
   </div>
 );
 

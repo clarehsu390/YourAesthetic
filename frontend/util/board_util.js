@@ -8,14 +8,14 @@ export const getUsersBoards = (userId) => (
 export const getSingleBoard = (userId, id) => (
   $.ajax({
     method: 'GET',
-    url: `/api/users/${userId}/boards/${id}`
+    url: `/api/boards/${id}`
   })
 );
 
 export const createBoard = (board, userId) => (
   $.ajax({
     method: 'POST',
-    url: `/api/users/${userId}/boards`,
+    url: `/api/boards`,
     data: {board}
 
   })
