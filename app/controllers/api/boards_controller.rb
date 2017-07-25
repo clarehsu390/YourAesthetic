@@ -11,13 +11,11 @@ class Api::BoardsController < ApplicationController
   end
 
   def index
-    user = User.find(params[:user_id])
-    @boards = user.boards
+    @boards = current_user.boards
   end
 
   def show
-    user = User.find(params[:user_id])
-    @board = user.boards.find(params[:id])
+    @board = current_user.boards.find(params[:id])
   end
 
   def update

@@ -8,7 +8,7 @@ const boardsReducer = (
     case RECEIVE_USER_BOARDS:
     return action.boards;
   case RECEIVE_SINGLE_BOARD:
-    return merge(state, action.board);
+    return action.board;
   default:
     return state;
   }

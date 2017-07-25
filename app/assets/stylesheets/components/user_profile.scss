@@ -79,12 +79,15 @@ h3.username {
 .boards {
   display: flex;
   flex-direction: row;
-    column-count: 3;
+  column-count: 3;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .boards-index {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
 }
 

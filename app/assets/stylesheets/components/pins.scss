@@ -223,3 +223,23 @@ font-size: 16px;
   color: white;
   z-index: 1;
 }
+
+.board-pin img {
+  border-radius: 8px;
+}
+.boards-pins {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.board-pin {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  width:  100%;
+}

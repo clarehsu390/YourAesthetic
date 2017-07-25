@@ -7,15 +7,17 @@ class CreatePinning extends React.Component {
     super(props);
     this.state = {
       pin_id: null,
-      board_id: null
+      board_id: null,
+      waiting: true
     };
     this.allBoards = this.allBoards.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
-    this.props.requestBoards(this.props.currentUser.id);
-
+    this.props.requestBoards(this.props.currentUser.id).then(() => this.setState({
+      waiting: false
+    }));
   }
   allBoards() {
     console.log(this.props.boards);
@@ -34,6 +36,11 @@ class CreatePinning extends React.Component {
   }
 
   render() {
+    if (this.state.waiting) {
+      return (
+        <div></div>
+      );
+    }
     return (
       <div className="board-menu">
         <ul className="dropdown-content">
