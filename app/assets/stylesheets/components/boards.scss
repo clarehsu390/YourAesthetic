@@ -1,14 +1,3 @@
-.boards-index {
-  -moz-column-width: 14em;
-  -webkit-column-width: 14em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  align-items: center;
-  column-count: 3
-}
-
-
-
 .board-item {
   width:  250px;
   height: 150px;
@@ -32,6 +21,10 @@
   flex-direction: column;
 }
 
+.add-board{
+  margin: auto;
+}
+
 
 .create-board-form input {
   border: solid 1px black;
@@ -39,17 +32,6 @@
   padding: 10px;
   margin: 10px;
   font-weight: 500
-}
-
-.add-board {
-  margin: auto;
-  background-color: #E8E8E8;
-  border-radius: 8px;
-  width:  250px;
-  height: 150px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
 }
 
 .add-board:hover {

@@ -30,6 +30,8 @@ class CreateBoard extends React.Component {
 
   openModal(){
     this.setState({modalIsOpen: true});
+    const { currentUser } = this.props;
+    console.log(currentUser);
   }
   afterOpenModal() {
 
@@ -40,7 +42,8 @@ class CreateBoard extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log(this.props.currentUser);
+    const { currentUser } = this.props;
+    console.log(currentUser);
     const board = {
       title: this.state.title,
       description: this.state.description,

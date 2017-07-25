@@ -48,8 +48,10 @@ h3.username {
 
 .links {
   display: flex;
-  margin: 8px;
   flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .board a:hover {
@@ -59,18 +61,33 @@ h3.username {
 
 .boards-link {
   background-color: #E8E8E8;
-  float: right;
-  padding: 10px;
+  margin-right: 10px;
   border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 .pins-link{
   background-color: #E8E8E8;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
 
 }
 
-.boards-link:active{
+.boards {
+  display: flex;
+  flex-direction: row;
+    column-count: 3;
+}
+
+.boards-index {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.links a {
   padding: 10px;
 }
