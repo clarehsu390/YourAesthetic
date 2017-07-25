@@ -1,5 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
+import ReactDOM from 'react-dom';
+import { withRouter } from 'react-router-dom';
 
 const customStyles = {
   content : {
@@ -13,6 +15,7 @@ const customStyles = {
 };
 
 class CreateBoard extends React.Component {
+
   constructor(props){
     super(props);
     this.state = {
@@ -20,7 +23,6 @@ class CreateBoard extends React.Component {
       description: "",
       modalIsOpen: false
     };
-
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
     this.openModal = this.openModal.bind(this);
@@ -30,11 +32,9 @@ class CreateBoard extends React.Component {
 
   openModal(){
     this.setState({modalIsOpen: true});
-    const { currentUser } = this.props;
-    console.log(currentUser);
+    console.log(this.props);
   }
   afterOpenModal() {
-
   }
 
   closeModal(){
@@ -92,4 +92,4 @@ class CreateBoard extends React.Component {
   }
 }
 
-export default CreateBoard;
+export default withRouter(CreateBoard);

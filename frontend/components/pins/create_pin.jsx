@@ -79,7 +79,7 @@ class CreatePin extends React.Component {
       image_url: this.state.image_url,
       creator_id: this.props.currentUser.id
     };
-    this.props.newPin(pin)
+    this.props.newPin(pin);
   }
 
   update(property) {
