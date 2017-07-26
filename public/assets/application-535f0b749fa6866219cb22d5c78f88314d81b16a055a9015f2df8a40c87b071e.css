@@ -1,0 +1,1516 @@
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/errors.scss */
+.error {
+  color: red;
+  font-size: 12px;
+  font-style: bold;
+}
+/* line 5, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+section.session {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  text-align: center;
+  background-image: url("https://static.pexels.com/photos/414548/pexels-photo-414548.jpeg");
+  background-size: cover;
+}
+
+/* line 22, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+section.session::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 33, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+div.login {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+/* line 50, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+h4 {
+  position: relative;
+  margin: 1px;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.session-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* line 65, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.session-form input {
+  border-radius: 3px;
+  border: solid #E8E8E8 1px;
+  background-color: #E8E8E8;
+  -webkit-appearance: none;
+  margin: auto;
+  padding: 8px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  position: static;
+}
+
+/* line 79, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.linkto-signup {
+  font-size: 12px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+/* line 86, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.linkto-signup a {
+  margin: 5px;
+  position: relative;
+  text-decoration: underline;
+}
+
+/* line 92, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+div.signup {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+/* line 109, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.signup h4 {
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* line 115, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.signup span {
+  text-align: center;
+  font-size: 12px;
+}
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/grid.scss */
+.pin-attr {
+  width: 200px;
+}
+
+/* line 2, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/grid.scss */
+.grid-item--width2 {
+  width: 400px;
+}
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  -webkit-appearance: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+
+/* line 11, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+.session-form button {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  bottom: 70px;
+}
+
+/* line 20, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button.login {
+  background-color: #E8E8E8;
+  color: gray;
+  border: solid #E8E8E8 1px;
+  margin: auto;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* line 30, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button.demo {
+  background-color: blue;
+}
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-item {
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  transform-style: preserve-3d;
+}
+
+/* line 13, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.create-board-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 18, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board {
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+
+/* line 25, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.boards {
+  display: flex;
+}
+
+/* line 30, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board {
+  font-size: 50px;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.boards-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  content-align: center;
+}
+
+/* line 45, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.create-board-form input {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+/* line 53, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board:hover {
+  background: #d5d5d5;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  opacity: 0.8;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+/* line 78, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 85, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu:target {
+  font-weight: bold;
+}
+
+/* line 89, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.overlay .dropdown:hover .board-menu {
+  display: block;
+  z-index: 1;
+  float: right;
+  cursor: pointer;
+}
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i {
+  font-weight: bold;
+  color: #575757;
+  padding: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* line 9, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+  transition: 0.25s ease-in-out;
+}
+
+/* line 16, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar {
+  border: solid 2px #E8E8E8;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 24, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.search {
+  border-radius: 5px;
+  background-color: #E8E8E8;
+  display: flex;
+  line-height: 20px;
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1 {
+  font-size: 38px;
+  padding: 10px;
+  color: #575757;
+  display: flex;
+}
+
+/* line 45, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1:hover {
+  cursor: pointer;
+}
+/* line 3, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin {
+  border-radius: 5px;
+}
+
+/* line 7, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+img.pin:hover {
+  cursor: zoom-in;
+  color: white;
+}
+
+/* line 12, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.list-of-pins {
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+}
+
+/* line 20, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-attr {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 28, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.all-pins {
+  max-width: 95%;
+  margin: auto;
+}
+
+/* line 34, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* line 39, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-name:hover {
+  cursor: zoom-in;
+}
+
+/* line 43, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form {
+  margin: auto;
+  text-align: center;
+  height: 650px;
+  width: 450px;
+  border-radius: 30px;
+}
+
+/* line 51, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.drop-zone {
+  margin: auto;
+  border: dotted 1px black;
+  height: 400px;
+  width: 400px;
+  background-color: #E8E8E8;
+  text-align: left;
+  border-radius: 6px;
+  display: flex;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: auto;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+}
+
+/*Create Pins*/
+/* line 75, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 99;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px gray;
+  font-size: 28px;
+  color: #b22222;
+}
+
+/* line 92, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add {
+  display: flex;
+  transition: 0.35s ease-in-out;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 105, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+
+/* line 111, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin {
+  align-self: center;
+  align-items: center;
+}
+
+/* line 116, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add:hover {
+  transform: translateY(-5px);
+}
+
+/* line 120, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 125, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.new-pin-input {
+  border: solid 1px black;
+  display: inline;
+  height: 30px;
+  width: 230px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #E8E8E8;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* line 139, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form h4 {
+  font-size: 16px;
+}
+
+/* line 143, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.new-pin {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 151, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-image {
+  max-height: 90%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  overflow: hidden;
+}
+
+/* line 161, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.save-pin {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  width: 100px;
+  margin-right: 350px;
+}
+
+/* line 172, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  width: 400px;
+  height: 600px;
+}
+
+/* line 182, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail-modal {
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* line 187, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* line 192, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.overlay {
+  position: absolute;
+  align-content: right;
+  text-align: right;
+  padding: 10px;
+  width: inherit;
+  height: inherit;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* line 204, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.save-pin-button {
+  align-content: right;
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  font-weight: bold;
+  position: absolute;
+  width: 80px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+/* line 219, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-attr:hover .save-pin-button {
+  opacity: 1;
+}
+
+/* line 223, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.icon-pushpin {
+  color: white;
+  z-index: 1;
+}
+
+/* line 228, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.board-pin img {
+  border-radius: 8px;
+}
+
+/* line 231, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.boards-pins {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* line 241, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.board-pin {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* line 10, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.user-info {
+  display: flex;
+}
+
+/* line 13, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+h3.username {
+  display: flex;
+  flex: 1.5;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 100px;
+  color: #575757;
+}
+
+/* line 22, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.pf-pic {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  margin-left: 30px;
+}
+
+/* line 32, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows a {
+  margin: 10px;
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
+/* line 44, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows a:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+}
+
+/* line 49, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.board a:hover {
+  background-color: #E8E8E8;
+  transition: 0.35s ease-in-out;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards-link {
+  background-color: #E8E8E8;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* line 70, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.pins-link {
+  background-color: #E8E8E8;
+  padding: 5px;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* line 79, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards {
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* line 87, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 94, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.links a {
+  padding: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+@import url(base/reset.css);
+/* line 5, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+section.session {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  text-align: center;
+  background-image: url("https://static.pexels.com/photos/414548/pexels-photo-414548.jpeg");
+  background-size: cover;
+}
+
+/* line 22, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+section.session::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 33, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+div.login {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+/* line 50, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+h4 {
+  position: relative;
+  margin: 1px;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.session-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* line 65, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.session-form input {
+  border-radius: 3px;
+  border: solid #E8E8E8 1px;
+  background-color: #E8E8E8;
+  -webkit-appearance: none;
+  margin: auto;
+  padding: 8px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  position: static;
+}
+
+/* line 79, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.linkto-signup {
+  font-size: 12px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+/* line 86, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.linkto-signup a {
+  margin: 5px;
+  position: relative;
+  text-decoration: underline;
+}
+
+/* line 92, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+div.signup {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+/* line 109, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.signup h4 {
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* line 115, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/sessions.scss */
+.signup span {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px;
+  -webkit-appearance: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+
+/* line 11, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+.session-form button {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  bottom: 70px;
+}
+
+/* line 20, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button.login {
+  background-color: #E8E8E8;
+  color: gray;
+  border: solid #E8E8E8 1px;
+  margin: auto;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* line 30, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/base/layouts.scss */
+button.demo {
+  background-color: blue;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i {
+  font-weight: bold;
+  color: #575757;
+  padding: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* line 9, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+  transition: 0.25s ease-in-out;
+}
+
+/* line 16, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar {
+  border: solid 2px #E8E8E8;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 24, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.search {
+  border-radius: 5px;
+  background-color: #E8E8E8;
+  display: flex;
+  line-height: 20px;
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1 {
+  font-size: 38px;
+  padding: 10px;
+  color: #575757;
+  display: flex;
+}
+
+/* line 45, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1:hover {
+  cursor: pointer;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/api/errors.scss */
+.error {
+  color: red;
+  font-size: 12px;
+  font-style: bold;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-item {
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  transform-style: preserve-3d;
+}
+
+/* line 13, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.create-board-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 18, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board {
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+
+/* line 25, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.boards {
+  display: flex;
+}
+
+/* line 30, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board {
+  font-size: 50px;
+  background-color: #E8E8E8;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.boards-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  content-align: center;
+}
+
+/* line 45, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.create-board-form input {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+/* line 53, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.add-board:hover {
+  background: #d5d5d5;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  opacity: 0.8;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+/* line 78, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 85, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.board-menu:target {
+  font-weight: bold;
+}
+
+/* line 89, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/boards.scss */
+.overlay .dropdown:hover .board-menu {
+  display: block;
+  z-index: 1;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i {
+  font-weight: bold;
+  color: #575757;
+  padding: 10px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* line 9, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+i:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+  transition: 0.25s ease-in-out;
+}
+
+/* line 16, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar {
+  border: solid 2px #E8E8E8;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 24, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.search {
+  border-radius: 5px;
+  background-color: #E8E8E8;
+  display: flex;
+  line-height: 20px;
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1 {
+  font-size: 38px;
+  padding: 10px;
+  color: #575757;
+  display: flex;
+}
+
+/* line 45, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/navbar.scss */
+.navbar h1:hover {
+  cursor: pointer;
+}
+
+/* line 3, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin {
+  border-radius: 5px;
+}
+
+/* line 7, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+img.pin:hover {
+  cursor: zoom-in;
+  color: white;
+}
+
+/* line 12, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.list-of-pins {
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+}
+
+/* line 20, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-attr {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 28, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.all-pins {
+  max-width: 95%;
+  margin: auto;
+}
+
+/* line 34, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* line 39, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-name:hover {
+  cursor: zoom-in;
+}
+
+/* line 43, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form {
+  margin: auto;
+  text-align: center;
+  height: 650px;
+  width: 450px;
+  border-radius: 30px;
+}
+
+/* line 51, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.drop-zone {
+  margin: auto;
+  border: dotted 1px black;
+  height: 400px;
+  width: 400px;
+  background-color: #E8E8E8;
+  text-align: left;
+  border-radius: 6px;
+  display: flex;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: auto;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+}
+
+/*Create Pins*/
+/* line 75, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 99;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px gray;
+  font-size: 28px;
+  color: #b22222;
+}
+
+/* line 92, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add {
+  display: flex;
+  transition: 0.35s ease-in-out;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 105, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+
+/* line 111, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin {
+  align-self: center;
+  align-items: center;
+}
+
+/* line 116, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.add:hover {
+  transform: translateY(-5px);
+}
+
+/* line 120, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 125, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.new-pin-input {
+  border: solid 1px black;
+  display: inline;
+  height: 30px;
+  width: 230px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #E8E8E8;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* line 139, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.create-pin-form h4 {
+  font-size: 16px;
+}
+
+/* line 143, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.new-pin {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 151, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-image {
+  max-height: 90%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  overflow: hidden;
+}
+
+/* line 161, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.save-pin {
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  margin: 5px;
+  font-weight: bold;
+  width: 100px;
+  margin-right: 350px;
+}
+
+/* line 172, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  width: 400px;
+  height: 600px;
+}
+
+/* line 182, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail-modal {
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* line 187, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-detail h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* line 192, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.overlay {
+  position: absolute;
+  align-content: right;
+  text-align: right;
+  padding: 10px;
+  width: inherit;
+  height: inherit;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* line 204, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.save-pin-button {
+  align-content: right;
+  background-color: #b22222;
+  color: white;
+  border: solid #b22222 1px;
+  font-weight: bold;
+  position: absolute;
+  width: 80px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+/* line 219, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.pin-attr:hover .save-pin-button {
+  opacity: 1;
+}
+
+/* line 223, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.icon-pushpin {
+  color: white;
+  z-index: 1;
+}
+
+/* line 228, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.board-pin img {
+  border-radius: 8px;
+}
+
+/* line 231, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.boards-pins {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* line 241, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/pins.scss */
+.board-pin {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 1, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* line 10, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.user-info {
+  display: flex;
+}
+
+/* line 13, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+h3.username {
+  display: flex;
+  flex: 1.5;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 100px;
+  color: #575757;
+}
+
+/* line 22, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.pf-pic {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  margin-left: 30px;
+}
+
+/* line 32, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* line 38, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows a {
+  margin: 10px;
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
+/* line 44, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.follows a:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+}
+
+/* line 49, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* line 57, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.board a:hover {
+  background-color: #E8E8E8;
+  transition: 0.35s ease-in-out;
+}
+
+/* line 62, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards-link {
+  background-color: #E8E8E8;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* line 70, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.pins-link {
+  background-color: #E8E8E8;
+  padding: 5px;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* line 79, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards {
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* line 87, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.boards-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 94, /Users/kuhlarebear/Documents/YourAesthetic/app/assets/stylesheets/components/user_profile.scss */
+.links a {
+  padding: 10px;
+}
