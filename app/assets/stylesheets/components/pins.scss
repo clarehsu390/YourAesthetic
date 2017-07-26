@@ -15,6 +15,9 @@ img.pin:hover {
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
   align-items: center;
+  margin: auto;
+  max-width: 1200px;
+
 }
 
 .pin-attr {
@@ -84,7 +87,7 @@ img.pin:hover {
       height: 50px;
       padding: 10px;
       box-shadow: 2px 2px 2px gray;
-      font-size: 28px;
+      font-size: 36px;
       color: #b22222
     }
 
@@ -243,4 +246,8 @@ font-size: 16px;
   display: inline-block;
   padding: 5px;
   width:  100%;
+}
+
+.boards-pins h2 {
+  font-weight: bold;
 }

@@ -36,7 +36,7 @@ class CreatePinning extends React.Component {
   }
 
   render() {
-    if (this.props.waiting) {
+    if (this.state.waiting) {
       return (
         <div></div>
       );

@@ -5,35 +5,38 @@ class BoardShow extends React.Component {
   constructor(props) {
     super(props);
     console.log(this.props);
+    this.state = {
+      waiting: true
+    };
   }
 
   componentDidMount() {
-    this.props.requestSingleBoard(this.props.match.params.boardId);
+    this.props.requestSingleBoard(this.props.match.params.boardId).then(
+      () => this.setState({waiting: false})
+    );
   }
 
 
 
   render() {
-    if (this.props.boards.pins){
+    if (this.state.waiting) {
+      return <div></div>;
+    }
     return (
       <div className="boards-pins">
+      <h2>{this.props.boards.title}</h2>
       {this.props.boards.pins.map((pin,i) => {
-        return <li className="board-pin">
+        return <li key={i} className="board-pin">
           <img src={pin.image_url}></img>
           <span>{pin.name}</span>
         </li>;
-
       }
-      )}
-      </div>
-    );
-    }
-    else {
-      return(
-        <div></div>
-      );
+    )}
+    </div>
+  );
+
     }
   }
-}
+
 
 export default withRouter(BoardShow);

@@ -42,7 +42,7 @@ class CreatePin extends React.Component {
   }
 
   afterOpenModal(){
-    this.subtitle.style.color = '#f00';
+    
   }
 
   closeModal(){

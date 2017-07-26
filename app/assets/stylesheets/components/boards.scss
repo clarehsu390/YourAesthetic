@@ -82,8 +82,8 @@
   display: block;
 }
 
-.board-menu:target {
-  font-weight: bold;
+li.board-menu:target {
+  font-weight: bolder;
 }
 
 .overlay .dropdown:hover .board-menu{

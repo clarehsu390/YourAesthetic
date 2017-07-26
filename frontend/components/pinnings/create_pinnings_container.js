@@ -4,7 +4,7 @@ import { requestBoards } from '../../actions/board_actions';
 import { requestPin } from '../../actions/pins_actions';
 import CreatePinning from './create_pinnings';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   currentUser: state.currentUser,
   boards: state.boards,
   errors: state.errors
