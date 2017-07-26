@@ -18,19 +18,11 @@ class PinsIndex extends React.Component {
     const { currentUser } = this.props;
     if (this.props.pins){
       return (
-        <Masonry
-          className={'list-of-pins'}
-          elementType={'ul'}
-          options={masonryOptions}
-          disableImagesLoaded={false}
-        >
         <div className="all-pins">
         <ul className="list-of-pins">
           {this.props.pins.map((pin, i) => <PinIndexItem key={i} pin={pin} currentUser={currentUser}/>)}
         </ul>
       </div>
-
-        </Masonry>
       );
     }
     else {
