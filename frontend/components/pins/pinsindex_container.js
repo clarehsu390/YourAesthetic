@@ -11,8 +11,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestAllPins: () => dispatch(requestAllPins()),
-  requestPin: pin => dispatch(requestPin(pin))
+  requestAllPins: () => dispatch(requestAllPins())
 
 });
 

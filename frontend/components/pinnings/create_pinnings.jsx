@@ -10,7 +10,6 @@ class CreatePinning extends React.Component {
       board_id: null,
       waiting: true
     };
-    this.allBoards = this.allBoards.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -18,9 +17,6 @@ class CreatePinning extends React.Component {
     this.props.requestBoards(this.props.currentUser.id).then(() => this.setState({
       waiting: false}));
 
-  }
-  allBoards() {
-    console.log(this.props.boards);
   }
 
   handleClick(e) {

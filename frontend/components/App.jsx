@@ -19,12 +19,10 @@ const App = () => (
     <Switch>
       <AuthRoute exact path='/' component={ SignUpContainer }/>
       <AuthRoute path ='/login' component={ LoginContainer } />
-
     </Switch>
     <Switch>
-
-    <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
-    <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
+      <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
+      <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
     </Switch>
     <ProtectedRoute path='/' component={ CreatePinContainer } />
     <Route path='/boards/:boardId' component={ BoardShowContainer } />

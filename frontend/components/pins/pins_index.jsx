@@ -1,10 +1,6 @@
 import React from 'react';
 import PinIndexItem from './pin_index_item';
-import Masonry from 'react-masonry-component';
 
-const masonryOptions = {
-    transitionDuration: 4
-};
 class PinsIndex extends React.Component {
   constructor(props) {
     super(props);

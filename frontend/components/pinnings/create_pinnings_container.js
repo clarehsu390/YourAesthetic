@@ -12,8 +12,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
   requestBoards: userId => dispatch(requestBoards(userId)),
-  createPinning: pinning => dispatch(createPinning(pinning)),
-  requestPin: pin => dispatch(requestPin(pin))
+  createPinning: pinning => dispatch(createPinning(pinning))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreatePinning);
