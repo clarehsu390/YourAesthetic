@@ -14,10 +14,10 @@ class BoardShow extends React.Component {
 
 
   render() {
-    if (this.props.pins){
+    if (this.props.boards.pins){
     return (
       <div className="boards-pins">
-      {this.props.pins.map((pin,i) => {
+      {this.props.boards.pins.map((pin,i) => {
         return <li className="board-pin">
           <img src={pin.image_url}></img>
           <span>{pin.name}</span>

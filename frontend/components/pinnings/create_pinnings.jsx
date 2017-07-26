@@ -16,8 +16,8 @@ class CreatePinning extends React.Component {
 
   componentDidMount() {
     this.props.requestBoards(this.props.currentUser.id).then(() => this.setState({
-      waiting: false
-    }));
+      waiting: false}));
+
   }
   allBoards() {
     console.log(this.props.boards);
@@ -36,6 +36,11 @@ class CreatePinning extends React.Component {
   }
 
   render() {
+    if (this.props.waiting) {
+      return (
+        <div></div>
+      );
+    }
     return (
       <div className="board-menu">
         <ul className="dropdown-content">

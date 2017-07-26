@@ -24,8 +24,8 @@ const App = () => (
     </Switch>
 
     <Route exact path='/' component={ PinsIndexContainer } />
-    <ProtectedRoute exact path='/' component={ CreatePinContainer } />
-    <Route exact path="/boards/:boardId" component={ BoardShowContainer } />
+    <Route exact path='/' component={ CreatePinContainer } />
+    <ProtectedRoute exact path="/boards/:boardId" component={ BoardShowContainer } />
 
   </div>
 );
