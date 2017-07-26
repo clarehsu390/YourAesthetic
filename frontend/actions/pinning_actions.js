@@ -6,8 +6,8 @@ export const createPinning = (pinning) => (dispatch) => {
   return APIUtil.addPinning(pinning);
 };
 
-export const deletePinning = (pinning) => (dispatch) => {
-  return APIUtil.destroyPinning(pinning).then(
+export const deletePinning = (pinId, boardId) => (dispatch) => {
+  return APIUtil.removePinning(pinId, boardId).then(
     board => dispatch(receiveSingleBoard(board))
   );
 };

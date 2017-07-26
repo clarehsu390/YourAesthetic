@@ -4,6 +4,7 @@ import { fetchSingleUser } from '../../util/user_util';
 import BoardIndexContainer from '../boards/board_index_container';
 import BoardIndex from '../boards/board_index_container';
 import CreateBoardContainer from '../boards/create_board_container';
+import SavedPinsContainer from '../pins/saved_pins_container';
 
 class UserProfile extends React.Component {
   constructor(props){
@@ -50,6 +51,8 @@ class UserProfile extends React.Component {
                  component={BoardIndexContainer} />
               <Route exact path={`/${currentUser.username}`}
                  component={BoardIndexContainer} />
+               <Route path={`/${currentUser.username}/pins`}
+                 component={SavedPinsContainer} />
 
             </div>
 

@@ -23,7 +23,7 @@ class PinsIndex extends React.Component {
     }
     else {
       return (
-        <div></div>
+        ""
       );
     }
   }

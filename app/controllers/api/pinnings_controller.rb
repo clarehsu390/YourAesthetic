@@ -14,15 +14,12 @@ class Api::PinningsController < ApplicationController
     @pinnings = Pinning.all
   end
 
-  def remove
-    @pinning = Pinning.find(params[:id])
+  def destroy
+    @pinning = Pinning.where(board_id: params[:pinning][:board_id], pin_id: params[:pinning][:pin_id]).first
+    # debugger
     @board = @pinning.board
-    if @pinning
-      @pinning.destroy
-      render 'api/boards/show'
-    else
-      render json: @pinning.errors.full_messages, status: 400
-    end
+    @pinning.destroy
+    render 'api/boards/show'
   end
   # private
 

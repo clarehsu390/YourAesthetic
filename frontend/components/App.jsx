@@ -9,6 +9,7 @@ import PinsIndexContainer from './pins/pinsindex_container';
 import CreatePinContainer from './pins/create_pin_container';
 import CreateBoardContainer from './boards/create_board_container';
 import BoardShowContainer from './boards/board_show_container';
+// import SavedPinContainer from './pins/saved_pins_container';
 
 
 const App = () => (
@@ -26,7 +27,6 @@ const App = () => (
     </Switch>
     <ProtectedRoute path='/' component={ CreatePinContainer } />
     <Route path='/boards/:boardId' component={ BoardShowContainer } />
-
   </div>
 );
 

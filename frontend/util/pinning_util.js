@@ -9,8 +9,7 @@ export const addPinning = (pinning) => (
 export const removePinning = (pinning) => (
   $.ajax({
     method: 'DELETE',
-    url: `api/pinnings/${pinning.id}`,
+    url: `api/pinnings/0`,
+    data: { pinning }
   })
 );
-
- 

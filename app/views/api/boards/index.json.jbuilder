@@ -3,4 +3,5 @@ json.array! @boards do |board|
   json.description board.description
   json.user_id board.user.id
   json.id board.id
+  json.saved_pins board.pins
 end
