@@ -17,19 +17,20 @@ class SavedPins extends React.Component {
   }
 
   allPins() {
-    this.props.boards.map((board, i) =>
-    {return board.saved_pins.map((pin, idx) => {
-      return <li>{pin.name}</li>;
-    });
-  });
+    return this.props.boards.map((board, i) =>
+    (board.saved_pins.map((pin, idx) => (
+      <li key={idx}><img src={pin.image_url}></img>
+      {pin.name}</li>
+      ))));
   }
 
   render() {
     if (this.state.waiting) {
       return <div></div>;
     }
+
     return(
-      <ul className="pins">
+      <ul className="boards-pins">
         {this.allPins()}
       </ul>
   );

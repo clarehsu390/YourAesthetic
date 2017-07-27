@@ -51,8 +51,7 @@ class UserProfile extends React.Component {
                  component={BoardIndexContainer} />
               <Route exact path={`/${currentUser.username}`}
                  component={BoardIndexContainer} />
-               <Route path={`/${currentUser.username}/pins`}
-                 component={SavedPinsContainer} />
+
 
             </div>
 

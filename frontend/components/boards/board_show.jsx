@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import RemovePinningsContainer from '../pinnings/remove_pinnings_container';
+
 
 class BoardShow extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class BoardShow extends React.Component {
 
   handleClick(e) {
     console.log(e.currentTarget.value);
-    
+
       e.preventDefault();
       this.setState({
         pin_id: e.currentTarget.value,
