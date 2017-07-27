@@ -32,7 +32,6 @@ class PinsIndex extends React.Component {
      else {
        return (
         <div className="all-pins">
-          <h1>ALL PINS</h1>
         <ul className="list-of-pins">
           {this.props.pins.map((pin, i) =>
             <PinIndexItem key={i} pin={pin} currentUser={currentUser}/>)}
