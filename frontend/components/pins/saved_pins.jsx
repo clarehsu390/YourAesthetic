@@ -1,14 +1,38 @@
 import React from 'react';
 import { DotLoader } from 'react-spinners';
+import Modal from 'react-modal';
+// import SavedPinItem from './saved_pin_item';
+
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
 
 class SavedPins extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      loading: true
+      loading: true,
+      modalIsOpen: false
     };
     this.allPins = this.allPins.bind(this);
-  }
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    }
+
+    openModal() {
+      this.setState({modalIsOpen: true});
+    }
+
+    closeModal() {
+      this.setState({modalIsOpen: false});
+    }
 
   componentDidMount() {
     console.log(this.props);
@@ -20,7 +44,7 @@ class SavedPins extends React.Component {
   allPins() {
     return this.props.boards.map((board, i) =>
     (board.saved_pins.map((pin, idx) => (
-      <li className="saved-pin-item"key={idx}><img src={pin.image_url}></img>
+      <li onClick={this.openModal}className="saved-pin-item"key={idx}><img src={pin.image_url}></img>
       {pin.name}</li>
       ))));
   }
@@ -43,6 +67,14 @@ class SavedPins extends React.Component {
       <h2 className="saved-pins">Saved Pins</h2>
       <ul className="all-saved-pins">
         {this.allPins()}
+        <Modal
+            isOpen={this.state.modalIsOpen}
+            onAfterOpen={this.afterOpenModal}
+            onRequestClose={this.closeModal}
+            style={customStyles}
+            contentLabel="pin-detail"
+            >
+      </Modal>
       </ul>
       </div>
   );

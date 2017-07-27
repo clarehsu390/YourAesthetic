@@ -8,7 +8,8 @@ class CreatePinning extends React.Component {
     this.state = {
       pin_id: null,
       board_id: null,
-      waiting: true
+      waiting: true,
+      clicked: false
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -21,9 +22,11 @@ class CreatePinning extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
+    console.log(e.currentTarget);
     this.setState({
       pin_id: this.props.pin.id,
-      board_id: e.currentTarget.value
+      board_id: e.currentTarget.value,
+      clicked: true
     });
   }
 
@@ -37,12 +40,13 @@ class CreatePinning extends React.Component {
         <div></div>
       );
     }
+    const className = this.state.clicked ? 'click-state' : 'base-state';
     return (
       <div className="board-menu">
         <ul className="dropdown-content">
           <li><a href="#">Select a Board</a></li>
           {this.props.boards.map((board, i) => {
-            return <li onClick={this.handleClick}
+            return <li className={className} onClick={this.handleClick}
               key={board.id} value={board.id}>{board.title}</li>;
           })}
         </ul>

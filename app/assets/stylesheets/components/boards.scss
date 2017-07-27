@@ -88,6 +88,12 @@ justify-content: center;
   font-weight: bolder;
 }
 
+
+.click-state:active {
+  color: white;
+  background-color: black;
+}
+
 .dropdown-content li:active{
   font-weight: bolder;
   transform: translateY(2px);
