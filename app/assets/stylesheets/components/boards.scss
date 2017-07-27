@@ -39,6 +39,10 @@ justify-content: center;
 
 }
 
+.board-item:hover {
+  background: darken(#E8E8E8, 7.5%)
+}
+
 .create-board-form input {
   border: solid 1px black;
   border-radius: 10px;
