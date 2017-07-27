@@ -22,6 +22,12 @@ export const createNewBoard = (board) => (dispatch) => {
   );
 };
 
+export const removeBoard = (id) => (dispatch) => {
+  return BoardUtil.destroyBoard(id).then(
+    boards => dispatch(receiveBoards(boards))
+  );
+};
+
 export const receiveBoards = (boards) => ({
   type: RECEIVE_USER_BOARDS,
   boards

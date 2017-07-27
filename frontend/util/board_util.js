@@ -20,3 +20,10 @@ export const createBoard = (board, userId) => (
 
   })
 );
+
+export const destroyBoard = (boardId) => (
+  $.ajax({
+    method: 'DELETE',
+    url: `/api/boards/${boardId}`,
+  })
+);

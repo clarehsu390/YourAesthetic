@@ -22,19 +22,21 @@ class BoardIndex extends React.Component {
       );
     }
     else {
+      console.log("HERE");
+      console.log(this.props.boards);
       return (
         <div className="boards">
           <ul className="boards-index">
             <Route path="/:username" component={CreateBoardContainer}/>
-            {this.props.boards.map((board, i) => {
-              return   <Link to={`/boards/${board.id}`}>
-                <li key={i} className="board-item">
+            {this.props.boards ? this.props.boards.map((board, i) => {
+              return   <Link key={i} to={`/boards/${board.id}`}>
+                <li  className="board-item">
                   {board.title}
               </li>
             </Link>;
             }
           )
-        }
+        : ""}
 
       </ul>
     </div>

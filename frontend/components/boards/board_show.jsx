@@ -12,6 +12,7 @@ class BoardShow extends React.Component {
       waiting: true
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleDelete= this.handleDelete.bind(this);
   }
 
   componentDidMount() {
@@ -29,9 +30,11 @@ class BoardShow extends React.Component {
         board_id: this.props.match.params.boardId
       });
       this.props.deletePinning(this.state);
+  }
 
-
-
+  handleDelete(e) {
+    e.preventDefault();
+    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push("/:username/boards"));
   }
 
   render() {
@@ -42,7 +45,8 @@ class BoardShow extends React.Component {
       <div className="boards-pins">
         <div className="board-name">
           <h2>{this.props.boards.title}</h2>
-          <h4>{this.props.boards.pins.length} Pins</h4>
+          <button onClick={this.handleDelete}>Delete Board</button>
+          <h4>{this.props.boards.pins.length}Pins</h4>
         <div className="just-pins">
       {this.props.boards.pins.map((pin,i) => {
         return (<li key={i} className="board-pin">

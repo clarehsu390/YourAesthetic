@@ -4,7 +4,8 @@ class Api::BoardsController < ApplicationController
     @board = current_user.boards.new(board_params)
     @board.user_id = current_user.id
     if @board.save
-      render "api/boards/show"
+      @boards = current_user.boards
+      render "api/boards/index"
     else
       render json: @board.errors.full_messages
     end

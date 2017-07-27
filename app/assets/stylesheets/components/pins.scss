@@ -20,7 +20,7 @@ img.pin:hover {
 
 }
 
-.boards-pins {
+.just-pins {
   -moz-column-width: 14em;
   -webkit-column-width: 14em;
   -moz-column-gap: 1em;
@@ -262,8 +262,8 @@ font-size: 16px;
   margin: auto;
 }
 
-.boards-pins h2{
-  margin: auto;
+.boards-pins {
+  text-align: center;
 
 }
 
@@ -281,9 +281,12 @@ font-size: 16px;
 }
 
 .board-name {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .board-name h2{
+  text-align: center;
   display: inline-block;
   font-weight: bold;
   font-size: 36px;
@@ -298,14 +301,22 @@ font-size: 16px;
 
 .saved-pins {
   font-size: 36px;
-  margin: auto;
+  text-align: center;
   padding: 10px;
 }
 
-.users-pins {
-  display: flex;
-  flex-direction: column;
+.all-saved-pins{
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
   margin: auto;
+  max-width: 1200px;
+}
+
+.all-saved-pins img {
+  border-radius: 5px;
 }
 
 .sweet-loading {
