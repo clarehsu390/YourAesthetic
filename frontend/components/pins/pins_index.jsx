@@ -11,7 +11,7 @@ class PinsIndex extends React.Component {
 
   componentDidMount() {
       this.props.requestAllPins().then(
-        setTimeout(() => this.setState({ loading: false }), 1500));
+        setTimeout(() => this.setState({ loading: false }), 1800));
 
 
   }
