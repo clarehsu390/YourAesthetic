@@ -38,29 +38,30 @@ class BoardShow extends React.Component {
     if (this.state.waiting) {
       return <div></div>;
     }
+
     return (
       <div className="boards-pins">
         <div className="board-name">
           <h2>{this.props.boards.title}</h2>
           <h5>{this.props.boards.pins.length} Pins</h5>
         </div>
-        <div className="overlay">
+
         <div className="just-pins">
       {this.props.boards.pins.map((pin,i) => {
-        return <li key={i} className="board-pin">
+        return(
+        <li key={i} className="board-pin">
           <img src={pin.image_url}></img>
           <span>{pin.name}</span>
-          <button value={pin.id} onClick={this.handleClick}>Delete</button>
-        </li>;
-      }
-    )}
-    </div>
-    </div>
-    </div>
-  );
-
+          <button className="delete-pinning" value={pin.id}>Remove Pin</button>
+          </li>);
+        }
+      )
     }
-  }
+  </div>
+</div>
+  );
+}
+}
 
 
 export default withRouter(BoardShow);

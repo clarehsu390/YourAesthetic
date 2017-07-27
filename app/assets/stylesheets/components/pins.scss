@@ -224,6 +224,10 @@ font-size: 16px;
   opacity: 1;
 }
 
+.delete-pinning{
+  float: right;
+}
+
 .icon-pushpin {
   color: white;
   z-index: 1;
@@ -242,13 +246,7 @@ font-size: 16px;
   margin: auto;
 }
 
-.boards-pins {
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  align-items: center;
-  max-width: 1000px;
+.boards-pins h2{
   margin: auto;
 
 }

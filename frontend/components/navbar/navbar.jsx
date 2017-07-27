@@ -34,7 +34,8 @@ class NavBar extends React.Component {
     if (currentUser){
       return (
         <section className="navbar">
-          <h1 onClick={this.handleDiscoverClick}>Aesthetic</h1>
+          <h1 onClick={this.handleDiscoverClick}><img src="http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png">
+          </img></h1>
           <input type="text" className="search" placeholder="Search"/>
             <i className="fa fa-user fa-2x"
               aria-hidden="true"

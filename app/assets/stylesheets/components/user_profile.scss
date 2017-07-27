@@ -38,13 +38,16 @@ h3.username {
 .follows a {
   margin: 10px;
   color: #b8b8b8;
-  font-weight: 600
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 .follows a:hover {
   cursor: pointer;
-  background: darken(#E8E8E8, 7.5%)
+  background: darken(#E8E8E8, 7.5%);
+  height: 30px;
 }
+
 
 .links {
   display: flex;

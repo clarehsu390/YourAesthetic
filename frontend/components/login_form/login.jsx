@@ -58,8 +58,10 @@ class Login extends React.Component {
     return (
       <section className="session">
         <div className="login">
-        <h4>Your Aesthetic</h4>
-        <h4>Log in to see more</h4>
+        <h4>
+          <img src="http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png"></img>
+        </h4>
+        <h4 className="login-title">Log in to see more</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
 
         <input
