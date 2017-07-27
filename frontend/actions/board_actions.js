@@ -18,7 +18,7 @@ export const requestSingleBoard = (id) => (dispatch)=> {
 
 export const createNewBoard = (board) => (dispatch) => {
   return BoardUtil.createBoard(board).then(
-    board => dispatch(receiveSingleBoard(board))
+    boards => dispatch(receiveBoards(boards))
   );
 };
 

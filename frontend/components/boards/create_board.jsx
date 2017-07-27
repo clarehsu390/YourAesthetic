@@ -55,7 +55,11 @@ class CreateBoard extends React.Component {
       description: this.state.description,
       user_id: this.props.currentUser.id
     };
-    this.props.createNewBoard(board).then(this.closeModal());
+    this.props.createNewBoard(board);
+  }
+
+  componentWillUpdate() {
+    
   }
 
   update(property) {
@@ -66,6 +70,10 @@ class CreateBoard extends React.Component {
     if (e.target === e.currentTarget) {
       this.props.hideModal();
     }
+  }
+
+  componentWillUpdate() {
+
   }
 
   render() {
@@ -104,4 +112,4 @@ class CreateBoard extends React.Component {
   }
 }
 
-export default CreateBoard;
+export default withRouter(CreateBoard);

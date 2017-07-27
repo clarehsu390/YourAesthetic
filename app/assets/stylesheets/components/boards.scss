@@ -78,9 +78,14 @@ justify-content: center;
 
 .board-menu li {
   color: black;
-  padding: 12px 16px;
+  padding: 5px;
   text-decoration: none;
   display: block;
+  z-index: 1;
+}
+
+.dropdown-content li:hover {
+  font-weight: bolder;
 }
 
 .dropdown-content li:active{
