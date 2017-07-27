@@ -294,5 +294,7 @@ font-size: 16px;
 }
 
 .sweet-loading {
-  margin: auto;
+  position: fixed; 
+ top: 50%;
+ left: 50%;
 }
