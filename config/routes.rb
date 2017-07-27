@@ -5,8 +5,8 @@ Rails.application.routes.draw do
       resources :boards, only: [:index]
     end
     resources :boards, only: [:show, :update, :destroy, :create]
-    resources :pinnings, only: [:create, :destroy]
-    # delete '/pinnings', to: 'pinnings#destroy', as: "pinning"
+    # resources :pinnings, only: [:create, :destroy]
+    delete '/pinnings', to: 'pinnings#destroy', as: "pinning"
     resources :pins, only: [:create, :show, :index, :update]
     resource :session, only: [:create, :destroy, :show]
 

@@ -232,7 +232,7 @@ font-size: 16px;
 .board-pin img {
   border-radius: 8px;
 }
-.boards-pins {
+.just-pins {
   -moz-column-width: 13em;
   -webkit-column-width: 13em;
   -moz-column-gap: 1em;
@@ -246,9 +246,21 @@ font-size: 16px;
   list-style: none;
   display: inline-block;
   padding: 5px;
-  width:  100%;
+  max-width:  300px;
 }
 
-.boards-pins h2 {
+.board-name {
+  text-align: center;
+}
+.board-name h2{
+  display: inline-block;
   font-weight: bold;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.board-name h5 {
+  font-size: 16px;
+  margin: 10px;
+  font-weight: 500;
 }

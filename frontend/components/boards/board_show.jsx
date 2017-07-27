@@ -40,7 +40,11 @@ class BoardShow extends React.Component {
     }
     return (
       <div className="boards-pins">
-      <h2>{this.props.boards.title}</h2>
+        <div className="board-name">
+          <h2>{this.props.boards.title}</h2>
+          <h5>{this.props.boards.pins.length} Pins</h5>
+        </div>
+        <div className="just-pins">
       {this.props.boards.pins.map((pin,i) => {
         return <li key={i} className="board-pin">
           <img src={pin.image_url}></img>
@@ -49,6 +53,7 @@ class BoardShow extends React.Component {
         </li>;
       }
     )}
+    </div>
     </div>
   );
 

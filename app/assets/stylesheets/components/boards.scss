@@ -1,5 +1,5 @@
 .board-item {
-  width:  250px;
+  width:  220px;
   height: 150px;
   margin: auto;
   background-color: #E8E8E8;
@@ -17,13 +17,8 @@
 
 .add-board{
   margin: auto;
-  width:  250px;
+  width:  220px;
   height: 150px;
-
-}
-
-.boards {
-  display: flex;
 
 }
 
@@ -36,10 +31,10 @@
 }
 
 .boards-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  content-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
 }
 
 .create-board-form input {
@@ -82,13 +77,20 @@
   display: block;
 }
 
-li.board-menu:target {
+.dropdown-content li:active{
   font-weight: bolder;
+  transform: translateY(2px);
+  pointer-events: auto;
 }
+
 
 .overlay .dropdown:hover .board-menu{
   display: block;
   z-index: 1;
   float: right;
   cursor: pointer
+}
+
+.dropdown-content a {
+  font-weight: bold
 }
