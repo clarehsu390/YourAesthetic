@@ -48,7 +48,7 @@ class UserProfile extends React.Component {
             <div className="board">
 
               <Route exact path="/:username" component={ BoardIndexContainer }/>
-              
+              <Route exact path ="/:username/boards" component={ BoardIndexContainer }/>
               </div>
 
 

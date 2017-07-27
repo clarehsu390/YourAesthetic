@@ -44,6 +44,7 @@ class BoardShow extends React.Component {
           <h2>{this.props.boards.title}</h2>
           <h5>{this.props.boards.pins.length} Pins</h5>
         </div>
+        <div className="overlay">
         <div className="just-pins">
       {this.props.boards.pins.map((pin,i) => {
         return <li key={i} className="board-pin">
@@ -53,6 +54,7 @@ class BoardShow extends React.Component {
         </li>;
       }
     )}
+    </div>
     </div>
     </div>
   );
