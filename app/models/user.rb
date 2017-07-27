@@ -11,8 +11,8 @@ class User < ApplicationRecord
   foreign_key: :creator_id,
   class_name: :Pin
 
-  has_many :in_follows, class_name: :Follow, foreign_key: :student_id
-   has_many :out_follows, class_name: :Follow, foreign_key: :teacher_id
+  has_many :in_follows, class_name: :Follow, foreign_key: :teacher_id
+   has_many :out_follows, class_name: :Follow, foreign_key: :student_id
    has_many :students, through: :in_follows, source: :student
    has_many :teachers, through: :out_follows, source: :teacher
 

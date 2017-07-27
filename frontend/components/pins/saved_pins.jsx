@@ -66,15 +66,11 @@ class SavedPins extends React.Component {
       <div className="users-pins">
       <h2 className="saved-pins">Saved Pins</h2>
       <ul className="all-saved-pins">
-        {this.allPins()}
-        <Modal
-            isOpen={this.state.modalIsOpen}
-            onAfterOpen={this.afterOpenModal}
-            onRequestClose={this.closeModal}
-            style={customStyles}
-            contentLabel="pin-detail"
-            >
-      </Modal>
+        {this.props.boards.map((board, i) =>
+        (board.saved_pins.map((pin, idx) => (
+          <li onClick={this.openModal}className="saved-pin-item"key={idx}>
+            <img src={pin.image_url}></img></li>
+          ))))}
       </ul>
       </div>
   );
