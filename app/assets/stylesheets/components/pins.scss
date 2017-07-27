@@ -242,6 +242,23 @@ font-size: 16px;
   margin: auto;
 }
 
+.boards-pins {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+.boards-pins img {
+  border-radius: 10px;
+}
+
+
+
 .board-pin {
   list-style: none;
   display: inline-block;
@@ -263,4 +280,19 @@ font-size: 16px;
   font-size: 16px;
   margin: 10px;
   font-weight: 500;
+}
+
+.saved-pins {
+  font-size: 36px;
+  margin: auto;
+  padding: 10px;
+}
+
+.users-pins {
+  display: flex;
+  flex-direction: column;
+}
+
+.sweet-loading {
+  margin: auto;
 }

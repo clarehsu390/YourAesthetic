@@ -46,16 +46,14 @@ class UserProfile extends React.Component {
                  activeClassName="pins-link">Pins</NavLink>
              </div>
             <div className="board">
+
+              <Route exact path="/:username" component={ BoardIndexContainer }/>
               
-              <Route path={`/${currentUser.username}/boards`}
-                 component={BoardIndexContainer} />
-              <Route exact path={`/${currentUser.username}`}
-                 component={BoardIndexContainer} />
+              </div>
 
 
             </div>
 
-          </div>
       );
     }
     // else {
@@ -67,4 +65,4 @@ class UserProfile extends React.Component {
   }
 }
 
-export default withRouter(UserProfile);
+export default UserProfile;

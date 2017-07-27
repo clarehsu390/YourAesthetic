@@ -1,38 +1,49 @@
 import React from 'react';
 import PinIndexItem from './pin_index_item';
-import Masonry from 'react-masonry-component';
-
-const masonryOptions = {
-  gutter: 20,
-  fitWidth: true
-};
+import { DotLoader } from 'react-spinners';
 class PinsIndex extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      loading: true
+    };
   }
 
   componentDidMount() {
-    this.props.requestAllPins();
+      setTimeout(() => this.setState({ loading: false }), 3000);
+        this.props.requestAllPins();
+
+
   }
 
   render () {
     const { currentUser } = this.props;
-    if (this.props.pins){
+    if (this.state.loading) {
       return (
-    
+
+        <div className='sweet-loading'>
+     <DotLoader
+       color={'#ff0000'}
+       loading={this.state.loading}
+     />
+    </div>
+ );
+}
+     else {
+       return (
         <div className="all-pins">
         <ul className="list-of-pins">
-          {this.props.pins.map((pin, i) => <PinIndexItem key={i} pin={pin} currentUser={currentUser}/>)}
+          {this.props.pins.map((pin, i) =>
+            <PinIndexItem key={i} pin={pin} currentUser={currentUser}/>)}
         </ul>
       </div>
-      );
-    }
-    else {
-      return (
-        ""
-      );
-    }
+
+    );
   }
+
 }
+
+  }
+
 
 export default PinsIndex;

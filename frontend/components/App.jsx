@@ -10,7 +10,7 @@ import CreatePinContainer from './pins/create_pin_container';
 import CreateBoardContainer from './boards/create_board_container';
 import BoardShowContainer from './boards/board_show_container';
 import SavedPinContainer from './pins/saved_pins_container';
-
+import BoardIndexContainer from './boards/board_index_container';
 
 const App = () => (
   <div>
@@ -23,10 +23,12 @@ const App = () => (
     </Switch>
     <Switch>
       <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
-      <ProtectedRoute exact path="/:username" component={ UserProfileContainer }/>
+      <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
     </Switch>
+    <Route exact path='/boards/:boardId' component={ BoardShowContainer } />
+
     <ProtectedRoute path='/' component={ CreatePinContainer } />
-    <Route path='/boards/:boardId' component={ BoardShowContainer } />
+
       <Route path={`/:username/pins`}
         component={ SavedPinContainer } />
   </div>

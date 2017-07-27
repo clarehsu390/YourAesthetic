@@ -30,9 +30,12 @@ class SavedPins extends React.Component {
     }
 
     return(
+      <div className="users-pins">
+      <h2 className="saved-pins">Saved Pins</h2>
       <ul className="boards-pins">
         {this.allPins()}
       </ul>
+      </div>
   );
   }
 }

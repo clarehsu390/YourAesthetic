@@ -1,6 +1,5 @@
 import React from 'react';
 import CreateBoardContainer from '../boards/create_board_container';
-import BoardShowContainer from '../boards/board_show_container';
 import {Route, Link} from 'react-router-dom';
 
 class BoardIndex extends React.Component {
