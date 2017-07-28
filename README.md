@@ -24,7 +24,9 @@ This full-stack web application uses the structure:
 [schema]: docs/schema
 
 [Development README][dev-readme]
+
 [Wireframes][wireframes]
+
 [Schema]:[schema]
 
 #### Masonry Layout
