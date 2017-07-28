@@ -21,7 +21,7 @@ class Follows extends React.Component {
       <ul className="followers">
         {this.props.teachers.map((teacher, i) => {
           return (
-            <Link to={`/${teacher.id}`} key={i}><li className="teacher" key={i}>
+            <Link to={`/${teacher.id}`} key={i}><li className="teacher">
               <span>{teacher.username}</span>
               <img className="teacher-image" src={teacher.image_url}></img>
             </li></Link>
