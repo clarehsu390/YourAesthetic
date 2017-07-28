@@ -1,0 +1,16 @@
+.follow-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px
+}
+
+.followers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

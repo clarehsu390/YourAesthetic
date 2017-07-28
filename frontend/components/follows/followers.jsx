@@ -12,7 +12,7 @@ class Followers extends React.Component {
 
   allStudents() {
     return (
-      <ul>
+      <ul className="followers">
         {this.props.students.map((student, i) => {
           return (
             <li className="student" key={i}>
@@ -27,7 +27,7 @@ class Followers extends React.Component {
 }
   render() {
     return (
-      <div>
+      <div className="follow-list">
         <h1>Followers</h1>
         {this.allStudents()}
     </div>

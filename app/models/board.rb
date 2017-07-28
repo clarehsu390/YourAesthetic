@@ -1,5 +1,5 @@
 class Board < ApplicationRecord
-  validates :title, :user_id, presence: true
+  validates :title, :user, presence: true
 
   belongs_to :user,
   primary_key: :id,

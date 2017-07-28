@@ -30,7 +30,6 @@ class BoardIndex extends React.Component {
         <div></div>
       );
     }
-    else {
       return (
         <div className="boards">
           <ul className="boards-index">
@@ -49,7 +48,7 @@ class BoardIndex extends React.Component {
     </div>
   );
 
-    }
+    
   }
 }
 
