@@ -18,6 +18,11 @@ This full-stack web application uses the structure:
   * Discover Page features a Masonry layout.
   * Users have a profile and can view other users' profiles.
 
+## Project Design
+[dev-readme]: docs/README.md
+[wireframes]: docs/wireframes
+[schema]: docs/schema
+
 #### Masonry Layout
 
 On the Discover Page, pins are organized in a Masonry-like fashion. The pins are given a minimum width. The columns are fitted according to the maximum amount of columns that can fit in the window. As a result, the window is resized, the page is responsive.
