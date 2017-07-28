@@ -83,11 +83,12 @@ class SignUp extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
-        {this.errors()}
+          {this.errors()}
         <button className="sign-up-button">Sign Up!</button>
         <button className="demo"onClick={this.handleDemoClick}>Demo</button>
 
       </form>
+
       <span>Already a member?</span>
       <button className='login' onClick={this.handleClick}>Log In</button>
       </div>
