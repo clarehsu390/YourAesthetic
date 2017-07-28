@@ -16,9 +16,9 @@ class User < ApplicationRecord
     source: :pins
 
   has_many :in_follows, class_name: :Follow, foreign_key: :teacher_id
-   has_many :out_follows, class_name: :Follow, foreign_key: :student_id
-   has_many :students, through: :in_follows, source: :student
-   has_many :teachers, through: :out_follows, source: :teacher
+  has_many :out_follows, class_name: :Follow, foreign_key: :student_id
+  has_many :students, through: :in_follows, source: :student
+  has_many :teachers, through: :out_follows, source: :teacher
 
 
   attr_reader :password
