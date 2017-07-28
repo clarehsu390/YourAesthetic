@@ -23,6 +23,10 @@ This full-stack web application uses the structure:
 [wireframes]: docs/wireframes
 [schema]: docs/schema
 
+[Development README][dev-readme]
+[Wireframes][wireframes]
+[Schema]:[schema]
+
 #### Masonry Layout
 
 On the Discover Page, pins are organized in a Masonry-like fashion. The pins are given a minimum width. The columns are fitted according to the maximum amount of columns that can fit in the window. As a result, the window is resized, the page is responsive.
