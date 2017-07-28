@@ -11,9 +11,8 @@ class BoardIndex extends React.Component {
   }
   componentDidMount(){
 
-    this.props.requestBoards(this.props.match.params.userId).then(() => this.setState({
-      waiting: false
-    }));
+    this.props.receiveSingleUser(this.props.match.params.userId).then(
+      this.props.requestBoards(this.props.match.params.userId));
   }
 
   componentWillReceiveProps(nextProps) {
@@ -25,16 +24,29 @@ class BoardIndex extends React.Component {
   }
 
   render() {
-    if (this.state.waiting) {
-      return (
-        <div></div>
-      );
+    if (parseInt(this.props.match.params.userId) === this.props.currentUser.id) {
+      return(
+      <div className="boards">
+        <ul className="boards-index">
+          <Route path="/:userId" component={CreateBoardContainer}/>
+          {this.props.boards ? this.props.boards.map((board, i) => {
+            return   <Link key={i} to={`/${this.props.match.params.userId}/boards/${board.id}`}>
+              <li  className="board-item">
+                {board.title}
+            </li>
+          </Link>;
+          }
+        )
+      : ""}
+      </ul>
+    </div>
+  );
+
     }
       return (
         <div className="boards">
           <ul className="boards-index">
-            <Route path="/:userId" component={CreateBoardContainer}/>
-            {this.props.boards ? this.props.boards.map((board, i) => {
+            {this.props.userProfile.boards ? this.props.userProfile.boards.map((board, i) => {
               return   <Link key={i} to={`/${this.props.match.params.userId}/boards/${board.id}`}>
                 <li  className="board-item">
                   {board.title}

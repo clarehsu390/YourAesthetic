@@ -42,7 +42,7 @@ class CreatePin extends React.Component {
   }
 
   afterOpenModal() {
-    
+
   }
   closeModal(){
     this.setState({ modalIsOpen: false });
@@ -74,13 +74,14 @@ class CreatePin extends React.Component {
   }
 
   handleSubmit(e) {
+    e.preventDefault();
     const pin = {
       name: this.state.name,
       description: this.state.description,
       image_url: this.state.image_url,
       creator_id: this.props.currentUser.id
     };
-    this.props.newPin(pin);
+    this.props.newPin(pin).then(this.closeModal()).then(this.props.requestAllPins());
   }
 
   update(property) {

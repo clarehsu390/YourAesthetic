@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Follows from './follows';
-import { receiveFollow, removeFollow } from '../../actions/follow_actions';
+import { receiveFollow, removeFollow, receiveSingleUser } from '../../actions/follow_actions';
 
 
 const mapStateToProps = state => ({
@@ -11,7 +11,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   receiveFollow: user => dispatch(receiveFollow(user)),
-  removeFollow: follow => dispatch(removeFollow(follow))
+  removeFollow: follow => dispatch(removeFollow(follow)),
+  receiveSingleUser: user => dispatch(receiveSingleUser(user))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Follows);

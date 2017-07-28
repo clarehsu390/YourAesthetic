@@ -18,11 +18,13 @@ const userProfileReducer = (state = defaultProfile, action) => {
       newState.teachers[action.teacher.id] = action.teacher;
       return newState;
     case REMOVE_FOLLOW:
+
       newState = merge({}, state, { followed: false });
-      delete newState.teachers[action.follow.teacher_id];
+      debugger
+      newState.teachers[action.follow.id] = null;
       return newState;
     case RECEIVE_USER:
-      return merge({}, state, action.user);
+      return merge({}, state, action.user, { followed: false});
     default:
       return state;
   }

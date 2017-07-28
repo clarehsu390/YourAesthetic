@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { newPin } from '../../actions/pins_actions';
+import { newPin, requestAllPins } from '../../actions/pins_actions';
 import CreatePin from './create_pin';
 
 const mapStateToProps = ({ currentUser, errors }) => ({
@@ -10,7 +10,8 @@ const mapStateToProps = ({ currentUser, errors }) => ({
 
 
 const mapDispatchToProps = (dispatch) => ({
-  newPin: pin => dispatch(newPin(pin))
+  newPin: pin => dispatch(newPin(pin)),
+  requestAllPins: () => dispatch(requestAllPins())
 
 });
 

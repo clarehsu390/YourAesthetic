@@ -56,6 +56,12 @@ h3.username {
   height: 30px;
 }
 
+.following a:hover {
+  cursor: pointer;
+  background: darken(#E8E8E8, 7.5%);
+  height: 30px;
+}
+
 
 .links {
   display: flex;

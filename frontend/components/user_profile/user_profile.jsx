@@ -65,8 +65,7 @@ class UserProfile extends React.Component {
             </div>
             <div className="more-info">
               <img className="pf-pic"
-                src="
-                https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
+                src={this.props.userProfile.image_url}>
               </img>
               {this.followButton()}
               </div>

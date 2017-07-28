@@ -14,3 +14,36 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
+.teacher-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px
+}
+
+.followings {
+  display: flex;
+  justify-content: space-around
+
+}
+.teacher {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.student {
+  text-align: center;
+}
+
+.teacher-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.follow-list h1 {
+  font-size: 36px;
+  font-weight: bold;
+}

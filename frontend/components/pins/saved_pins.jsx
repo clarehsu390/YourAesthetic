@@ -35,7 +35,6 @@ class SavedPins extends React.Component {
     }
 
   componentDidMount() {
-    console.log(this.props);
     this.props.requestBoards(this.props.currentUser.id).then(
       setTimeout(() => this.setState({ loading: false }), 1800));
 

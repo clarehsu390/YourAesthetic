@@ -3,7 +3,7 @@ class Api::PinsController < ApplicationController
     @pin = current_user.pins.new(pin_params)
     @pin.creator_id = current_user.id
     if @pin.save
-      render "api/pins/show"
+      render "api/pins/index"
     else
       render json: @pin.errors.full_messages
     end

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class Followers extends React.Component {
   constructor(props) {
@@ -15,10 +15,10 @@ class Followers extends React.Component {
       <ul className="followers">
         {this.props.students.map((student, i) => {
           return (
-            <li className="student" key={i}>
+            <Link to={`/${student.id}`} key={i}><li className="student" key={i}>
               <span className= "studentName">{student.username}</span>
               <img className="student-image" src={student.image_url}></img>
-            </li>
+            </li></Link>
           );
         })
       }

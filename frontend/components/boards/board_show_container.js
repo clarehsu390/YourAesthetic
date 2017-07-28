@@ -7,7 +7,7 @@ import BoardShow from './board_show';
 
 const mapStateToProps = (state) => ({
   currentUser: state.currentUser,
-  boards: state.boards
+  boards: state.userProfile.boards
 });
 
 const mapDispatchToProps = dispatch => ({

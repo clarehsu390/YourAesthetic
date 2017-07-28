@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class Follows extends React.Component {
   constructor(props) {
@@ -18,13 +18,13 @@ class Follows extends React.Component {
     return (
 
 
-      <ul>
+      <ul className="followers">
         {this.props.teachers.map((teacher, i) => {
           return (
-            <li className="teacher" key={i}>
+            <Link to={`/${teacher.id}`} key={i}><li className="teacher" key={i}>
               <span>{teacher.username}</span>
-              <img src={teacher.image_url}></img>
-            </li>
+              <img className="teacher-image" src={teacher.image_url}></img>
+            </li></Link>
           );
         })
       }
@@ -32,8 +32,9 @@ class Follows extends React.Component {
     );
 }
   render() {
+
     return (
-      <div>
+      <div className="follow-list">
       <h1>Following</h1>
       {this.allTeachers()}
       </div>

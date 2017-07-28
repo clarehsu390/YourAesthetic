@@ -35,7 +35,7 @@ class BoardShow extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push(`/${this.props.match.params.userId}/boards`));
+    this.props.removeBoard(this.props.match.params.boardId);
   }
 
   render() {

@@ -30,7 +30,7 @@ const App = () => (
 
     <ProtectedRoute path='/' component={ CreatePinContainer } />
     <ProtectedRoute path='/:userId/followers' component={ FollowersContainer } />
-    <ProtectedRoute path ="/:userId/followings" component={ FollowsContainer } />
+    <ProtectedRoute path ="/:userId/following" component={ FollowsContainer } />
       <Route path={`/:userId/pins`}
         component={ SavedPinContainer } />
   </div>
