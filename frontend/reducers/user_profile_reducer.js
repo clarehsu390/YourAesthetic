@@ -20,7 +20,6 @@ const userProfileReducer = (state = defaultProfile, action) => {
     case REMOVE_FOLLOW:
 
       newState = merge({}, state, { followed: false });
-      debugger
       newState.teachers[action.follow.id] = null;
       return newState;
     case RECEIVE_USER:

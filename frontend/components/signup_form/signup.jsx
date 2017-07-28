@@ -49,7 +49,7 @@ class SignUp extends React.Component {
 
   errors() {
       return (
-        <ul>
+        <ul className="errors">
           {this.props.errors.map((error, i) => {
             return (
               <li className="error" key={i}>
@@ -83,8 +83,8 @@ class SignUp extends React.Component {
           placeholder='Password'
           onChange={this.update('password')}
           />
-          {this.errors()}
-        <button>Sign Up!</button>
+        {this.errors()}
+        <button className="sign-up-button">Sign Up!</button>
         <button className="demo"onClick={this.handleDemoClick}>Demo</button>
 
       </form>
