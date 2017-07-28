@@ -29,7 +29,7 @@
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
-  color: #b22222
+  color: #778899
 }
 
 .boards-index {
@@ -84,20 +84,21 @@ justify-content: center;
   z-index: 1;
 }
 
-.dropdown-content li:hover {
-  font-weight: bolder;
-}
-
 
 .click-state:active {
   color: white;
   background-color: black;
 }
 
-.dropdown-content li:active{
+.dropdown-content li:hover{
   font-weight: bolder;
   transform: translateY(2px);
   pointer-events: auto;
+}
+
+.dropdown-content li:active{
+  background-color: #FFB6C1;
+  color: white;
 }
 
 
@@ -115,4 +116,17 @@ justify-content: center;
 .first-pin {
   max-width:  220px;
   max-height: 150px;
+}
+
+button.create {
+  background-color: #778899;
+  border: solid 1px #778899
+}
+
+.delete-board {
+  background-color: #778899;
+  border: solid 1px #778899;
+  color: white;
+  width: 100px;
+  margin: auto;
 }

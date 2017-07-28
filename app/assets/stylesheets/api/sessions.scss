@@ -16,11 +16,11 @@ section.session {
   text-align: center;
   background-image:
   url("https://static.pexels.com/photos/414548/pexels-photo-414548.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100%;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-position: center center;
 }
 
 section.session::before {
@@ -62,7 +62,6 @@ h4 img{
 
 .login-title {
   font-size: 28px;
-  margin: auto;
   margin-top: 0px;
   margin-bottom: 0px;
 }

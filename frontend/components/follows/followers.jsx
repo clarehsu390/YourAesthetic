@@ -16,7 +16,8 @@ class Followers extends React.Component {
         {this.props.students.map((student, i) => {
           return (
             <li className="student" key={i}>
-              <span>{student.username}</span>
+              <span className= "studentName">{student.username}</span>
+              <img className="student-image" src={student.image_url}></img>
             </li>
           );
         })
@@ -27,6 +28,7 @@ class Followers extends React.Component {
   render() {
     return (
       <div>
+        <h1>Followers</h1>
         {this.allStudents()}
     </div>
   );

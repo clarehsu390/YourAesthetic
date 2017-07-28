@@ -55,7 +55,7 @@ class SavedPins extends React.Component {
 
         <div className='sweet-loading'>
      <DotLoader
-       color={'#ff0000'}
+       color={'#FFB6C1'}
        loading={this.state.loading}
      />
     </div>

@@ -35,7 +35,7 @@ class BoardShow extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push("/:userId/boards"));
+    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push(`/${this.props.match.params.userId}/boards`));
   }
 
   render() {
@@ -46,7 +46,7 @@ class BoardShow extends React.Component {
       <div className="boards-pins">
         <div className="board-name">
           <h2>{this.props.boards.title}</h2>
-          <button onClick={this.handleDelete}>Delete Board</button>
+          <span><i onClick={this.handleDelete} className="fa fa-trash-o" aria-hidden="true"></i></span>
           <h4>{this.props.boards.pins.length}Pins</h4>
         <div className="just-pins">
       {this.props.boards.pins.map((pin,i) => {

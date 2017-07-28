@@ -28,7 +28,7 @@ class UserProfile extends React.Component {
   }
 
   followButton() {
-    return <button onClick={this.handleClick}>{this.props.userProfile.followed ? "Followed" : "Follow!"}</button>;
+    return <button className="follow-button" onClick={this.handleClick}>{this.props.userProfile.followed ? "Followed" : "Follow!"}</button>;
 
   }
 
@@ -63,11 +63,13 @@ class UserProfile extends React.Component {
             <span>{this.props.userProfile.teachers.length}</span>
             </div>
             </div>
+            <div className="more-info">
               <img className="pf-pic"
                 src="
                 https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
               {this.followButton()}
+              </div>
             </div>
             <div className="links">
               <NavLink to=

@@ -38,7 +38,6 @@ img.pin:hover {
 
 .pin-attr {
   display: inline-block;
-  padding: 5px;
   width:  100%;
 
 }
@@ -53,7 +52,7 @@ img.pin:hover {
 
 .pin-name {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .pin-name:hover {
@@ -195,13 +194,19 @@ font-size: 16px;
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  width: 400px;
-  height: 600px;
+  width: 350px;
+  height: 450px;
 }
 
 .pin-detail-modal {
   margin: auto;
   border-radius: 5px;
+}
+
+.pin-detail img {
+  max-width: 100%;
+   height: auto;
+   width: auto
 }
 
 .pin-detail h3 {
@@ -223,15 +228,16 @@ font-size: 16px;
 }
 .save-pin-button {
   align-content: right;
-  background-color: #b22222;
+  background-color: #778899;
   color: white;
-  border: solid #b22222 1px;
+  border: solid #778899 1px;
   font-weight: bold;
   position: absolute;
   width: 80px;
   text-align: center;
   opacity: 0;
   transition: opacity .2s ease;
+  box-shadow: 0px 0px 2px white;
 }
 
 

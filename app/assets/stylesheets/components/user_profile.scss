@@ -24,7 +24,6 @@ h3.username {
   height: 150px;
   width: 150px;
   display: flex;
-  margin-left: 30px;
 
 }
 
@@ -99,4 +98,17 @@ h3.username {
 
 .links a {
   padding: 10px;
+}
+
+.follow-button {
+  background-color: #FFB6C1;
+  color: white;
+  width: 100px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
 }
