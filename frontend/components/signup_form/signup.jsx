@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 class SignUp extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       username: "",
       password: ""
@@ -67,7 +66,7 @@ class SignUp extends React.Component {
       <section className="session">
         <div className="signup">
           <h4>
-        <img src="http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png"></img>
+        <img src="https://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png"></img>
           </h4>
         <h4>Sign up to discover your aesthetic</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>

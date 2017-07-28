@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 class BoardShow extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
     this.state = {
       pin_id: null,
       board_id: null,
@@ -23,7 +22,6 @@ class BoardShow extends React.Component {
   }
 
   handleClick(e) {
-    console.log(this.props.boards);
 
       e.preventDefault();
       this.setState({
