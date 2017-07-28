@@ -1,26 +1,22 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-class Follows extends React.Component {
+class Followers extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      waiting: true
-    };
   }
 
   componentDidMount() {
     this.props.receiveSingleUser(this.props.match.params.userId);
   }
 
-
-  allTeachers() {
+  allStudents() {
     return (
       <ul>
-        {this.props.teachers.map((teacher, i) => {
+        {this.props.students.map((student, i) => {
           return (
-            <li className="teacher" key={i}>
-              <span>{teacher.username}</span>
+            <li className="student" key={i}>
+              <span>{student.username}</span>
             </li>
           );
         })
@@ -31,10 +27,10 @@ class Follows extends React.Component {
   render() {
     return (
       <div>
-      {this.allTeachers()}
-      </div>
-    );
+        {this.allStudents()}
+    </div>
+  );
   }
 }
 
-export default withRouter(Follows);
+export default withRouter(Followers);

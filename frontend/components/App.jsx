@@ -11,7 +11,8 @@ import CreateBoardContainer from './boards/create_board_container';
 import BoardShowContainer from './boards/board_show_container';
 import SavedPinContainer from './pins/saved_pins_container';
 import BoardIndexContainer from './boards/board_index_container';
-
+import FollowersContainer from './follows/followers_container';
+import FollowsContainer from './follows/follows_container';
 const App = () => (
   <div>
 
@@ -28,7 +29,8 @@ const App = () => (
     <Route exact path='/:userId/boards/:boardId' component={ BoardShowContainer } />
 
     <ProtectedRoute path='/' component={ CreatePinContainer } />
-
+    <ProtectedRoute path='/:userId/followers' component={ FollowersContainer } />
+    <ProtectedRoute path ="/:userId/followings" component={ FollowsContainer } />
       <Route path={`/:userId/pins`}
         component={ SavedPinContainer } />
   </div>

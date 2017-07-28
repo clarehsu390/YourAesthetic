@@ -8,7 +8,7 @@ class Api::FollowsController < ApplicationController
   end
 
   def destroy
-    @follow = current_user.out_follows.where(follow_params).first
+    @follow = current_user.out_follows.where(teacher_id: params[:follow][:teacher_id]).first
     @follow.destroy
     render 'api/follow/show'
   end

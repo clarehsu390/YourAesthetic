@@ -21,6 +21,12 @@ class UserProfile extends React.Component {
     this.props.receiveSingleUser(this.props.match.params.userId);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.userId !== nextProps.match.params.userId) {
+      this.props.receiveSingleUser(nextProps.match.params.userId);
+    }
+  }
+
   followButton() {
     return <button onClick={this.handleClick}>{this.props.userProfile.followed ? "Followed" : "Follow!"}</button>;
 
