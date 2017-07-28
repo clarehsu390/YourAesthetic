@@ -29,17 +29,26 @@ h3.username {
 }
 
 
-.follows {
+.follow-container {
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.follows a {
+.following {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.follow-container a {
   margin: 10px;
   color: #b8b8b8;
   font-weight: 600;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .follows a:hover {

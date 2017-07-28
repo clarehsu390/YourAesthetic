@@ -8,8 +8,7 @@ class CreatePinning extends React.Component {
     this.state = {
       pin_id: null,
       board_id: null,
-      waiting: true,
-      clicked: false
+      waiting: true
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -25,8 +24,7 @@ class CreatePinning extends React.Component {
     console.log(e.currentTarget);
     this.setState({
       pin_id: this.props.pin.id,
-      board_id: e.currentTarget.value,
-      clicked: true
+      board_id: e.currentTarget.value
     });
   }
 

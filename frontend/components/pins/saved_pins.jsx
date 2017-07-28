@@ -64,7 +64,7 @@ class SavedPins extends React.Component {
 
     return(
       <div className="users-pins">
-      <h2 className="saved-pins">Saved Pins</h2>
+      <h2 className="saved-pins">Uploaded Pins</h2>
       <ul className="all-saved-pins">
         {this.props.pins.map((pin, idx) => (
           <li onClick={this.openModal}className="saved-pin-item"key={idx}>

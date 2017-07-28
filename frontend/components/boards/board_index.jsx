@@ -16,6 +16,14 @@ class BoardIndex extends React.Component {
     }));
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.userId !== nextProps.match.params.userId) {
+      this.props.receiveSingleUser(nextProps.match.params.userId).then(
+        this.props.requestBoards(nextProps.match.params.userId)
+      );
+    }
+  }
+
   render() {
     if (this.state.waiting) {
       return (
@@ -23,8 +31,6 @@ class BoardIndex extends React.Component {
       );
     }
     else {
-      console.log("HERE");
-      console.log(this.props.boards);
       return (
         <div className="boards">
           <ul className="boards-index">

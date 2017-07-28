@@ -49,21 +49,25 @@ class UserProfile extends React.Component {
       <div className='profile'>
         <div className="user-info">
         <h3 className="username">{this.props.userProfile.username}</h3>
+        <div className="follow-container">
         <div className="follows">
             <Link to={`/${this.props.match.params.userId}/followers`}>
               Followers
             </Link>
             <span>{this.props.userProfile.students.length}</span>
+          </div>
+            <div className="following">
             <Link to={`/${this.props.match.params.userId}/following`}>
               Following
             </Link>
             <span>{this.props.userProfile.teachers.length}</span>
+            </div>
+            </div>
               <img className="pf-pic"
                 src="
                 https://s-media-cache-ak0.pinimg.com/originals/a0/fc/2f/a0fc2f1be1c4ba1d0288c335f814bfdf.jpg">
               </img>
               {this.followButton()}
-            </div>
             </div>
             <div className="links">
               <NavLink to=
