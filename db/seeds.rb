@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Pin.destroy_all
+Board.destroy_all
+Follow.destroy_all
+Pinning.destroy_all
+
 user1 = User.create!(username: "guest", password: "password", image_url: "https://img.huffingtonpost.com/asset/570eb9d71600002b0031ba2e.jpeg?ops=scalefit_950_800_noupscale")
 user2 = User.create!(username: "username", password: "password", image_url: "https://static.boredpanda.com/blog/wp-content/uploads/2017/05/59199fbda8274_1YQ4cy3r__605.jpg")
 user3 = User.create!(username: "Corgi", password: "password", image_url: "https://i.imgur.com/ehZPuwA.png")
