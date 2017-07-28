@@ -21,7 +21,7 @@ This full-stack web application uses the structure:
 ## Project Design
 [dev-readme]: docs/README.md
 [wireframes]: docs/wireframes
-[schema]: docs/schema
+[schema]: docs/schema.md
 
 [Development README][dev-readme]
 
