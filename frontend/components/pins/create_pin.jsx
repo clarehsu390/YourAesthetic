@@ -74,7 +74,6 @@ class CreatePin extends React.Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
     const pin = {
       name: this.state.name,
       description: this.state.description,

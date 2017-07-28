@@ -70,4 +70,27 @@ has_many :students, through: :in_follows, source: :student
 has_many :teachers, through: :out_follows, source: :teacher
 ```
 
-####
+#### Drag and Drop Upload
+
+Users are able to upload images from their own devices onto the website. This uses [react-dropzone](https://github.com/okonet/react-dropzone). Users can either click on the dropzone or drag their images to upload to the site. The uploaded images are automatically rendered onto the home page.
+
+```html
+<Dropzone className="drop-zone"
+  multiple={false}
+  accept="image/*"
+  onDrop={this.onImageDrop.bind(this)}>
+
+    {this.state.image_url === '' ? null :
+    <div className='new-pin'>
+      <img src={this.state.image_url} />
+    </div>}
+</Dropzone>
+```
+
+## Future features
+
+#### Infinite Scrolling
+Using react-masonry, users will be able to continually scroll though the home page to view more content.
+
+#### Search by Tags
+Each pin will have tag/tags which will allow the application to retrieve pins which have that particular tag/tags.
