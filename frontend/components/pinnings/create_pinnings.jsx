@@ -21,7 +21,6 @@ class CreatePinning extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    console.log(e.currentTarget);
     this.setState({
       pin_id: this.props.pin.id,
       board_id: e.currentTarget.value

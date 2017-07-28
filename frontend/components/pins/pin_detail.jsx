@@ -16,8 +16,6 @@ const customStyle = {
 class PinDetail extends React.Component {
   constructor(props){
     super(props);
-    console.log("pin detail");
-    console.log(this.props);
     this.state = {
       pin_id: 0,
       board_id: 0
@@ -25,7 +23,6 @@ class PinDetail extends React.Component {
   }
 
   render() {
-    console.log(this.props.currentUser);
     return (
       <div className="pin-detail">
       <h3>{this.props.pin.name}</h3>
