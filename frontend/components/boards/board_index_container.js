@@ -7,7 +7,8 @@ import { receiveSingleUser } from '../../actions/follow_actions';
 
 const mapStateToProps = (state) => ({
   currentUser: state.currentUser,
-  userProfile: state.userProfile
+  userProfile: state.userProfile,
+  boards: state.boards
 });
 
 const mapDispatchToProps = (dispatch) => ({

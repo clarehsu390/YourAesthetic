@@ -34,7 +34,7 @@ class BoardIndex extends React.Component {
         <div className="boards">
           <ul className="boards-index">
             <Route path="/:userId" component={CreateBoardContainer}/>
-            {this.props.userProfile.boards ? this.props.userProfile.boards.map((board, i) => {
+            {this.props.boards ? this.props.boards.map((board, i) => {
               return   <Link key={i} to={`/${this.props.match.params.userId}/boards/${board.id}`}>
                 <li  className="board-item">
                   {board.title}
@@ -48,7 +48,7 @@ class BoardIndex extends React.Component {
     </div>
   );
 
-    
+
   }
 }
 
