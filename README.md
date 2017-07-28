@@ -11,9 +11,9 @@ This full-stack web application uses the structure:
 * React/Redux frontend
 * Postgres
 
-##Features
+## Features
 
-####Masonry Layout
+#### Masonry Layout
 
 On the Discover Page, pins are organized in a Masonry-like fashion. The pins are given a minimum width. The columns are fitted according to the maximum amount of columns that can fit in the window. As a result, the window is resized, the page is responsive.
 
@@ -31,4 +31,4 @@ On the Discover Page, pins are organized in a Masonry-like fashion. The pins are
 ```
 
 
-![Masonry](https://i.gyazo.com/d78fc6b339426a1d39f481f65761858b.gif)
+![Masonry](https://user-images.githubusercontent.com/26496447/28737534-d9eb4860-73a3-11e7-9176-bf16c29b26b7.gif)
