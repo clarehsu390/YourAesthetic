@@ -16,13 +16,14 @@ class BoardShow extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestSingleBoard(this.props.match.params.boardId).then(
+    this.props.requestSingleBoard(this.props.match.params.userId, this.props.match.params.boardId).then(
       () => this.setState({waiting: false})
     );
+
   }
 
   handleClick(e) {
-    console.log(e.currentTarget.value);
+    console.log(this.props.boards);
 
       e.preventDefault();
       this.setState({
@@ -34,7 +35,7 @@ class BoardShow extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push("/:username/boards"));
+    this.props.removeBoard(this.props.match.params.boardId).then(this.props.history.push("/:userId/boards"));
   }
 
   render() {

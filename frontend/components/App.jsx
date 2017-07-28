@@ -23,13 +23,13 @@ const App = () => (
     </Switch>
     <Switch>
       <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
-      <ProtectedRoute path="/:username" component={ UserProfileContainer }/>
+      <ProtectedRoute path="/:userId" component={ UserProfileContainer }/>
     </Switch>
-    <Route exact path='/boards/:boardId' component={ BoardShowContainer } />
+    <Route exact path='/:userId/boards/:boardId' component={ BoardShowContainer } />
 
     <ProtectedRoute path='/' component={ CreatePinContainer } />
 
-      <Route path={`/:username/pins`}
+      <Route path={`/:userId/pins`}
         component={ SavedPinContainer } />
   </div>
 );

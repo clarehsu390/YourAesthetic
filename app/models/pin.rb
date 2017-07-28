@@ -14,4 +14,5 @@ class Pin < ApplicationRecord
   has_many :boards,
     through: :pinnings
 
+
 end

@@ -9,8 +9,8 @@ export const requestBoards = (userId) => (dispatch)=> {
   );
 };
 
-export const requestSingleBoard = (id) => (dispatch)=> {
-  return BoardUtil.getSingleBoard(id).then(
+export const requestSingleBoard = (userId, id) => (dispatch)=> {
+  return BoardUtil.getSingleBoard(userId, id).then(
     board => {
       dispatch(receiveSingleBoard(board));}
   );

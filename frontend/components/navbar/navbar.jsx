@@ -18,7 +18,7 @@ class NavBar extends React.Component {
 
   handleUserClick(e) {
     const { currentUser } = this.props;
-    this.props.history.push(`/${currentUser.username}`);
+    this.props.history.push(`/${currentUser.id}/`);
   }
 
   handleDiscoverClick(e) {

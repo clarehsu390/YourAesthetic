@@ -10,7 +10,8 @@ class BoardIndex extends React.Component {
     };
   }
   componentDidMount(){
-    this.props.requestBoards(this.props.currentUser.id).then(() => this.setState({
+
+    this.props.requestBoards(this.props.match.params.userId).then(() => this.setState({
       waiting: false
     }));
   }
@@ -27,9 +28,9 @@ class BoardIndex extends React.Component {
       return (
         <div className="boards">
           <ul className="boards-index">
-            <Route path="/:username" component={CreateBoardContainer}/>
-            {this.props.boards ? this.props.boards.map((board, i) => {
-              return   <Link key={i} to={`/boards/${board.id}`}>
+            <Route path="/:userId" component={CreateBoardContainer}/>
+            {this.props.userProfile.boards ? this.props.userProfile.boards.map((board, i) => {
+              return   <Link key={i} to={`/${this.props.match.params.userId}/boards/${board.id}`}>
                 <li  className="board-item">
                   {board.title}
               </li>

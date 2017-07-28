@@ -5,10 +5,10 @@ export const getUsersBoards = (userId) => (
   })
 );
 
-export const getSingleBoard = (id) => (
+export const getSingleBoard = (userId, id) => (
   $.ajax({
     method: 'GET',
-    url: `/api/boards/${id}`
+    url: `/api/users/${userId}/boards/${id}`
   })
 );
 

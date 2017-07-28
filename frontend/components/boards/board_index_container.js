@@ -4,9 +4,9 @@ import BoardIndex from './board_index';
 
 
 
-const mapStateToProps = ({ boards, currentUser }) => ({
-  currentUser,
-  boards
+const mapStateToProps = (state) => ({
+  currentUser: state.currentUser,
+  userProfile: state.userProfile
 });
 
 const mapDispatchToProps = (dispatch) => ({

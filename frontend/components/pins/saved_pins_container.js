@@ -3,7 +3,7 @@ import SavedPins from './saved_pins';
 import { requestBoards } from '../../actions/board_actions';
 
 const mapStateToProps = state => ({
-  boards: state.boards,
+  pins: state.userProfile.pins,
   currentUser: state.currentUser
 });
 
