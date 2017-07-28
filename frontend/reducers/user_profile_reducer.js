@@ -23,7 +23,7 @@ const userProfileReducer = (state = defaultProfile, action) => {
       newState.teachers[action.follow.id] = null;
       return newState;
     case RECEIVE_USER:
-      return merge({}, state, action.user, { followed: false});
+      return merge(action.user, { followed: false});
     default:
       return state;
   }
