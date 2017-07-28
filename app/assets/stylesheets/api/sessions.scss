@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   width: 100%;
   height: 100%
 
@@ -17,6 +17,10 @@ section.session {
   background-image:
   url("https://static.pexels.com/photos/414548/pexels-photo-414548.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.session::before {
@@ -52,6 +56,7 @@ h4 img{
   height: 50px;
   width: 70px;
   margin: auto;
+  padding: 8px;
   box-shadow: 2px 2px 2px white;
 }
 
@@ -69,6 +74,8 @@ h4 img{
   text-align: center;
   margin: auto;
   position: relative;
+  margin-top: 5px;
+
 }
 .session-form input {
   border-radius: 3px;
@@ -119,9 +126,21 @@ div.signup {
   text-align: center;
   font-size: 28px;
   margin: auto;
+  margin-top: 0px;;
 }
 
 .signup span {
   text-align: center;
   font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.login-title {
+  margin-top: 0;
+}
+
+.login h4 {
+  margin-bottom: 10px;
+  margin-top: 0px;
 }

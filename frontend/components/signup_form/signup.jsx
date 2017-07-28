@@ -66,8 +66,10 @@ class SignUp extends React.Component {
     return (
       <section className="session">
         <div className="signup">
-        <h4>Your Aesthetic</h4>
-        <h4>Sign up to see more</h4>
+          <h4>
+        <img src="http://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png"></img>
+          </h4>
+        <h4>Sign up to discover your aesthetic</h4>
       <form className='session-form' onSubmit={this.handleSubmit}>
           <input
             type='text'
