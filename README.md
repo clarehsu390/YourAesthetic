@@ -17,4 +17,18 @@ This full-stack web application uses the structure:
 
 On the Discover Page, pins are organized in a Masonry-like fashion. The pins are given a minimum width. The columns are fitted according to the maximum amount of columns that can fit in the window. As a result, the window is resized, the page is responsive.
 
-[![https://gyazo.com/eae70b2aa2526ce2a1e9412d1ef3ccce](https://i.gyazo.com/eae70b2aa2526ce2a1e9412d1ef3ccce.gif)](https://gyazo.com/eae70b2aa2526ce2a1e9412d1ef3ccce)
+```css
+.list-of-pins {
+  -moz-column-width: 14em;
+  -webkit-column-width: 14em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+
+}
+```
+
+
+![Masonry](https://i.gyazo.com/d78fc6b339426a1d39f481f65761858b.gif)
