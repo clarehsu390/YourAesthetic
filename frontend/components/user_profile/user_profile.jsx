@@ -33,7 +33,6 @@ class UserProfile extends React.Component {
   }
 
   handleClick() {
-    console.log(this.props.match.params.userId);
     if (this.props.userProfile.followed) {
       this.props.removeTeacher(this.state);
     }

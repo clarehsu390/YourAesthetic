@@ -39,7 +39,6 @@ class BoardShow extends React.Component {
   }
 
   render() {
-    debugger
     if (this.state.waiting) {
       return <div></div>;
     }
