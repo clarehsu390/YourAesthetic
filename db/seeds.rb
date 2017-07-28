@@ -12,11 +12,11 @@ Follow.destroy_all
 Pinning.destroy_all
 
 user1 = User.create!(username: "guest", password: "password", image_url: "https://img.huffingtonpost.com/asset/570eb9d71600002b0031ba2e.jpeg?ops=scalefit_950_800_noupscale")
-user2 = User.create!(username: "username", password: "password", image_url: "http://cdn2-www.dogtime.com/assets/uploads/2016/08/corgi-puppy-6.jpg")
+user2 = User.create!(username: "username", password: "password", image_url: "https://cdn2-www.dogtime.com/assets/uploads/2016/08/corgi-puppy-6.jpg")
 user3 = User.create!(username: "Corgi", password: "password", image_url: "https://i.imgur.com/ehZPuwA.png")
-user4 = User.create!(username: "Barney_Stinson", password: "password", image_url: "http://az616578.vo.msecnd.net/files/2016/01/17/635886557531071372-1009885900_tumblr_static_bdj3tvirs5k4wgww44sc8k4kc.jpg")
+user4 = User.create!(username: "Barney_Stinson", password: "password", image_url: "https://az616578.vo.msecnd.net/files/2016/01/17/635886557531071372-1009885900_tumblr_static_bdj3tvirs5k4wgww44sc8k4kc.jpg")
 user5 = User.create!(username: "Ted_Mosby", password: "123456", image_url: "https://ithinkalotandstuff.files.wordpress.com/2014/04/ted_profile1.jpg")
-user6 = User.create!(username: "Captain_America", password: "password", image_url: "http://nerdist.com/wp-content/uploads/2016/05/20160506_nerdistnews_capexclusive_1x1.jpg")
+user6 = User.create!(username: "Captain_America", password: "password", image_url: "https://nerdist.com/wp-content/uploads/2016/05/20160506_nerdistnews_capexclusive_1x1.jpg")
 user7 = User.create!(username: "black_widow", password: "password", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXEjL-XDKJww2Hm4ynszqS1asIrJN5NEfX2KI3eQ9g05v3KZQ-w")
 
 pin1 = Pin.create!(name: "Scenery", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/v1500677627/hpvinfcjslmnxo3bihtj.jpg", user: User.first)
