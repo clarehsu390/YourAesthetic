@@ -130,3 +130,10 @@ button.create {
   width: 100px;
   margin: auto;
 }
+
+.board-item {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  justify-content: center;
+}
