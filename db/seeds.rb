@@ -19,9 +19,9 @@ user5 = User.create!(username: "Ted_Mosby", password: "123456", image_url: "http
 user6 = User.create!(username: "Captain_America", password: "password", image_url: "https://nerdist.com/wp-content/uploads/2016/05/20160506_nerdistnews_capexclusive_1x1.jpg")
 user7 = User.create!(username: "black_widow", password: "password", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXEjL-XDKJww2Hm4ynszqS1asIrJN5NEfX2KI3eQ9g05v3KZQ-w")
 
-pin1 = Pin.create!(name: "Scenery", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/v1500677627/hpvinfcjslmnxo3bihtj.jpg", user: User.first)
+pin1 = Pin.create!(name: "Coffee", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/v1502827607/sticker-mule-199228_bxebrs.jpg", user: User.first)
 pin2 = Pin.create!(name: "Black and White Wedding", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/v1500906229/tjfzl7qcwvvtrxm1lqek.jpg", user: User.first)
-pin3 = Pin.create!(name: "Colorful Food", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595181/brooke-lark-229136_gjxdfq.jpg", user: User.first)
+pin3 = Pin.create!(name: "Colorful Food", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/v1502827546/brooke-lark-229136_ohlgcj.jpg", user: User.first)
 pin4 = Pin.create!(name: "Fruit", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,w_366/v1500595180/brenda-godinez-228181_zvxet4.jpg", user: User.first)
 pin5 = Pin.create!(name: "Hipster", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/v1500680398/stsqmvoopqdyl1xwvrgp.jpg", user: User.first)
 pin6 = Pin.create!(name: "Drinks", image_url: "https://res.cloudinary.com/dwetqmwgw/image/upload/v1501266122/brooke-lark-175184_ffa2h2.jpg", user: User.first)
