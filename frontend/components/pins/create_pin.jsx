@@ -1,5 +1,5 @@
-const CLOUDINARY_UPLOAD_PRESET = 'wrlzfwix';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/dwetqmwgw/image/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'viyybkya';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/dgacefwrw/image/upload';
 import { withRouter } from 'react-router-dom';
 import React from 'react';
 import Dropzone from 'react-dropzone';
