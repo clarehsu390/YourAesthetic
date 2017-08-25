@@ -46,7 +46,7 @@ class UserProfile extends React.Component {
     if (loggedIn) {
       return (
       <div className='profile'>
-        <div className="user-info">
+        <div className="user-profile">
         <h3 className="username">{this.props.userProfile.username}</h3>
         <div className="follow-container">
         <div className="follows">

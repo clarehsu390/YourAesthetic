@@ -189,7 +189,6 @@ font-size: 16px;
 }
 
 .pin-detail {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,7 +203,7 @@ font-size: 16px;
   border-radius: 5px;
 }
 
-.pin-detail img {
+.pin-image{
   max-width: 100%;
    height: auto;
    width: auto
@@ -260,8 +259,8 @@ font-size: 16px;
   border-radius: 8px;
 }
 .just-pins {
-  -moz-column-width: 13em;
-  -webkit-column-width: 13em;
+  -moz-column-width: 15em;
+  -webkit-column-width: 15em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
   align-items: center;
@@ -278,8 +277,9 @@ font-size: 16px;
   border-radius: 10px;
 }
 
-
-
+.description {
+  font-weight: bold;
+}
 .board-pin {
   list-style: none;
   display: inline-block;
@@ -313,13 +313,13 @@ font-size: 16px;
 }
 
 .all-saved-pins{
-  -moz-column-width: 14em;
-  -webkit-column-width: 14em;
+  -moz-column-width: 16em;
+  -webkit-column-width: 16em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
   align-items: center;
+  width: 1280px;
   margin: auto;
-  max-width: 1200px;
 }
 
 .all-saved-pins img {
@@ -330,4 +330,22 @@ font-size: 16px;
   position: fixed;
   top: 50%;
   left: 50%;
+}
+
+.user-img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.user-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+.user-info span {
+  width: 20px;
+  padding-left: 10px;
 }

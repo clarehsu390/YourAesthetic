@@ -30,7 +30,11 @@ class PinDetail extends React.Component {
       <img src={this.props.pin.image_url} className="pin-image">
       </img>
 
-      <span>{this.props.pin.description}</span>
+      <span className="description">{this.props.pin.description}</span>
+      <div className="user-info">
+      <img className="user-img" src={this.props.pin.user.image_url} />
+      <span>{this.props.pin.user.username}</span>
+      </div>
     </div>
   );
   }

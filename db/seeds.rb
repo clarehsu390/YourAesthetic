@@ -41,6 +41,8 @@ pin19 = Pin.create!(name: "Wedding Roses", image_url: "https://res.cloudinary.co
 pin20 = Pin.create!(name: "Space Needle", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_50/v1503688220/patrick-tomasso-199356_eahcni.jpg", user: user2, description: "Seattle")
 pin21 = Pin.create!(name: "Balloons", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_50/v1503688406/sofiya-levchenko-308460_gie8bm.jpg", user: user5)
 pin22 = Pin.create!(name: "Desk Setup", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_50/v1503689656/stil-326684_iwu5rw.jpg", user: user1)
+pin23 = Pin.create!(name: "Notes", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_50/v1503689987/oli-dale-139169_a6yewi.jpg", user: user1)
+pin24 = Pin.create!(name: "Marble", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_50/v1503690474/scott-webb-195100_t8pzuj.jpg", user: user1)
 
 
 Follow.create!(teacher_id: user1.id, student_id: user2.id)
@@ -88,3 +90,5 @@ Pinning.create!(board: board8, pin: pin14)
 Pinning.create!(board: board8, pin: pin20)
 Pinning.create!(board: board9, pin: pin18)
 Pinning.create!(board: board3, pin: pin22)
+Pinning.create!(board: board3, pin: pin23)
+Pinning.create!(board: board3, pin: pin24)
