@@ -10,25 +10,24 @@ img.pin:hover {
 }
 
 .list-of-pins {
-  -moz-column-width: 14em;
-  -webkit-column-width: 14em;
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
   align-items: center;
   margin: auto;
-  max-width: 1200px;
 
 }
 
-.just-pins {
-  -moz-column-width: 14em;
-  -webkit-column-width: 14em;
-  -moz-column-gap: 1em;
-  -webkit-column-gap: 1em;
-  margin: auto;
-  max-width: 1200px;
+// .just-pins {
+//   -moz-column-width: 13em;
+//   -webkit-column-width: 14em;
+//   -moz-column-gap: 1em;
+//   -webkit-column-gap: 1em;
+//   margin: auto;
+//   max-width: 1200px;
 
-}
+// }
 
 .saved-pin-item {
   display: inline-block;
@@ -39,7 +38,7 @@ img.pin:hover {
 .pin-attr {
   display: inline-block;
   width:  100%;
-
+  padding: 7px;
   transition: opacity .25s ease-in-out;
 }
 

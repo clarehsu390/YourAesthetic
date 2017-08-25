@@ -50,7 +50,6 @@ class PinIndexItem extends React.Component {
           </div>
         </div>
         <span onClick={this.openModal}><img src={this.props.pin.image_url} className="pin"></img></span>
-        <span onClick={this.openModal} className="pin-name">{this.props.pin.name}</span>
       </div>
 
 
