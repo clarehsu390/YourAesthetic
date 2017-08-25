@@ -12,7 +12,7 @@ Follow.destroy_all
 Pinning.destroy_all
 
 user1 = User.create!(username: "guest", password: "password", image_url: "https://img.huffingtonpost.com/asset/570eb9d71600002b0031ba2e.jpeg?ops=scalefit_950_800_noupscale")
-user2 = User.create!(username: "username", password: "password", image_url: "https://cdn2-www.dogtime.com/assets/uploads/2016/08/corgi-puppy-6.jpg")
+user2 = User.create!(username: "username", password: "password", image_url: "https://res.cloudinary.com/dgacefwrw/image/upload/q_30/v1503693497/31494379501_5636fd011f_o_r2ique.jpg")
 user3 = User.create!(username: "Corgi", password: "password", image_url: "https://i.imgur.com/ehZPuwA.png")
 user4 = User.create!(username: "Barney_Stinson", password: "password", image_url: "https://az616578.vo.msecnd.net/files/2016/01/17/635886557531071372-1009885900_tumblr_static_bdj3tvirs5k4wgww44sc8k4kc.jpg")
 user5 = User.create!(username: "Ted_Mosby", password: "123456", image_url: "https://ithinkalotandstuff.files.wordpress.com/2014/04/ted_profile1.jpg")
