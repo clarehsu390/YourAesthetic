@@ -39,11 +39,12 @@ img.pin:hover {
 .pin-attr {
   display: inline-block;
   width:  100%;
+  transition: opacity .25s ease-in-out;
 
 }
 
 .pin-attr:hover {
-  transform: translateY(2px);
+  opacity: 0.6;
 }
 .all-pins{
   max-width: 95%;
