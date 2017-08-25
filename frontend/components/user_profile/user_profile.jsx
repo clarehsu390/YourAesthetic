@@ -28,7 +28,13 @@ class UserProfile extends React.Component {
   }
 
   followButton() {
+    if (this.props.match.params.userId == this.props.currentUser.id) {
+      return <div></div>;
+    }
+    else {
+
     return <button className="follow-button" onClick={this.handleClick}>{this.props.userProfile.followed ? "Followed" : "Follow!"}</button>;
+    }
 
   }
 
@@ -66,6 +72,7 @@ class UserProfile extends React.Component {
               <img className="pf-pic"
                 src={this.props.userProfile.image_url}>
               </img>
+              
               {this.followButton()}
               </div>
             </div>
