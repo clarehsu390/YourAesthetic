@@ -37,10 +37,9 @@ class NavBar extends React.Component {
           <h1 onClick={this.handleDiscoverClick}><img src="https://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png">
           </img></ h1>
           <input type="text" className="search" placeholder="Search"/>
-            <i className="fa fa-user fa-2x"
-              aria-hidden="true"
-              onClick={this.handleUserClick}>
-            </i>
+            <Link to='/${currentUser.id}'><i className="fa fa-user fa-2x"
+              aria-hidden="true">
+            </i></Link>
             <i className="fa fa-safari fa-2x"
               aria-hidden="true"
               onClick={this.handleDiscoverClick}>
