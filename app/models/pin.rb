@@ -12,7 +12,8 @@ class Pin < ApplicationRecord
     class_name: :Pinning
 
   has_many :boards,
-    through: :pinnings
+    through: :pinnings,
+    source: :board
 
 
 end
