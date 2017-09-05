@@ -41,6 +41,8 @@ h3.username {
   flex-direction: column;
 }
 
+
+
 .follow-container a {
   margin: 10px;
   color: #b8b8b8;
@@ -48,18 +50,21 @@ h3.username {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 .follows a:hover {
   cursor: pointer;
   background: darken(#E8E8E8, 7.5%);
-  height: 30px;
+  transition: 0.35s ease-in-out;
+
 }
 
 .following a:hover {
   cursor: pointer;
   background: darken(#E8E8E8, 7.5%);
-  height: 30px;
+  transition: 0.35s ease-in-out;
+
 }
 
 
