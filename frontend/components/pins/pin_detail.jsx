@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import CreatePinning from '../pinnings/create_pinnings';
+import { Link }from 'react-router-dom';
 
 const customStyle = {
   content : {
@@ -24,6 +25,7 @@ class PinDetail extends React.Component {
 
   render() {
     return (
+      
       <div className="pin-detail">
       <h3>{this.props.pin.name}</h3>
 
@@ -33,7 +35,7 @@ class PinDetail extends React.Component {
       <span className="description">{this.props.pin.description}</span>
       <div className="user-info">
       <img className="user-img" src={this.props.pin.user.image_url} />
-      <span>{this.props.pin.user.username}</span>
+       <Link to={`/`}>{this.props.pin.user.username}</Link> 
       <span>{this.props.pin.boards.title}</span>
       </div>
     </div>
