@@ -1,4 +1,11 @@
 class Pin < ApplicationRecord
+
+  include PgSearch
+  pg_search_scope :whose_name_starts_with,
+                  :against => :name,
+                  :using => {
+                    :tsearch => {:prefix => true}
+                  }
   validates :name, :user, presence: true
 
   belongs_to :user,

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store.js';
 import Root from './components/root';
-import { createPin } from './util/pins_util';
+import { getAllResults } from './util/search_util';
 import { requestSingleBoard } from './actions/board_actions';
 import { createPinning } from './actions/pinning_actions';
 
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  window.requestSingleBoard = requestSingleBoard;
-  window.createPinning = createPinning;
+  window.getAllResults = getAllResults;
+  
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   ReactDOM.render(<Root store={store} />, root);

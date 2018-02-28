@@ -20,7 +20,7 @@ export default class Search extends React.Component {
 
     handleKeyPress(e) {
         if (e.key === 'Enter') {
-            this.handleSubmit(e);
+            this.handleSubmit();
         }
     }
 
