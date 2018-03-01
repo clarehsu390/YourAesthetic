@@ -14,8 +14,7 @@ export default class Search extends React.Component {
     }
 
     handleSubmit() {
-        // e.preventDefault();
-        console.log('submit');
+        this.props.getAllResults(this.state.input);
     }
 
     handleKeyPress(e) {

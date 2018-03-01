@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import { AuthRoute } from '../../util/route_util';
-import Search from './search';
+import SearchContainer from './search_container';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class NavBar extends React.Component {
         <section className="navbar">
           <h1 onClick={this.handleDiscoverClick}><img src="https://res.cloudinary.com/dwetqmwgw/image/upload/c_scale,q_100,w_87/v1501170188/Aesthetic_v7ua52.png">
           </img></ h1>
-          <Search />
+          <SearchContainer />
             <i className="fa fa-user fa-2x"
               aria-hidden="true"
               onClick={this.handleUserClick}>
