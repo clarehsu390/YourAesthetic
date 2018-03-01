@@ -13,7 +13,7 @@ import SavedPinContainer from './pins/saved_pins_container';
 import BoardIndexContainer from './boards/board_index_container';
 import FollowersContainer from './follows/followers_container';
 import FollowsContainer from './follows/follows_container';
-import SearchResults from './search_results/search_results';
+import ResultsContainer from './search_results/search_results_container';
 const App = () => (
   <div>
 
@@ -27,8 +27,9 @@ const App = () => (
       <ProtectedRoute exact path='/' component={ PinsIndexContainer } />
       <ProtectedRoute path="/:userId" component={ UserProfileContainer }/>
     </Switch>
+      <Route exact path='/results' component={ ResultsContainer }/>
     <Route exact path='/:userId/boards/:boardId' component={ BoardShowContainer } />
-    {/* <Route path='results' component={ }/> */}
+    
     <ProtectedRoute path='/' component={ CreatePinContainer } />
     <ProtectedRoute path='/:userId/followers' component={ FollowersContainer } />
     <ProtectedRoute path ="/:userId/following" component={ FollowsContainer } />

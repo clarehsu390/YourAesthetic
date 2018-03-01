@@ -1,6 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+import Results from '../search_results/search_results';
 
-export default class Search extends React.Component {
+class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = {input: ""};
@@ -14,7 +16,13 @@ export default class Search extends React.Component {
     }
 
     handleSubmit() {
-        this.props.getAllResults(this.state.input);
+        this.props.getAllResults(this.state.input)
+        // .then(this.props.history.push('/results'));
+
+        if (this.props.search.length !== 0) {
+            this.props.history.push('/results');
+        }
+        // console.log(this.props.search);
     }
 
     handleKeyPress(e) {
@@ -35,3 +43,5 @@ export default class Search extends React.Component {
         );
     }
 }
+
+export default withRouter(Search);
