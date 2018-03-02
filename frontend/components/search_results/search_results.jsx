@@ -6,11 +6,6 @@ export default class Results extends React.Component {
 
     }
 
-    componentDidMount() {
-        console.log(this.props);
-        console.log('results');
-    }
-
     render() {
         return (
             <div className="results">
