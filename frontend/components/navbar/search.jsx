@@ -20,7 +20,7 @@ class Search extends React.Component {
         // .then(this.props.history.push('/results'));
 
         if (this.props.search.length !== 0) {
-            this.props.history.push('/results');
+            this.props.history.push('/search/results');
         }
         // console.log(this.props.search);
     }
