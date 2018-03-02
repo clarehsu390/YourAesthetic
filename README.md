@@ -81,6 +81,10 @@ has_many :students, through: :in_follows, source: :student
 has_many :teachers, through: :out_follows, source: :teacher
 ```
 
+#### Search
+
+Using the ruby gem 'pg_search', users are able to see pins and users whose names match the search query.
+
 #### Drag and Drop Upload
 
 Users are able to upload images from their own devices onto the website. This uses [react-dropzone](https://github.com/okonet/react-dropzone). Users can either click on the dropzone or drag their images to upload to the site. The uploaded images are automatically rendered onto the home page.
