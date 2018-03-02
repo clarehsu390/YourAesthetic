@@ -18,7 +18,7 @@ class Search extends React.Component {
     handleSubmit() {
         this.props.getAllResults(this.state.input)
         // .then(this.props.history.push('/results'));
-
+        this.setState({input: ""});
         if (this.props.search.length !== 0) {
             this.props.history.push('/search/results');
         }
@@ -30,6 +30,8 @@ class Search extends React.Component {
             this.handleSubmit();
         }
     }
+
+    
 
 
     render() {
