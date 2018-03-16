@@ -14,7 +14,7 @@ class CreatePinning extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestBoards(this.props.currentUser.id, () =>  this.setState({
+    this.props.requestBoards(this.props.currentUser.id, this.setState({
       waiting: false}));
 
   }
