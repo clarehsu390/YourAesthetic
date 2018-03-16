@@ -36,7 +36,7 @@ class PinDetail extends React.Component {
       <div className="user-info">
       <span>Uploaded by &nbsp;</span>
       <img className="user-img" src={this.props.pin.user.image_url} />
-       <Link to={`/`}>{this.props.pin.user.username}</Link> 
+       <Link to={`/${this.props.pin.user.id}`}>{this.props.pin.user.username}</Link> 
       </div>
     </div>
   );
