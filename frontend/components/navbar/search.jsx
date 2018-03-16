@@ -19,9 +19,8 @@ class Search extends React.Component {
         this.props.getAllResults(this.state.input)
         // .then(this.props.history.push('/results'));
         this.setState({input: ""});
-        if (this.props.search.length !== 0) {
-            this.props.history.push('/search/results');
-        }
+        this.props.history.push('/search/results');
+        
         // console.log(this.props.search);
     }
 

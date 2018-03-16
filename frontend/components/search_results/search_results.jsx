@@ -6,6 +6,10 @@ export default class Results extends React.Component {
 
     }
 
+    componentWillUnmount() {
+        this.props.clearSearch();
+    }
+
     render() {
         return (
             <div className="results">
