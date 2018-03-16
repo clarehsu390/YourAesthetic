@@ -42,9 +42,6 @@ img.pin:hover {
   transition: opacity .25s ease-in-out;
 }
 
-// .pin-attr:hover {
-//   color: gray;
-// }
 .all-pins{
   max-width: 95%;
   margin: auto;
@@ -187,7 +184,9 @@ font-size: 16px;
   margin-right: 350px;
 
 }
-
+.ReactModal__Body--open {
+  overflow:hidden;
+}
 .pin-detail {
   display: flex;
   flex-direction: column;
@@ -202,6 +201,8 @@ font-size: 16px;
 .pin-detail-modal {
   margin: auto;
   border-radius: 5px;
+  overflow: hidden;
+  position: fixed;
 }
 
 .pin-image{
@@ -345,11 +346,13 @@ font-size: 16px;
   display: flex;
   flex-direction: row;
   height: 30px;
+  text-align: center;
+  align-items: center;
 }
 
 .user-info a {
   width: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .search-results {
