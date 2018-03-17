@@ -36,19 +36,21 @@ class CreatePinning extends React.Component {
       return (
         <div></div>
       );
+    } else {
+
+      const className = this.state.clicked ? 'click-state' : 'base-state';
+      return (
+        <div className="board-menu">
+          <ul className="dropdown-content">
+            <li><a href="#">Select a Board</a></li>
+            {this.props.boards.map((board, i) => {
+              return <li className={className} onClick={this.handleClick}
+                key={board.id} value={board.id}>{board.title}</li>;
+            })}
+          </ul>
+        </div>
+      );
     }
-    const className = this.state.clicked ? 'click-state' : 'base-state';
-    return (
-      <div className="board-menu">
-        <ul className="dropdown-content">
-          <li><a href="#">Select a Board</a></li>
-          {this.props.boards.map((board, i) => {
-            return <li className={className} onClick={this.handleClick}
-              key={board.id} value={board.id}>{board.title}</li>;
-          })}
-        </ul>
-      </div>
-    );
   }
 }
 

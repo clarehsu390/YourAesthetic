@@ -7,9 +7,6 @@ export default class Results extends React.Component {
         super(props);
 
     }
-    componentWillReceiveProps() {
-        console.log(this.props.search);
-    }
 
     componentWillUnmount() {
         this.props.clearSearch();

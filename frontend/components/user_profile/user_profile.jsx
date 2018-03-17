@@ -10,7 +10,7 @@ class UserProfile extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      teacher_id: parseInt(this.props.match.params.userId),
+      teacher_id: this.props.match.params.userId,
       student_id: this.props.currentUser.id
     };
     this.followButton = this.followButton.bind(this);
@@ -28,7 +28,7 @@ class UserProfile extends React.Component {
   // }
 
   followButton() {
-    if (this.props.match.params.userId === this.props.currentUser.id) {
+    if (this.props.match.params.userId == this.props.currentUser.id) {
       return <div></div>;
     }
     else {
