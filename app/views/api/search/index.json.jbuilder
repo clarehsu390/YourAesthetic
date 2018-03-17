@@ -2,6 +2,7 @@ json.array! @results[:pins].each do |pin|
     json.name pin.name
     json.image_url pin.image_url
     json.id pin.id
+    json.user pin.user
 end
 
 json.array! @results[:users].each do |user|
