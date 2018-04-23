@@ -28,7 +28,7 @@ class UserProfile extends React.Component {
   // }
 
   followButton() {
-    if (this.props.match.params.userId == this.props.currentUser.id) {
+    if (parseInt(this.props.match.params.userId) === this.props.currentUser.id) {
       return <div></div>;
     }
     else {

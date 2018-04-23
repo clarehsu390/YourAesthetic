@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 
 class BoardShow extends React.Component {
@@ -12,6 +12,7 @@ class BoardShow extends React.Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleDelete= this.handleDelete.bind(this);
+    this.backToProfile = this.backToProfile.bind(this);
   }
 
   componentDidMount() {
@@ -36,12 +37,18 @@ class BoardShow extends React.Component {
     this.props.removeBoard(this.props.match.params.boardId);
   }
 
+  backToProfile(e) {
+    e.preventDefault();
+    this.props.history.push(`/${this.props.match.params.userId}`);
+  }
+
   render() {
     if (this.state.waiting) {
       return <div></div>;
     }
     return (
       <div className="boards-pins">
+      <button onClick={this.backToProfile}>Back to Profile</button>
         <div className="board-name">
           <h2>{this.props.boards.title}</h2>
           <span><i onClick={this.handleDelete} className="fa fa-trash-o" aria-hidden="true"></i></span>
