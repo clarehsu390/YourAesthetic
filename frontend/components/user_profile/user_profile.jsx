@@ -10,7 +10,7 @@ class UserProfile extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      teacher_id: this.props.match.params.userId,
+      teacher_id: parseInt(this.props.match.params.userId),
       student_id: this.props.currentUser.id
     };
     this.followButton = this.followButton.bind(this);
@@ -20,12 +20,6 @@ class UserProfile extends React.Component {
   componentDidMount() {
     this.props.receiveSingleUser(this.props.match.params.userId);
   }
-
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.match.params.userId !== nextProps.match.params.userId) {
-  //     this.props.receiveSingleUser(nextProps.match.params.userId);
-  //   }
-  // }
 
   followButton() {
     if (parseInt(this.props.match.params.userId) === this.props.currentUser.id) {
@@ -41,9 +35,8 @@ class UserProfile extends React.Component {
   handleClick() {
     if (this.props.userProfile.followed) {
       this.props.removeTeacher(this.state);
-      console.log(this.state);
     }
-    else {
+    else if (!this.props.userProfile.followed) {
       this.props.createTeacher(this.state);
     }
   }

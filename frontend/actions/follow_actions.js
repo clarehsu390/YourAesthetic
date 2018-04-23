@@ -17,7 +17,7 @@ export const receiveFollow = teacher =>({
 
 export const removeTeacher = (follow) => dispatch => {
   return APIUtil.destroyFollow(follow).then(
-    user => dispatch(receiveUser(user))
+    (user) => dispatch(receiveUser(user))
   );
 };
 

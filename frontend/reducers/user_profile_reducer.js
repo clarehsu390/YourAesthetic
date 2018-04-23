@@ -15,15 +15,26 @@ const userProfileReducer = (state = defaultProfile, action) => {
   switch(action.type) {
     case RECEIVE_FOLLOW:
       let newState = merge({}, state, { followed: true } );
-      newState.teachers.push(action.teacher);
+      if (!newState.teachers.includes(action.teacher.id)) {
+
+        newState.teachers.push(action.teacher);
+      }
+      console.log(newState);
       return newState;
     case REMOVE_FOLLOW:
 
       newState = merge({}, state, { followed: false });
-      newState.teachers[action.follow.id] = null;
+      newState.students[action.follow.id] = null;
+      console.log(newState);
       return newState;
     case RECEIVE_USER:
-      return merge(action.user, { followed: false});
+      // console.log(action.user);
+      if (action.user.students.includes(action.user)) {
+
+        return merge({}, action.user, { followed: true});
+      } else {
+        return merge({}, action.user, { followed: false});
+      }
     default:
       return state;
   }
